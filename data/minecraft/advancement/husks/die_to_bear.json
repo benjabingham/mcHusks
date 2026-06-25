@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:husks/die_to_llama",   
+  "criteria": {
+    "die_to_bear": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:polar_bear",
+              "flags":{"is_on_fire": true}
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:entity_killed_player"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Sacrifice yourself to a flaming Polar Bear."
+    },
+    "icon": {
+      "id": "minecraft:snowball"
+    },
+    "title": {
+      "translate": "Hot and Cold"
+    }
+  },
+  "requirements": [
+    [
+      "die_to_bear"
+    ]
+],
+"rewards": {
+    "function": "husks:gainsoul"
+},
+  "sends_telemetry_event": true
+}

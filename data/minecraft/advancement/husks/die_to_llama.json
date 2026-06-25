@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:husks/die_to_bee",   
+  "criteria": {
+    "die_to_llama": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:llama"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:entity_killed_player"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Sacrifice yourself to a Llama."
+    },
+    "icon": {
+      "id": "minecraft:brown_wool"
+    },
+    "title": {
+      "translate": "Human Spittoon"
+    }
+  },
+  "requirements": [
+    [
+      "die_to_llama"
+    ]
+],
+"rewards": {
+    "function": "husks:gainsoul"
+},
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:husks/die_to_bear",   
+  "criteria": {
+    "die_to_warden": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:warden"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:entity_killed_player"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Sacrifice yourself to the Warden."
+    },
+    "icon": {
+      "id": "minecraft:sculk"
+    },
+    "title": {
+      "translate": "Eternal Darkness"
+    }
+  },
+  "requirements": [
+    [
+      "die_to_warden"
+    ]
+],
+"rewards": {
+    "function": "husks:gainsoul"
+},
+  "sends_telemetry_event": true
+}

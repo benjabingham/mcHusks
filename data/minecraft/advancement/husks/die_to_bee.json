@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:husks/root",   
+  "criteria": {
+    "die_to_bee": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:bee"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:entity_killed_player"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Sacrifice yourself to a Bee."
+    },
+    "icon": {
+      "id": "minecraft:bee_nest"
+    },
+    "title": {
+      "translate": "Wicker Man"
+    }
+  },
+  "requirements": [
+    [
+      "die_to_bee"
+    ]
+],
+"rewards": {
+    "function": "husks:gainsoul"
+},
+  "sends_telemetry_event": true
+}

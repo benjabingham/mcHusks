@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:husks/infanticide",
+  "criteria": {
+    "killed_player": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:player",
+              "nbt": "{Tags:[\"living\"]}"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Kill your fellow man."
+    },
+    "icon": {
+      "id": "minecraft:player_head"
+    },
+    "title": {
+      "translate": "Murder"
+    }
+  },
+  "requirements": [
+    [
+      "killed_player"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:gainsoul"
+  },
+  "sends_telemetry_event": true
+}

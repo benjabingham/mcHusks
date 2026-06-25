@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:husks/place_dried_ghast_in_water",
+  "criteria": {
+    "killed_ghast": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:ghast",
+              "minecraft:location": {
+                "dimension": "minecraft:overworld"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "show_toast":false,
+    "description": {
+      "translate": "advancements.nether.uneasy_alliance.description"
+    },
+    "icon": {
+      "id": "minecraft:ghast_tear"
+    },
+    "title": {
+      "translate": "advancements.nether.uneasy_alliance.title"
+    }
+  },
+  "requirements": [
+    [
+      "killed_ghast"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:gainsoul"
+  },
+  "sends_telemetry_event": true
+}

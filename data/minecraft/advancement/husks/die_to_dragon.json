@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:husks/die_to_elder_guardian",   
+  "criteria": {
+    "die_to_dragon": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:ender_dragon"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:entity_killed_player"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Sacrifice yourself to the Ender Dragon."
+    },
+    "icon": {
+      "id": "minecraft:dragon_breath"
+    },
+    "title": {
+      "translate": "Dragon Food"
+    }
+  },
+  "requirements": [
+    [
+      "die_to_dragon"
+    ]
+],
+"rewards": {
+    "function": "husks:gainsoul"
+},
+  "sends_telemetry_event": true
+}

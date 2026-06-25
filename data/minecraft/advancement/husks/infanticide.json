@@ -1,0 +1,42 @@
+{
+  "parent": "minecraft:husks/kill_a_lamb",
+  "criteria": {
+    "killed_baby": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:villager",
+              "flags": {
+                "is_baby": true
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Kill a Baby Villager."
+    },
+    "icon": {
+      "id": "minecraft:beetroot"
+    },
+    "title": {
+      "translate": "Infanticide"
+    }
+  },
+  "requirements": [
+    [
+      "killed_baby"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:gainsoul"
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,42 @@
+{
+  "parent": "minecraft:husks/root",
+  "criteria": {
+    "killed_baby_sheep": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:sheep",
+              "flags": {
+                "is_baby": true
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Kill a defenseless Baby Sheep"
+    },
+    "icon": {
+      "id": "minecraft:red_wool"
+    },
+    "title": {
+      "translate": "Sacrifice"
+    }
+  },
+  "requirements": [
+    [
+      "killed_baby_sheep"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:gainsoul"
+  },
+  "sends_telemetry_event": true
+}

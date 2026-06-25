@@ -1,0 +1,2 @@
+summon pig ~ ~ ~
+say test

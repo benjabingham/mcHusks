@@ -1,0 +1,54 @@
+{
+    "parent": "husks/return_to_sender",
+  "criteria": {
+    "wear_skull": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:wither_skeleton"
+            }
+          }
+        ],
+         "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "armor.head": {
+                  "items": [
+                    "minecraft:wither_skeleton_skull"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Kill a Wither Skeleton while wearing its brother's skull."
+    },
+    "icon": {
+      "id": "minecraft:wither_skeleton_skull"
+    },
+    "title": {
+      "translate": "Fratricide"
+    }
+  },
+  "requirements": [
+    [
+      "wear_skull"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:gainsoul"
+  },
+  "sends_telemetry_event": true
+}

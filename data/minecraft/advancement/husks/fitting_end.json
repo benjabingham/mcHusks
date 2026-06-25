@@ -1,0 +1,51 @@
+{
+  "parent": "minecraft:husks/wear_skull",
+  "criteria": {
+    "killed_enderman": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:enderman"
+            }
+          }
+        ],
+        "killing_blow": {
+          "direct_entity": {
+            "minecraft:entity_type": "minecraft:end_crystal"
+          },
+          "tags": [
+            {
+              "expected": true,
+              "id": "minecraft:is_explosion"
+            }
+          ]
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Kill an Enderman with an explosion from an End Crystal."
+    },
+    "icon": {
+      "id": "minecraft:end_crystal"
+    },
+    "title": {
+      "translate": "Fitting End"
+    }
+    
+  },
+  "requirements": [
+    [
+      "killed_enderman"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:gainsoul"
+  },
+  "sends_telemetry_event": true
+}
