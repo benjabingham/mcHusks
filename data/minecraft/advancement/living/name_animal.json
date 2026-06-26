@@ -1,16 +1,12 @@
 {
   "parent": "minecraft:living/root",
   "criteria": {
-    "alive":{
-        "conditions":{
-            "player": {
-                "minecraft:team":"living"
-            }
-        },
-        "trigger":"minecraft:tick"
-    },
+    
     "listen": {
       "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
         "item": 
           {
               "items": [

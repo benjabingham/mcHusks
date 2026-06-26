@@ -1,16 +1,11 @@
 {
   "parent": "minecraft:living/root",
   "criteria": {
-    "alive":{
-        "conditions":{
-            "player": {
-                "minecraft:team":"living"
-            }
-        },
-        "trigger":"minecraft:tick"
-    },
     "play_jukebox_in_meadows": {
       "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
         "location": [
           {
             "condition": "minecraft:location_check",
@@ -48,9 +43,6 @@
   "requirements": [
     [
       "play_jukebox_in_meadows"
-    ],
-    [
-        "alive"
     ]
   ],
   "rewards": {

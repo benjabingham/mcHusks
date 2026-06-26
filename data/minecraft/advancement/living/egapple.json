@@ -1,17 +1,12 @@
 {
   "parent": "minecraft:living/gapple",
   "criteria": {
-    "alive":{
-        "conditions":{
-            "player": {
-                "minecraft:team":"living"
-            }
-        },
-        "trigger":"minecraft:tick"
-    },
     "eat": {
         
       "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
         "item": {
           "items": "minecraft:enchanted_golden_apple"
         }
@@ -34,9 +29,6 @@
   "requirements": [
     [
       "eat"
-    ],
-    [
-        "alive"
     ]
   ],
   "rewards": {

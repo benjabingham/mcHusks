@@ -1,16 +1,11 @@
 {
   "parent": "minecraft:living/freefall",
   "criteria": {
-    "alive":{
-        "conditions":{
-            "player": {
-                "minecraft:team":"living"
-            }
-        },
-        "trigger":"minecraft:tick"
-    },
     "who_needs_rockets": {
       "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
         "cause": [
           {
             "condition": "minecraft:entity_properties",
@@ -43,9 +38,6 @@
   "requirements": [
     [
       "who_needs_rockets"
-    ],
-    [
-        "alive"
     ]
   ],
   "rewards": {

@@ -26,9 +26,6 @@
   "requirements": [
     [
       "alive"
-    ],
-    [
-        "alive"
     ]
 ],
   "sends_telemetry_event": true

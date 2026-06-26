@@ -1,14 +1,6 @@
 {
   "parent": "minecraft:living/eroded_badlands",
   "criteria": {
-    "alive":{
-        "conditions":{
-            "player": {
-                "minecraft:team":"living"
-            }
-        },
-        "trigger":"minecraft:tick"
-    },
     "minecraft:basalt_deltas": {
       "conditions": {
         "player": [
@@ -16,6 +8,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
+                "minecraft:team":"living",
               "minecraft:location": {
                 "biomes": "minecraft:basalt_deltas"
               }
@@ -119,9 +112,6 @@
     ],
     [
       "minecraft:basalt_deltas"
-    ],
-    [
-        "alive"
     ]
   ],
   "rewards": {

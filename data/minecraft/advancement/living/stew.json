@@ -1,16 +1,11 @@
 {
   "parent": "minecraft:living/cake",
   "criteria": {
-    "alive":{
-        "conditions":{
-            "player": {
-                "minecraft:team":"living"
-            }
-        },
-        "trigger":"minecraft:tick"
-    },
     "eat": {
       "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
         "item": {
           "items": "minecraft:suspicious_stew"
         }
@@ -32,9 +27,6 @@
   "requirements": [
     [
       "eat"
-    ],
-    [
-        "alive"
     ]
   ],
   "rewards": {

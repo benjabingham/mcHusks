@@ -1,14 +1,6 @@
 {
   "parent": "minecraft:living/zooming",
   "criteria": {
-    "alive":{
-        "conditions":{
-            "player": {
-                "minecraft:team":"living"
-            }
-        },
-        "trigger":"minecraft:tick"
-    },
     "terminal": {
       "trigger": "minecraft:tick",
       "conditions": {
@@ -17,6 +9,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
+              "minecraft:team":"living",
               "movement": {
                 "speed": {
                   "min": 70
@@ -43,9 +36,6 @@
   "requirements": [
     [
       "terminal"
-    ],
-    [
-        "alive"
     ]
   ],
   "rewards": {

@@ -1,16 +1,11 @@
 {
   "parent": "minecraft:living/cat",
   "criteria": {
-    "alive":{
-        "conditions":{
-            "player": {
-                "minecraft:team":"living"
-            }
-        },
-        "trigger":"minecraft:tick"
-    },
     "listen": {
       "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
         "location": [
           {
             "condition": "minecraft:location_check",

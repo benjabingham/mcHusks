@@ -1,14 +1,6 @@
 {
   "parent": "minecraft:living/freefall",
   "criteria": {
-    "alive":{
-        "conditions":{
-            "player": {
-                "minecraft:team":"living"
-            }
-        },
-        "trigger":"minecraft:tick"
-    },
     "terminal": {
       "trigger": "minecraft:tick",
       "conditions": {
@@ -17,6 +9,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
+              "minecraft:team":"living",
               "movement": {
                 "horizontal_speed": {
                   "min": 30
@@ -42,9 +35,6 @@
   "requirements": [
     [
       "terminal"
-    ],
-    [
-        "alive"
     ]
   ],
   "rewards": {

@@ -1,14 +1,6 @@
 {
   "parent": "minecraft:living/root",
   "criteria": {
-    "alive":{
-        "conditions":{
-            "player": {
-                "minecraft:team":"living"
-            }
-        },
-        "trigger":"minecraft:tick"
-    },
     "visit": {
       "conditions": {
         "player": [
@@ -16,6 +8,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
+                "minecraft:team":"living",
               "minecraft:location": {
                 "biomes": "minecraft:eroded_badlands"
               }
@@ -40,9 +33,6 @@
   "requirements": [
     [
       "visit"
-    ],
-    [
-        "alive"
     ]
   ],
   "rewards": {

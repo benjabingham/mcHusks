@@ -1,16 +1,11 @@
 {
   "parent": "minecraft:living/name_animal",
   "criteria": {
-    "alive":{
-        "conditions":{
-            "player": {
-                "minecraft:team":"living"
-            }
-        },
-        "trigger":"minecraft:tick"
-    },
     "armor_trimmed_minecraft:bolt_armor_trim_smithing_template_smithing_trim": {
       "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
         "recipe_id": "minecraft:bolt_armor_trim_smithing_template_smithing_trim"
       },
       "trigger": "minecraft:recipe_crafted"
@@ -149,9 +144,6 @@
       "armor_trimmed_minecraft:ward_armor_trim_smithing_template_smithing_trim",
       "armor_trimmed_minecraft:wayfinder_armor_trim_smithing_template_smithing_trim",
       "armor_trimmed_minecraft:wild_armor_trim_smithing_template_smithing_trim"
-    ],
-    [
-        "alive"
     ]
   ],
   "rewards": {

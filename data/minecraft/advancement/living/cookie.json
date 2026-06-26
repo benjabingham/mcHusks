@@ -1,16 +1,11 @@
 {
   "parent": "minecraft:living/honey",
   "criteria": {
-    "alive":{
-        "conditions":{
-            "player": {
-                "minecraft:team":"living"
-            }
-        },
-        "trigger":"minecraft:tick"
-    },
     "cookie": {
       "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
         "item": {
           "items": "minecraft:cookie"
         }
@@ -32,9 +27,6 @@
   "requirements": [
     [
       "cookie"
-    ],
-    [
-        "alive"
     ]
   ],
   "rewards": {

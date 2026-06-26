@@ -1,14 +1,6 @@
 {
   "parent": "minecraft:living/eroded_badlands",
   "criteria": {
-    "alive":{
-        "conditions":{
-            "player": {
-                "minecraft:team":"living"
-            }
-        },
-        "trigger":"minecraft:tick"
-    },
     "visit": {
       "conditions": {
         
@@ -16,7 +8,9 @@
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
+            
             "predicate": {
+                "minecraft:team":"living",
               "minecraft:location": {
                 "biomes": "minecraft:cherry_grove"
               }
@@ -41,9 +35,6 @@
   "requirements": [
     [
       "visit"
-    ],
-    [
-        "alive"
     ]
   ],
   "rewards": {
