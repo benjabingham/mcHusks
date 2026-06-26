@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:living/tears",
+  "criteria": {
+    "listen": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "jukebox"
+                ]
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:music_disc_pigstep"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Listen to the Pigstep music disc"
+    },
+    "icon": {
+      "id": "minecraft:music_disc_pigstep"
+    },
+    "title": {
+      "translate": "Step To It"
+    }
+  },
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

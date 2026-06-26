@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:living/otherside",
+  "criteria": {
+    "listen": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "jukebox"
+                ]
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:music_disc_bounce"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Listen to the Bounce music disc"
+    },
+    "icon": {
+      "id": "minecraft:music_disc_bounce"
+    },
+    "title": {
+      "translate": "Bounce Around"
+    }
+  },
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

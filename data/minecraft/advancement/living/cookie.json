@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:living/root",
+  "criteria": {
+    "cookie": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:cookie"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Eat a Cookie"
+    },
+    "icon": {
+      "id": "minecraft:cookie"
+    },
+    "title": {
+      "translate": "Sweet Treat"
+    }
+  },
+  "requirements": [
+    [
+      "cookie"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

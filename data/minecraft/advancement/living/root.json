@@ -6,16 +6,16 @@
   },
   "display": {
     "announce_to_chat": false,
-    "background": "minecraft:block/basalt_side",
+    "background": "minecraft:block/dirt",
     "description": {
-      "translate": "Bring back the dead."
+      "translate": "Extend your life by living it"
     },
     "icon": {
-      "id": "minecraft:zombie_head"
+      "id": "minecraft:player_head"
     },
     "show_toast": false,
     "title": {
-      "translate": "Husks"
+      "translate": "Live"
     }
   },
   "requirements": [

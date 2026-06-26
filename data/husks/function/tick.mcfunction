@@ -1,5 +1,9 @@
+execute as @a if score @s deaths matches 1 run attribute @s minecraft:max_health base set 20
+
 execute as @e[type=player] if score @s deaths matches 1 run function husks:playerdeath
+
+execute as @e[type=player] run scoreboard players add @s timeAliveTrue 1
+execute as @e[tag=!husk,type=player] run function husks:fleeting
 
 tag @a[tag=!husk] add living
 
-scoreboard players add @a[tag=!husk] timeAlive 1
