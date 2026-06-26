@@ -1,11 +1,11 @@
-execute if score @s timeAlive matches ..4400000 run scoreboard players add @s timeAlive 10
+execute if score @s timeAlive matches ..800000 run scoreboard players add @s timeAlive 30
+execute if score @s timeAlive matches -800000..0 run scoreboard players add @s timeAlive 20
+execute if score @s timeAlive matches 0..800000 run scoreboard players add @s timeAlive 12
+execute if score @s timeAlive matches 800000..4400000 run scoreboard players add @s timeAlive 10
 execute if score @s timeAlive matches 4400000..5600000 run scoreboard players add @s timeAlive 8
 execute if score @s timeAlive matches 5600000..6800000 run scoreboard players add @s timeAlive 6
 execute if score @s timeAlive matches 5600000..6800000 run scoreboard players add @s timeAlive 4
 execute if score @s timeAlive matches 6800000..8000000 run scoreboard players add @s timeAlive 2
-
-execute if score @s timeAlive matches ..-1 run effect give @s speed 1
-execute if score @s timeAlive matches ..-1 run effect give @s haste 1
 
 execute if score @s timeAlive matches ..800000 run attribute @s minecraft:max_health base set 20
 execute if score @s timeAlive matches 800000..2000000 run attribute @s minecraft:max_health base set 18

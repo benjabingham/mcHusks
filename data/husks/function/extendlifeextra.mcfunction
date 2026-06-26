@@ -4,3 +4,5 @@ execute as @a at @s run playsound entity.villager.celebrate
 execute as @a at @s run playsound entity.villager.celebrate
 execute as @a at @s run playsound entity.villager.celebrate
 say has extended their life considerably!
+
+function husks:joy
