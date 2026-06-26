@@ -18,7 +18,7 @@
   },
   "display": {
     "description": {
-      "translate": "Kill the ender dragon."
+      "translate": "Kill the ender dragon"
     },
     "icon": {
       "id": "minecraft:dragon_head"

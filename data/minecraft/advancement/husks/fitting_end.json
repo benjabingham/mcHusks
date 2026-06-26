@@ -29,7 +29,7 @@
   },
   "display": {
     "description": {
-      "translate": "Kill an Enderman with an explosion from an End Crystal."
+      "translate": "Kill an Enderman with an explosion from an End Crystal"
     },
     "icon": {
       "id": "minecraft:end_crystal"
