@@ -1,16 +1,15 @@
 {
-  "parent": "minecraft:living/explore_ocean",
+  "parent": "living/warm_ocean",
   "criteria": {
-    "visit": {
+    "buried_treasure": {
       "conditions": {
         "player": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-                "minecraft:team":"living",
               "minecraft:location": {
-                "biomes": "minecraft:mushroom_fields"
+                "structures": "minecraft:buried_treasure"
               }
             }
           }
@@ -21,23 +20,22 @@
   },
   "display": {
     "description": {
-      "translate": "Discover a Mushroom Island"
+      "translate": "Find buried treasure"
     },
-    "frame": "challenge",
     "icon": {
-      "id": "minecraft:red_mushroom"
+      "id": "minecraft:chest"
     },
     "title": {
-      "translate": "Those Aren't Trees..."
+      "translate": "X Marks The Spot"
     }
   },
   "requirements": [
     [
-      "visit"
+      "buried_treasure"
     ]
   ],
   "rewards": {
-    "function": "husks:extendlifeextra"
+    "function": "husks:extendlife"
   },
   "sends_telemetry_event": true
 }
