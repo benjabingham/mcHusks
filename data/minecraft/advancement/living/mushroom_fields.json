@@ -1,6 +1,14 @@
 {
   "parent": "minecraft:living/warm_ocean",
   "criteria": {
+    "alive":{
+        "conditions":{
+            "player": {
+                "minecraft:team":"living"
+            }
+        },
+        "trigger":"minecraft:tick"
+    },
     "visit": {
       "conditions": {
         "player": [
@@ -33,6 +41,9 @@
   "requirements": [
     [
       "visit"
+    ],
+    [
+        "alive"
     ]
   ],
   "rewards": {

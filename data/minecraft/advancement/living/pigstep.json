@@ -1,6 +1,14 @@
 {
   "parent": "minecraft:living/tears",
   "criteria": {
+    "alive":{
+        "conditions":{
+            "player": {
+                "minecraft:team":"living"
+            }
+        },
+        "trigger":"minecraft:tick"
+    },
     "listen": {
       "conditions": {
         "location": [

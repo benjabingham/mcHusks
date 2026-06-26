@@ -1,6 +1,14 @@
 {
   "parent": "minecraft:living/cookie",
   "criteria": {
+    "alive":{
+        "conditions":{
+            "player": {
+                "minecraft:team":"living"
+            }
+        },
+        "trigger":"minecraft:tick"
+    },
     "cake": {
       "conditions": {
         "location": [
@@ -31,6 +39,9 @@
   "requirements": [
     [
       "cake"
+    ],
+    [
+        "alive"
     ]
   ],
   "rewards": {

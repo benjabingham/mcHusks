@@ -1,6 +1,14 @@
 {
   "parent": "minecraft:living/zooming",
   "criteria": {
+    "alive":{
+        "conditions":{
+            "player": {
+                "minecraft:team":"living"
+            }
+        },
+        "trigger":"minecraft:tick"
+    },
     "terminal": {
       "trigger": "minecraft:tick",
       "conditions": {
@@ -35,6 +43,9 @@
   "requirements": [
     [
       "terminal"
+    ],
+    [
+        "alive"
     ]
   ],
   "rewards": {

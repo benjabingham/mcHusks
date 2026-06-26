@@ -1,7 +1,12 @@
 {
   "criteria": {
-    "start_trigger": {
-      "trigger": "minecraft:impossible"
+    "alive":{
+        "conditions":{
+            "player": {
+                "minecraft:team":"living"
+            }
+        },
+        "trigger":"minecraft:tick"
     }
   },
   "display": {
@@ -20,7 +25,10 @@
   },
   "requirements": [
     [
-      "start_trigger"
+      "alive"
+    ],
+    [
+        "alive"
     ]
 ],
   "sends_telemetry_event": true

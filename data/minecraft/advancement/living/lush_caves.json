@@ -1,6 +1,14 @@
 {
   "parent": "minecraft:living/cherry_grove",
   "criteria": {
+    "alive":{
+        "conditions":{
+            "player": {
+                "minecraft:team":"living"
+            }
+        },
+        "trigger":"minecraft:tick"
+    },
     "visit": {
       "conditions": {
         "player": [
@@ -32,6 +40,9 @@
   "requirements": [
     [
       "visit"
+    ],
+    [
+        "alive"
     ]
   ],
   "rewards": {

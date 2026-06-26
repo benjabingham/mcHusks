@@ -1,6 +1,14 @@
 {
   "parent": "minecraft:living/eroded_badlands",
   "criteria": {
+    "alive":{
+        "conditions":{
+            "player": {
+                "minecraft:team":"living"
+            }
+        },
+        "trigger":"minecraft:tick"
+    },
     "visit": {
       "conditions": {
         
@@ -33,6 +41,9 @@
   "requirements": [
     [
       "visit"
+    ],
+    [
+        "alive"
     ]
   ],
   "rewards": {

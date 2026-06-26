@@ -1,6 +1,14 @@
 {
   "parent": "minecraft:living/gapple",
   "criteria": {
+    "alive":{
+        "conditions":{
+            "player": {
+                "minecraft:team":"living"
+            }
+        },
+        "trigger":"minecraft:tick"
+    },
     "eat": {
         
       "conditions": {
@@ -26,6 +34,9 @@
   "requirements": [
     [
       "eat"
+    ],
+    [
+        "alive"
     ]
   ],
   "rewards": {
