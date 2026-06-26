@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:living/root",
+  "criteria": {
+    "terminal": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "movement": {
+                "vertical_speed": {
+                  "min": 30
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Achieve a vertical velocity of 30 m/s"
+    },
+    "icon": {
+      "id": "minecraft:feather"
+    },
+    "title": {
+      "translate": "Free-Fall"
+    }
+  },
+  "requirements": [
+    [
+      "terminal"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

@@ -1,7 +1,7 @@
 {
   "criteria": {
     "start_trigger": {
-      "trigger": "minecraft:tick"
+      "trigger": "minecraft:impossible"
     }
   },
   "display": {

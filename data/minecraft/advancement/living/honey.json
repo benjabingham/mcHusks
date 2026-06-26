@@ -1,10 +1,10 @@
 {
-  "parent": "minecraft:living/honey",
+  "parent": "minecraft:living/root",
   "criteria": {
-    "cookie": {
+    "eat": {
       "conditions": {
         "item": {
-          "items": "minecraft:cookie"
+          "items": "minecraft:honey_bottle"
         }
       },
       "trigger": "minecraft:consume_item"
@@ -12,18 +12,18 @@
   },
   "display": {
     "description": {
-      "translate": "Eat a Cookie"
+      "translate": "Eat some Honey"
     },
     "icon": {
-      "id": "minecraft:cookie"
+      "id": "minecraft:honey_bottle"
     },
     "title": {
-      "translate": "Sweet Treat"
+      "translate": "Oh, Bother"
     }
   },
   "requirements": [
     [
-      "cookie"
+      "eat"
     ]
   ],
   "rewards": {

@@ -1,2 +1,2 @@
-scoreboard players remove @s timeAlive 240000
+scoreboard players remove @s timeAlive 3600000
 say has extended their life considerably!

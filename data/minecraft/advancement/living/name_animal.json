@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:living/root",
+  "criteria": {
+    "listen": {
+      "conditions": {
+        "item": 
+          {
+              "items": [
+                "minecraft:name_tag"
+              ]
+          }
+      },
+      "trigger": "minecraft:player_interacted_with_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Bestow a mob with a name"
+    },
+    "icon": {
+      "id": "minecraft:name_tag"
+    },
+    "title": {
+      "translate": "¿Como Te Llamas?"
+    }
+  },
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

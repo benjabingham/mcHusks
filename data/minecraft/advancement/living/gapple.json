@@ -1,10 +1,10 @@
 {
-  "parent": "minecraft:living/honey",
+  "parent": "minecraft:living/gcarrot",
   "criteria": {
-    "cookie": {
+    "eat": {
       "conditions": {
         "item": {
-          "items": "minecraft:cookie"
+          "items": "minecraft:golden_apple"
         }
       },
       "trigger": "minecraft:consume_item"
@@ -12,18 +12,18 @@
   },
   "display": {
     "description": {
-      "translate": "Eat a Cookie"
+      "translate": "Eat a Golden Apple"
     },
     "icon": {
-      "id": "minecraft:cookie"
+      "id": "minecraft:golden_apple"
     },
     "title": {
-      "translate": "Sweet Treat"
+      "translate": "Crassus In Eden"
     }
   },
   "requirements": [
     [
-      "cookie"
+      "eat"
     ]
   ],
   "rewards": {

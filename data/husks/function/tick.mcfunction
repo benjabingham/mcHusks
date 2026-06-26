@@ -6,4 +6,3 @@ execute as @e[type=player] run scoreboard players add @s timeAliveTrue 1
 execute as @e[tag=!husk,type=player] run function husks:fleeting
 
 tag @a[tag=!husk] add living
-

@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:living/root",
+  "parent": "minecraft:living/eroded_badlands",
   "criteria": {
     "minecraft:basalt_deltas": {
       "conditions": {
@@ -85,6 +85,7 @@
   "display": {
     "announce_to_chat": false,
     "show_toast":false,
+    "frame":"challenge",
     "description": {
       "translate": "advancements.nether.explore_nether.description"
     },
@@ -113,7 +114,7 @@
     ]
   ],
   "rewards": {
-    "function": "husks:extendlife"
+    "function": "husks:extendlifeextra"
   },
   "sends_telemetry_event": true
 }

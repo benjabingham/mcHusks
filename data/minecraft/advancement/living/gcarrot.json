@@ -1,10 +1,10 @@
 {
-  "parent": "minecraft:living/honey",
+  "parent": "minecraft:living/cake",
   "criteria": {
-    "cookie": {
+    "eat": {
       "conditions": {
         "item": {
-          "items": "minecraft:cookie"
+          "items": "minecraft:golden_carrot"
         }
       },
       "trigger": "minecraft:consume_item"
@@ -12,18 +12,18 @@
   },
   "display": {
     "description": {
-      "translate": "Eat a Cookie"
+      "translate": "Eat a Golden Carrot"
     },
     "icon": {
-      "id": "minecraft:cookie"
+      "id": "minecraft:golden_carrot"
     },
     "title": {
-      "translate": "Sweet Treat"
+      "translate": "24 Karat"
     }
   },
   "requirements": [
     [
-      "cookie"
+      "eat"
     ]
   ],
   "rewards": {

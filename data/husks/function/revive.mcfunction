@@ -4,6 +4,7 @@ spreadplayers 0 0 20 20 false @s[tag=husk]
 tag @s remove husk
 tag @s add living
 team leave @s
+team join living
 
 gamemode survival @s
 

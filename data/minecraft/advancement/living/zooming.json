@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:living/freefall",
+  "criteria": {
+    "terminal": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "movement": {
+                "horizontal_speed": {
+                  "min": 30
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Achieve a horizontal velocity of 30 m/s"
+    },
+    "icon": {
+      "id": "minecraft:blaze_powder"
+    },
+    "title": {
+      "translate": "Need For Speed"
+    }
+  },
+  "requirements": [
+    [
+      "terminal"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

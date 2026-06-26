@@ -1,5 +1,6 @@
 tag @s add husk
 tag @s remove living
+team leave @s
 team join husk @s
 
 
@@ -9,6 +10,7 @@ gamemode adventure @s
 execute in minecraft:the_nether run spreadplayers 0 0 2000 2000 false @s
 function cavespread:spread
 execute as @a at @s run playsound block.portal.trigger
+execute as @a at @s run playsound block.trial_spawner.ambient_ominous
 
 effect give @s night_vision infinite 0 true
 effect give @s water_breathing infinite 0 true

@@ -1,2 +1,5 @@
-scoreboard players remove @s timeAlive 120000
-say has extended their life!
+scoreboard players remove @s timeAlive 1200000
+execute as @a at @s[tag=!husk] run playsound block.amethyst_cluster.break
+execute as @s at @s[tag=!husk] run playsound entity.villager.celebrate
+
+execute as @s[tag=!husk] run say has extended their life!

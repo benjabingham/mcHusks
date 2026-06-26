@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:living/cat",
+  "parent": "minecraft:living/pigstep",
   "criteria": {
     "listen": {
       "conditions": {
@@ -18,7 +18,7 @@
             "condition": "minecraft:match_tool",
             "predicate": {
               "items": [
-                "minecraft:music_disc_otherside"
+                "minecraft:music_disc_5"
               ]
             }
           }
@@ -28,18 +28,19 @@
     }
   },
   "display": {
+    "frame":"challenge",
     "description": {
-      "translate": "Listen to the Otherside music disc"
+      "translate": "Listen to the 5 music disc"
     },
     "icon": {
-      "id": "minecraft:music_disc_otherside"
+      "id": "minecraft:music_disc_5"
     },
     "title": {
-      "translate": "Take A Walk On The Other Side"
+      "translate": "Found Footage"
     }
   },
   "rewards": {
-    "function": "husks:extendlife"
+    "function": "husks:extendlifeextra"
   },
   "sends_telemetry_event": true
 }

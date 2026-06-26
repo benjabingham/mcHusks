@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:living/zooming",
+  "criteria": {
+    "terminal": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "movement": {
+                "speed": {
+                  "min": 70
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "frame": "challenge",
+    "description": {
+      "translate": "Achieve a velocity of 70 m/s"
+    },
+    "icon": {
+      "id": "minecraft:elytra"
+    },
+    "title": {
+      "translate": "Terminal Velocity"
+    }
+  },
+  "requirements": [
+    [
+      "terminal"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlifeextra"
+  },
+  "sends_telemetry_event": true
+}

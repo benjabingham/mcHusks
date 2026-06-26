@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:living/root",
+  "criteria": {
+    "visit": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:location": {
+                "biomes": "minecraft:eroded_badlands"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Visit the Eroded Badlands"
+    },
+    "icon": {
+      "id": "minecraft:orange_terracotta"
+    },
+    "title": {
+      "translate": "Grand Canyon"
+    }
+  },
+  "requirements": [
+    [
+      "visit"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

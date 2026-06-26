@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:living/cat",
+  "parent": "minecraft:living/play_jukebox_in_meadow",
   "criteria": {
     "listen": {
       "conditions": {
@@ -18,7 +18,7 @@
             "condition": "minecraft:match_tool",
             "predicate": {
               "items": [
-                "minecraft:music_disc_otherside"
+                "minecraft:music_disc_cat"
               ]
             }
           }
@@ -29,13 +29,13 @@
   },
   "display": {
     "description": {
-      "translate": "Listen to the Otherside music disc"
+      "translate": "Listen to the Cat music disc"
     },
     "icon": {
-      "id": "minecraft:music_disc_otherside"
+      "id": "minecraft:music_disc_cat"
     },
     "title": {
-      "translate": "Take A Walk On The Other Side"
+      "translate": "Meow"
     }
   },
   "rewards": {

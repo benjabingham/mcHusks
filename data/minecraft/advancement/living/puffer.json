@@ -1,10 +1,10 @@
 {
-  "parent": "minecraft:living/honey",
+  "parent": "minecraft:living/stew",
   "criteria": {
-    "cookie": {
+    "eat": {
       "conditions": {
         "item": {
-          "items": "minecraft:cookie"
+          "items": "minecraft:pufferfish"
         }
       },
       "trigger": "minecraft:consume_item"
@@ -12,18 +12,18 @@
   },
   "display": {
     "description": {
-      "translate": "Eat a Cookie"
+      "translate": "Eat a Pufferfish"
     },
     "icon": {
-      "id": "minecraft:cookie"
+      "id": "minecraft:pufferfish"
     },
     "title": {
-      "translate": "Sweet Treat"
+      "translate": "Did I Prepare This Right?"
     }
   },
   "requirements": [
     [
-      "cookie"
+      "eat"
     ]
   ],
   "rewards": {

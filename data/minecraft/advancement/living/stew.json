@@ -1,10 +1,10 @@
 {
-  "parent": "minecraft:living/honey",
+  "parent": "minecraft:living/cake",
   "criteria": {
-    "cookie": {
+    "eat": {
       "conditions": {
         "item": {
-          "items": "minecraft:cookie"
+          "items": "minecraft:suspicious_stew"
         }
       },
       "trigger": "minecraft:consume_item"
@@ -12,18 +12,18 @@
   },
   "display": {
     "description": {
-      "translate": "Eat a Cookie"
+      "translate": "Eat some Suspicious Stew"
     },
     "icon": {
-      "id": "minecraft:cookie"
+      "id": "minecraft:suspicious_stew"
     },
     "title": {
-      "translate": "Sweet Treat"
+      "translate": "Adventurous Eater"
     }
   },
   "requirements": [
     [
-      "cookie"
+      "eat"
     ]
   ],
   "rewards": {

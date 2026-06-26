@@ -10,4 +10,6 @@ scoreboard objectives add timeAlive dummy timeAlive
 scoreboard objectives add timeAliveTrue dummy timeAliveTrue
 
 team add husk
+team add living
 team modify husk color dark_purple
+
