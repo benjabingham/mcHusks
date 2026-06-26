@@ -1,2 +1,2 @@
 summon pig ~ ~ ~
-say test
+tellraw @s {text:"","extra": [{"score":{"name":"@s","objective":"timeAlive"}}]}
