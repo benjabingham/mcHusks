@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:husks/scapegoat",
+  "parent": "minecraft:husks/kill_a_lamb",
   "criteria": {
     "killed_baby": {
       "conditions": {
@@ -8,7 +8,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:entity_type": "minecraft:villager",
+              "minecraft:entity_type": "minecraft:goat",
               "flags": {
                 "is_baby": true
               }
@@ -21,13 +21,13 @@
   },
   "display": {
     "description": {
-      "translate": "Kill a defenseless Baby Villager"
+      "translate": "Kill a defenseless Baby Goat"
     },
     "icon": {
-      "id": "minecraft:beetroot"
+      "id": "minecraft:goat_horn"
     },
     "title": {
-      "translate": "Infanticide"
+      "translate": "Scapegoat"
     }
   },
   "requirements": [
