@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:living/pie",
+  "parent": "minecraft:living/cookie",
   "criteria": {
     "eat": {
       "conditions": {
@@ -7,7 +7,7 @@
             "minecraft:team":"living"
         },
         "item": {
-          "items": "minecraft:golden_carrot"
+          "items": "minecraft:pumpkin_pie"
         }
       },
       "trigger": "minecraft:consume_item"
@@ -15,13 +15,13 @@
   },
   "display": {
     "description": {
-      "translate": "Eat a Golden Carrot"
+      "translate": "Eat a Pumpkin Pie"
     },
     "icon": {
-      "id": "minecraft:golden_carrot"
+      "id": "minecraft:pumpkin_pie"
     },
     "title": {
-      "translate": "24 Karat"
+      "translate": "π"
     }
   },
   "requirements": [

@@ -1,13 +1,18 @@
 {
-  "parent": "minecraft:living/pie",
+  "parent": "minecraft:living/none",
   "criteria": {
-    "eat": {
+    "three": {
       "conditions": {
         "player": {
             "minecraft:team":"living"
         },
         "item": {
-          "items": "minecraft:golden_carrot"
+          "items": "minecraft:firework_rocket",
+          "components": {
+            "minecraft:fireworks": {
+              "flight_duration": 3
+            }
+          }
         }
       },
       "trigger": "minecraft:consume_item"
@@ -15,18 +20,18 @@
   },
   "display": {
     "description": {
-      "translate": "Eat a Golden Carrot"
+      "translate": "Craft Fireworks with one, two, and three Gunpowder"
     },
     "icon": {
-      "id": "minecraft:golden_carrot"
+      "id": "minecraft:firework_rocket"
     },
     "title": {
-      "translate": "24 Karat"
+      "translate": "Stairway To heaven"
     }
   },
   "requirements": [
     [
-      "eat"
+      "three"
     ]
   ],
   "rewards": {

@@ -1,37 +1,45 @@
 {
   "parent": "minecraft:living/carnivore",
   "criteria": {
-    "sus": {
+    "raw_cod": {
       "conditions": {
         "player": {
             "minecraft:team":"living"
         },
         "item": {
-          "items": "minecraft:suspicious_stew"
+          "items": "minecraft:cod"
         }
       },
       "trigger": "minecraft:consume_item"
     },
-    "rabbit": {
+    "cod": {
       "conditions": {
         "item": {
-          "items": "minecraft:rabbit_stew"
+          "items": "minecraft:cooked_cod"
         }
       },
       "trigger": "minecraft:consume_item"
     },
-    "beetroot": {
+    "raw_salmon": {
       "conditions": {
         "item": {
-          "items": "minecraft:beetroot_soup"
+          "items": "minecraft:salmon"
         }
       },
       "trigger": "minecraft:consume_item"
     },
-    "mushroom": {
+    "salmon": {
       "conditions": {
         "item": {
-          "items": "minecraft:mushroom_stew"
+          "items": "minecraft:cooked_salmon"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "kelp": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:kelp"
         }
       },
       "trigger": "minecraft:consume_item"
@@ -40,27 +48,30 @@
   
   "display": {
     "description": {
-      "translate": "Eat Suspicious Stew, Rabbit Stew, Mushroom Stew, and Beetroot Soup"
+      "translate": "Eat Raw Salmon, Cooked Salmon, Raw Cod, Cooked Cod, and Dried Kelp"
     },
     "icon": {
-      "id": "minecraft:suspicious_stew"
+      "id": "minecraft:salmon"
     },
     "title": {
-      "translate": "Stewie Griffin"
+      "translate": "See Food Diet"
     }
   },
   "requirements": [
     [
-      "sus"
+      "salmon"
     ],
     [
-      "rabbit"
+      "raw_salmon"
     ],
     [
-      "beetroot"
+      "cod"
     ],
     [
-      "mushroom"
+      "raw_cod"
+    ],
+    [
+      "kelp"
     ]
   ],
   "rewards": {

@@ -1,13 +1,13 @@
 {
-  "parent": "minecraft:living/carnivore",
+  "parent": "minecraft:living/cake",
   "criteria": {
-    "sus": {
+    "chop": {
       "conditions": {
         "player": {
             "minecraft:team":"living"
         },
         "item": {
-          "items": "minecraft:suspicious_stew"
+          "items": "minecraft:cooked_porkchop"
         }
       },
       "trigger": "minecraft:consume_item"
@@ -15,23 +15,31 @@
     "rabbit": {
       "conditions": {
         "item": {
-          "items": "minecraft:rabbit_stew"
+          "items": "minecraft:cooked_rabbit"
         }
       },
       "trigger": "minecraft:consume_item"
     },
-    "beetroot": {
+    "steak": {
       "conditions": {
         "item": {
-          "items": "minecraft:beetroot_soup"
+          "items": "minecraft:cooked_beef"
         }
       },
       "trigger": "minecraft:consume_item"
     },
-    "mushroom": {
+    "mutton": {
       "conditions": {
         "item": {
-          "items": "minecraft:mushroom_stew"
+          "items": "minecraft:cooked_mutton"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "chicken": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:cooked_chicken"
         }
       },
       "trigger": "minecraft:consume_item"
@@ -40,27 +48,30 @@
   
   "display": {
     "description": {
-      "translate": "Eat Suspicious Stew, Rabbit Stew, Mushroom Stew, and Beetroot Soup"
+      "translate": "Eat Cooked Porkchop, Steak, Cooked Mutton, Cooked Chicken, and Cooked Rabbit"
     },
     "icon": {
-      "id": "minecraft:suspicious_stew"
+      "id": "minecraft:cooked_beef"
     },
     "title": {
-      "translate": "Stewie Griffin"
+      "translate": "Carnivore"
     }
   },
   "requirements": [
     [
-      "sus"
+      "steak"
     ],
     [
       "rabbit"
     ],
     [
-      "beetroot"
+      "chicken"
     ],
     [
-      "mushroom"
+      "mutton"
+    ],
+    [
+      "chop"
     ]
   ],
   "rewards": {

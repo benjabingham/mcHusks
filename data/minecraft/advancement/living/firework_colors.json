@@ -1,0 +1,138 @@
+{
+  "parent": "minecraft:living/root",
+  "criteria": {
+    "blue": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "recipe_id": "firework_star",
+        "ingredients":[{
+          "items":[
+            "blue_dye"
+          ]
+        }]
+      },
+      "trigger": "minecraft:recipe_crafted"
+    },
+    "red": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "recipe_id": "firework_star",
+        "ingredients":[{
+          "items":[
+            "red_dye"
+          ]
+        }]
+      },
+      "trigger": "minecraft:recipe_crafted"
+    },
+    "orange": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "recipe_id": "firework_star",
+        "ingredients":[{
+          "items":[
+            "orange_dye"
+          ]
+        }]
+      },
+      "trigger": "minecraft:recipe_crafted"
+    },"yellow": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "recipe_id": "firework_star",
+        "ingredients":[{
+          "items":[
+            "yellow_dye"
+          ]
+        }]
+      },
+      "trigger": "minecraft:recipe_crafted"
+    },"green": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "recipe_id": "firework_star",
+        "ingredients":[{
+          "items":[
+            "green_dye"
+          ]
+        }]
+      },
+      "trigger": "minecraft:recipe_crafted"
+    },"purple": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "recipe_id": "firework_star",
+        "ingredients":[{
+          "items":[
+            "purple_dye"
+          ]
+        }]
+      },
+      "trigger": "minecraft:recipe_crafted"
+    },"pink": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "recipe_id": "firework_star",
+        "ingredients":[{
+          "items":[
+            "pink_dye"
+          ]
+        }]
+      },
+      
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Craft Firework Stars with Red, Orange, Yellow, Green, Blue, Purple, and Pink dye"
+    },
+    "icon": {
+      "id": "minecraft:firework_star"
+    },
+    "title": {
+      "translate": "Light Up The Sky"
+    }
+  },
+  "requirements": [
+    [
+      "red"
+    ],
+    [
+      "orange"
+    ],
+    [
+      "yellow"
+    ],
+    [
+      "green"
+    ],
+    [
+      "blue"
+    ],
+    [
+      "purple"
+    ],
+    [
+      "pink"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

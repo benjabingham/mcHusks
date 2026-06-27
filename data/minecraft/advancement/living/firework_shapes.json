@@ -1,0 +1,105 @@
+{
+  "parent": "minecraft:living/firework_colors",
+  "criteria": {
+    "charge": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "recipe_id": "firework_star",
+        "ingredients":[{
+          "items":[
+            "fire_charge"
+          ]
+        }]
+      },
+      "trigger": "minecraft:recipe_crafted"
+    },
+    "gold": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "recipe_id": "firework_star",
+        "ingredients":[{
+          "items":[
+            "gold_nugget"
+          ]
+        }]
+      },
+      "trigger": "minecraft:recipe_crafted"
+    },
+    "feather": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "recipe_id": "firework_star",
+        "ingredients":[{
+          "items":[
+            "feather"
+          ]
+        }]
+      },
+      "trigger": "minecraft:recipe_crafted"
+    },"glowstone": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "recipe_id": "firework_star",
+        "ingredients":[{
+          "items":[
+            "glowstone_dust"
+          ]
+        }]
+      },
+      "trigger": "minecraft:recipe_crafted"
+    },"diamond": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "recipe_id": "firework_star",
+        "ingredients":[{
+          "items":[
+            "diamond"
+          ]
+        }]
+      },
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Craft Firework Stars with a Fire Charge, a Gold Nugget, a Feather, Glowstone Dust, and a Diamond"
+    },
+    "icon": {
+      "id": "minecraft:fire_charge"
+    },
+    "title": {
+      "translate": "All Shapes And Sizes"
+    }
+  },
+  "requirements": [
+    [
+      "charge"
+    ],
+    [
+      "gold"
+    ],
+    [
+      "feather"
+    ],
+    [
+      "glowstone"
+    ],
+    [
+      "diamond"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}
