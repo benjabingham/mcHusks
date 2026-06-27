@@ -1,20 +1,20 @@
 {
-  "parent": "minecraft:husks/kill_creeper",
+  "parent": "minecraft:husks/wear_skull",
   "criteria": {
-    "killed_enderman": {
+    "killed_creeper": {
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:entity_type": "minecraft:enderman"
+              "minecraft:entity_type": "minecraft:creeper"
             }
           }
         ],
         "killing_blow": {
           "direct_entity": {
-            "minecraft:entity_type": "minecraft:end_crystal"
+            "minecraft:entity_type": "minecraft:tnt"
           },
           "tags": [
             {
@@ -29,19 +29,19 @@
   },
   "display": {
     "description": {
-      "translate": "Kill an Enderman with an explosion from an End Crystal"
+      "translate": "Kill a Creeper with TNT"
     },
     "icon": {
-      "id": "minecraft:end_crystal"
+      "id": "minecraft:creeper_head"
     },
     "title": {
-      "translate": "Fitting End"
+      "translate": "How Do You Like It?"
     }
     
   },
   "requirements": [
     [
-      "killed_enderman"
+      "killed_creeper"
     ]
   ],
   "rewards": {
