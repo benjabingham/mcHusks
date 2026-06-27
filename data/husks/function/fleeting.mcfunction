@@ -1,3 +1,5 @@
+execute if score @s timeAliveTrue matches 1 run team join living @s
+
 execute if score @s timeAlive matches ..800000 run scoreboard players add @s timeAlive 30
 execute if score @s timeAlive matches -800000..0 run scoreboard players add @s timeAlive 20
 execute if score @s timeAlive matches 0..800000 run scoreboard players add @s timeAlive 12

@@ -3,6 +3,18 @@
   "criteria": {
     "killed_baby": {
       "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "minecraft:team":"living",
+              "minecraft:location": {
+                "biomes": "minecraft:deep_dark"
+              }
+            }
+          }
+        ],
         "entity": [
           {
             "condition": "minecraft:entity_properties",
@@ -21,13 +33,13 @@
   },
   "display": {
     "description": {
-      "translate": "Kill a defenseless Baby Villager"
+      "translate": "Bring a Baby Villager to the Deep Dark and kill it"
     },
     "icon": {
-      "id": "minecraft:beetroot"
+      "id": "minecraft:sculk_catalyst"
     },
     "title": {
-      "translate": "Infanticide"
+      "translate": "No Coming Back"
     }
   },
   "requirements": [
