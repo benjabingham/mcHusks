@@ -11,3 +11,5 @@ execute as @a[tag=!husk] if score @s currentHealth matches 1 run advancement gra
 
 execute in overworld as @a[distance=0..,team=husk] run gamemode adventure @s
 execute in the_nether as @a[distance=0..,team=husk] run gamemode survival @s
+
+function husks:printlife

@@ -1,5 +1,6 @@
 scoreboard players remove @s timeAlive 1000000
-xp add @s 25
+xp add @s 20
+xp add @s 1 levels
 execute as @a at @s run playsound block.amethyst_cluster.break
 execute as @s at @s run playsound entity.villager.celebrate
 

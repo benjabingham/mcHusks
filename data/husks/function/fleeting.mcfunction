@@ -1,17 +1,25 @@
+function husks:updatelifepercent
+
 execute if score @s timeAliveTrue matches 1 run team join living @s
 
-execute if score @s timeAlive matches ..-800000 run scoreboard players add @s timeAlive 60
-execute if score @s timeAlive matches -800000..0 run scoreboard players add @s timeAlive 40
-execute if score @s timeAlive matches 0..1200000 run scoreboard players add @s timeAlive 12
-execute if score @s timeAlive matches 1200000..4400000 run scoreboard players add @s timeAlive 10
-execute if score @s timeAlive matches 4400000..5200000 run scoreboard players add @s timeAlive 7
-execute if score @s timeAlive matches 5200000..6000000 run scoreboard players add @s timeAlive 5
+#a rate of 10 equates to 70 minutes per 10%
 
-execute if score @s timeAlive matches ..1200000 run attribute @s minecraft:max_health base set 20
-execute if score @s timeAlive matches 1200000..2000000 run attribute @s minecraft:max_health base set 18
-execute if score @s timeAlive matches 2000000..2800000 run attribute @s minecraft:max_health base set 16
-execute if score @s timeAlive matches 2800000..3600000 run attribute @s minecraft:max_health base set 14
-execute if score @s timeAlive matches 3600000..4400000 run attribute @s minecraft:max_health base set 12
-execute if score @s timeAlive matches 4400000..5200000 run attribute @s minecraft:max_health base set 10
-execute if score @s timeAlive matches 5200000..6000000 run attribute @s minecraft:max_health base set 8
-execute if score @s timeAlive matches 6000000.. run attribute @s minecraft:max_health base set 6
+execute if score @s lifePercent matches 110.. run scoreboard players add @s timeAlive 60
+execute if score @s lifePercent matches 100..109 run scoreboard players add @s timeAlive 40
+execute if score @s lifePercent matches 80..99 run scoreboard players add @s timeAlive 15
+execute if score @s lifePercent matches 50..79 run scoreboard players add @s timeAlive 10
+execute if score @s lifePercent matches 40..49 run scoreboard players add @s timeAlive 7
+execute if score @s lifePercent matches 10..39 run scoreboard players add @s timeAlive 5
+execute if score @s lifePercent matches ..9 run scoreboard players add @s timeAlive 3
+
+execute if score @s lifePercent matches 90.. run attribute @s minecraft:max_health base set 20
+execute if score @s lifePercent matches 80..89 run attribute @s minecraft:max_health base set 18
+execute if score @s lifePercent matches 70..79 run attribute @s minecraft:max_health base set 16
+execute if score @s lifePercent matches 60..69 run attribute @s minecraft:max_health base set 14
+execute if score @s lifePercent matches 50..59 run attribute @s minecraft:max_health base set 12
+execute if score @s lifePercent matches 40..49 run attribute @s minecraft:max_health base set 10
+execute if score @s lifePercent matches 30..39 run attribute @s minecraft:max_health base set 8
+execute if score @s lifePercent matches 20..29 run attribute @s minecraft:max_health base set 6
+execute if score @s lifePercent matches 10..19 run attribute @s minecraft:max_health base set 4
+execute if score @s lifePercent matches ..9 run attribute @s minecraft:max_health base set 2
+execute if score @s lifePercent matches ..0 run effect give @s wither 60
