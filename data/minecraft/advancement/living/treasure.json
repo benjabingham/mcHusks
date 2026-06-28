@@ -1,5 +1,5 @@
 {
-  "parent": "living/warm_ocean",
+  "parent": "living/root",
   "criteria": {
     "buried_treasure": {
       "conditions": {

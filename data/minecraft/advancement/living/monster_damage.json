@@ -1,0 +1,77 @@
+{
+  "parent": "minecraft:living/root",
+  "criteria": {
+    "zombie": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "damage": {
+          "source_entity": {
+            "minecraft:entity_type": "minecraft:zombie"
+          }
+        }
+      }
+    },
+    "skeleton": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "minecraft:entity_type": "minecraft:skeleton"
+          }
+        }
+      }
+    },
+    "creeper": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "minecraft:entity_type": "minecraft:creeper"
+          }
+        }
+      }
+    },
+    "spider": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "minecraft:entity_type": "minecraft:spider"
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Receive damage from a Skeleton, a Creeper, a Zombie, and a Spider"
+    },
+    "icon": {
+      "id": "minecraft:skeleton_skull"
+    },
+    "title": {
+      "translate": "Rough And Tumble"
+    }
+  },
+  "requirements": [
+    [
+      "zombie"
+    ],
+    [
+      "skeleton"
+    ],
+    [
+      "creeper"
+    ],
+    [
+      "spider"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

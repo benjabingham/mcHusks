@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:living/bedrock",
+  "criteria": {
+    "visit": {
+      "conditions": {
+        
+        "player": 
+          {
+            "minecraft:team":"living",
+            "minecraft:location": {
+              "position": {
+                "y": {
+                  "min": 250
+                }
+              },
+              "biomes": "jagged_peaks"
+            }
+          }
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Climb a very tall mountain"
+    },
+    "icon": {
+      "id": "minecraft:snow_block"
+    },
+    "title": {
+      "translate": "Sky High"
+    }
+  },
+  "requirements": [
+    [
+      "visit"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

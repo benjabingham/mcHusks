@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:living/pie",
+  "parent": "minecraft:living/cake",
   "criteria": {
     "potato": {
       "conditions": {

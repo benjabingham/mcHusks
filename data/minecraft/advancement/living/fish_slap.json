@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:living/puffer",
+  "criteria": {
+    "slap": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living",
+            "slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:cod"
+            }
+          }
+        },
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:player"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_hurt_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Slap a Player with raw Cod"
+    },
+    "icon": {
+      "id": "minecraft:cod"
+    },
+    "title": {
+      "translate": "Holy Mackarel"
+    }
+  },
+  "requirements": [
+    [
+      "slap"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

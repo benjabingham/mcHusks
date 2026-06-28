@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:living/tame_wolf",
+  "criteria": {
+    "breed": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "parent": {
+          "nbt": "{Color:14b}"
+        },
+        "partner": {
+          "nbt": "{Color:11b}"
+        }
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Breed a Blue sheep with a Red sheep"
+    },
+    "icon": {
+      "id": "minecraft:purple_wool"
+    },
+    "title": {
+      "translate": "Make Purple"
+    }
+  },
+  "requirements": [
+    [
+      "breed"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

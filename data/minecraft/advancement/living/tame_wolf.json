@@ -1,42 +1,39 @@
 {
-  "parent": "minecraft:living/root",
+  "parent": "minecraft:living/root",   
   "criteria": {
-    "visit": {
+    "tame": {
       "conditions": {
-        "player": [
+        "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-                "minecraft:team":"living",
-              "minecraft:location": {
-                "biomes": "minecraft:warm_ocean"
-              }
+              "minecraft:entity_type": "minecraft:wolf"
             }
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "minecraft:tame_animal"
     }
   },
   "display": {
     "description": {
-      "translate": "Visit a Coral Reef"
+      "translate": "Tame a Wolf"
     },
     "icon": {
-      "id": "minecraft:fire_coral"
+      "id": "minecraft:bone"
     },
     "title": {
-      "translate": "Under The Sea"
+      "translate": "Best Friend"
     }
   },
   "requirements": [
     [
-      "visit"
+      "tame"
     ]
-  ],
-  "rewards": {
+],
+"rewards": {
     "function": "husks:extendlife"
-  },
+},
   "sends_telemetry_event": true
 }

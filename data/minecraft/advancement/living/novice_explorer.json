@@ -1,5 +1,5 @@
 {
-  "parent": "living/lush_caves",
+  "parent": "living/treasure",
   "criteria": {
     "in_pyramid": {
       "conditions": {

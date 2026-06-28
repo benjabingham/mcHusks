@@ -8,6 +8,7 @@ scoreboard objectives setdisplay sidebar souls
 
 scoreboard objectives add timeAlive dummy timeAlive
 scoreboard objectives add timeAliveTrue dummy timeAliveTrue
+scoreboard objectives add currentHealth health currentHealth
 
 team add husk
 team add living
