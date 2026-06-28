@@ -8,3 +8,6 @@ execute as @e[tag=!husk,type=player] run function husks:fleeting
 tag @a[tag=!husk] add living
 
 execute as @a[tag=!husk] if score @s currentHealth matches 1 run advancement grant @s only living/half_heart
+
+execute in overworld as @a[distance=0..,team=husk] run gamemode adventure @s
+execute in the_nether as @a[distance=0..,team=husk] run gamemode survival @s

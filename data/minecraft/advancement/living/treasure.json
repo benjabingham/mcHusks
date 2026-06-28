@@ -3,19 +3,19 @@
   "criteria": {
     "buried_treasure": {
       "conditions": {
-        "player": [
+        "player": {
+            "minecraft:team":"living"
+        },
+       "location": [
           {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
+            "condition": "minecraft:location_check",
             "predicate": {
-              "minecraft:location": {
-                "structures": "minecraft:buried_treasure"
-              }
+              "structures": "minecraft:buried_treasure"
             }
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "minecraft:any_block_use"
     }
   },
   "display": {
