@@ -1,6 +1,7 @@
 scoreboard objectives add huskDeaths deathCount
 
 scoreboard objectives add deaths deathCount
+scoreboard objectives add trueDeaths deathCount trueDeaths
 
 scoreboard objectives add souls dummy
 scoreboard players add ☻ souls 0
@@ -11,10 +12,14 @@ scoreboard objectives add lifePercent dummy lifePercent
 scoreboard objectives setdisplay list lifePercent
 scoreboard objectives add timeAliveTrue dummy timeAliveTrue
 scoreboard objectives add currentHealth health currentHealth
+scoreboard objectives add longestLife dummy
+scoreboard objectives modify longestLife displayname "Longest Lives"
 
+scoreboard objectives add temp dummy temp
 scoreboard objectives add vars dummy vars
-scoreboard objectives add printLife trigger printLife 
-scoreboard players enable @a[team=living] printLife
+scoreboard players set ticksperminute vars 1200
+scoreboard objectives add printscore trigger printscore 
+scoreboard players enable @a printscore
 
 team add husk
 team add living
