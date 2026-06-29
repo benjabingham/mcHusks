@@ -20,5 +20,5 @@ execute if score scoreboardtimer vars matches 200 run scoreboard objectives setd
 
 #husks have trouble in daylight
 execute store result score timeOfDay vars run time query day
-execute if score timeOfDay vars matches 0..12000 run execute in overworld as @a at @s positioned over motion_blocking_no_leaves if entity @s[dy=999] run effect give @s slowness 2
-execute if score timeOfDay vars matches 0..12000 run execute in overworld as @a at @s positioned over motion_blocking_no_leaves if entity @s[dy=999] run effect give @s darkness 5
+execute if score timeOfDay vars matches 0..12000 run execute in overworld as @a[team=husk] at @s positioned over motion_blocking_no_leaves if entity @s[dy=999] run effect give @s slowness 2
+execute if score timeOfDay vars matches 0..12000 run execute in overworld as @a[team=husk] at @s positioned over motion_blocking_no_leaves if entity @s[dy=999] run effect give @s darkness 5
