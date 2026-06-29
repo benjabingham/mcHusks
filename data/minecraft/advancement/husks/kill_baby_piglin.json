@@ -1,0 +1,50 @@
+{
+  "parent": "minecraft:husks/scapegoat",
+  "criteria": {
+    "killed_baby_piglin": {
+      "conditions": {
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:golden_sword"
+            }
+          }
+        },
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:piglin",
+              "flags": {
+                "is_baby": true,
+                "is_on_fire": true
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Light a Baby Piglin on fire, then kill it with a Golden Sword"
+    },
+    "icon": {
+      "id": "minecraft:cooked_porkchop"
+    },
+    "title": {
+      "translate": "Piglet Roast"
+    }
+  },
+  "requirements": [
+    [
+      "killed_baby_piglin"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:gainsoul"
+  },
+  "sends_telemetry_event": true
+}

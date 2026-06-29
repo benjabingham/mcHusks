@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:husks/root",
+  "criteria": {
+    "high_life": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Reach a Life Score of 150"
+    },
+    "icon": {
+      "id": "minecraft:sugar"
+    },
+    "title": {
+      "translate": "Hedonism"
+    }
+    
+  },
+  "requirements": [
+    [
+      "high_life"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:gainsoul"
+  },
+  "sends_telemetry_event": true
+}

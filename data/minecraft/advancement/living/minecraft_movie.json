@@ -1,0 +1,107 @@
+{
+  "parent": "minecraft:living/root",
+  "criteria": {
+    "bucket": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:team":"living",
+              "movement": {
+                "vertical_speed": {
+                  "min": 20
+                }
+              }
+            }
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:water_bucket"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "listen": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "jukebox"
+                ]
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:music_disc_lava_chicken"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    },
+    "flint": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "flint_and_steel"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "frame":"challenge",
+    "description": {
+      "translate": "Cussion a deadly fall with a Water Bucket, use Flint and Steel, and listen to the Lava Chicken music Disc"
+    },
+    "icon": {
+      "id": "minecraft:grass_block"
+    },
+    "title": {
+      "translate": "The Minecraft Movie"
+    }
+  },
+  "requirements": [
+    [
+      "bucket"
+    ],
+    [
+      "flint"
+    ],
+    [
+      "listen"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlifeextra"
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,65 @@
+{
+  "parent": "minecraft:living/tame_wolf",   
+  "criteria": {
+    "grove": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living",
+            "minecraft:location": {
+              "biomes": "grove"
+            }
+        },
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:fox"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_interacted_with_entity"
+    },
+    "taiga": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living",
+            "minecraft:location": {
+              "biomes": "snowy_taiga"
+            }
+        },
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:fox"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_interacted_with_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Feed a Snow Fox in its natural habitat"
+    },
+    "icon": {
+      "id": "minecraft:sweet_berries"
+    },
+    "title": {
+      "translate": "Silver Fox"
+    }
+  },
+  "requirements": [
+    [
+      "taiga","grove"
+    ]
+],
+"rewards": {
+    "function": "husks:extendlife"
+},
+  "sends_telemetry_event": true
+}

@@ -1,33 +1,36 @@
 {
-  "parent": "minecraft:living/root",   
+  "parent": "minecraft:living/tame_fox",   
   "criteria": {
     "tame": {
       "conditions": {
         "player": {
-            "minecraft:team":"living"
+            "minecraft:team":"living",
+            "minecraft:location": {
+              "biomes": "jungle"
+            }
         },
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              
+              "minecraft:entity_type": "minecraft:ocelot"
             }
           }
         ]
       },
-      "trigger": "minecraft:tame_animal"
+      "trigger": "minecraft:player_interacted_with_entity"
     }
   },
   "display": {
     "description": {
-      "translate": "Tame an animal"
+      "translate": "Feed an ocelot in a Jungle"
     },
     "icon": {
-      "id": "minecraft:lead"
+      "id": "minecraft:salmon"
     },
     "title": {
-      "translate": "Best Friends Forever"
+      "translate": "Acquaintances"
     }
   },
   "requirements": [

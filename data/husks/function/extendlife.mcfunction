@@ -1,4 +1,4 @@
-scoreboard players remove @s timeAlive 1000000
+scoreboard players remove @s timeAlive 800000
 xp add @s 20
 xp add @s 1 levels
 execute as @a at @s run playsound block.amethyst_cluster.break

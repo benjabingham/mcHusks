@@ -1,4 +1,4 @@
-scoreboard players remove @s timeAlive 3600000
+scoreboard players remove @s timeAlive 3000000
 xp add @s 100
 xp add @s 3 levels
 
