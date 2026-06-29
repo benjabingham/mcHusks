@@ -1,0 +1,71 @@
+{
+  "parent": "minecraft:living/honey",
+  "criteria": {
+    "cookie": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "item": {
+          "items": "minecraft:cookie"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "cake": {
+      "conditions": {
+         "player": {
+                "minecraft:team":"living"
+        },
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:cake"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:default_block_use"
+    },
+    "pie": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "item": {
+          "items": "minecraft:pumpkin_pie"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Eat a Cookie, a Pie, and a slice of Cake"
+    },
+    "icon": {
+      "id": "minecraft:cookie"
+    },
+    "title": {
+      "translate": "Sweet Tooth"
+    }
+  },
+  "requirements": [
+    [
+      "cookie"
+    ],
+    [
+      "pie"
+    ],
+    [
+      "cake"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

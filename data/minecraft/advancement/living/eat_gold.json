@@ -1,7 +1,7 @@
 {
-  "parent": "minecraft:living/gcarrot",
+  "parent": "minecraft:living/sweets",
   "criteria": {
-    "eat": {
+    "apple": {
       "conditions": {
         "player": {
             "minecraft:team":"living"
@@ -11,22 +11,36 @@
         }
       },
       "trigger": "minecraft:consume_item"
+    },
+    "carrot": {
+      "conditions": {
+        "player": {
+            "minecraft:team":"living"
+        },
+        "item": {
+          "items": "minecraft:golden_carrot"
+        }
+      },
+      "trigger": "minecraft:consume_item"
     }
   },
   "display": {
     "description": {
-      "translate": "Eat a Golden Apple"
+      "translate": "Eat a Golden Carrot and a Golden Apple"
     },
     "icon": {
       "id": "minecraft:golden_apple"
     },
     "title": {
-      "translate": "Crassus In Eden"
+      "translate": "Just Like Crassus"
     }
   },
   "requirements": [
     [
-      "eat"
+      "apple"
+    ],
+    [
+      "carrot"
     ]
   ],
   "rewards": {

@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:living/gapple",
+  "parent": "minecraft:living/eat_gold",
   "criteria": {
     "eat": {
         
