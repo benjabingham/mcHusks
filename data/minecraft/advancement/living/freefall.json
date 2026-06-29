@@ -38,7 +38,7 @@
     ]
   ],
   "rewards": {
-    "function": "husks:extendlife"
+    "function": "husks:extendlifeless"
   },
   "sends_telemetry_event": true
 }
