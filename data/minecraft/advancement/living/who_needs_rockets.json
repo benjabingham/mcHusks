@@ -3,9 +3,6 @@
   "criteria": {
     "who_needs_rockets": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
         "cause": [
           {
             "condition": "minecraft:entity_properties",

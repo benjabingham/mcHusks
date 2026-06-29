@@ -3,10 +3,7 @@
   "criteria": {
     "sus": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
-        "item": {
+       "item": {
           "items": "minecraft:suspicious_stew"
         }
       },

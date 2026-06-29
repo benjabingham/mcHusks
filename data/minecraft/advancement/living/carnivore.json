@@ -3,9 +3,6 @@
   "criteria": {
     "chop": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
         "item": {
           "items": "minecraft:cooked_porkchop"
         }

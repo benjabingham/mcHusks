@@ -3,10 +3,7 @@
   "criteria": {
     "listen": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
-        "location": [
+       "location": [
           {
             "condition": "minecraft:location_check",
             "predicate": {
@@ -31,7 +28,6 @@
     }
   },
   "display": {
-    "frame":"challenge",
     "description": {
       "translate": "Listen to the 5 music disc"
     },
@@ -43,7 +39,7 @@
     }
   },
   "rewards": {
-    "function": "husks:extendlifeextra"
+    "function": "husks:extendlife"
   },
   "sends_telemetry_event": true
 }

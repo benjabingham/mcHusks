@@ -4,7 +4,6 @@
     "tame": {
       "conditions": {
         "player": {
-            "minecraft:team":"living",
             "minecraft:location": {
               "biomes": "jungle"
             }

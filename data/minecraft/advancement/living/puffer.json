@@ -3,10 +3,7 @@
   "criteria": {
     "eat": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
-        "item": {
+       "item": {
           "items": "minecraft:pufferfish"
         }
       },
@@ -30,7 +27,7 @@
     ]
   ],
   "rewards": {
-    "function": "husks:extendlife"
+    "function": "husks:extendlifeless"
   },
   "sends_telemetry_event": true
 }

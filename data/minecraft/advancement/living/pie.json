@@ -3,9 +3,6 @@
   "criteria": {
     "eat": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
         "item": {
           "items": "minecraft:pumpkin_pie"
         }

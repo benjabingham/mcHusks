@@ -3,9 +3,6 @@
   "criteria": {
     "armor_trimmed_minecraft:bolt_armor_trim_smithing_template_smithing_trim": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
         "recipe_id": "minecraft:bolt_armor_trim_smithing_template_smithing_trim"
       },
       "trigger": "minecraft:recipe_crafted"

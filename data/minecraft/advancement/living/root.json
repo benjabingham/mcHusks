@@ -2,9 +2,7 @@
   "criteria": {
     "alive":{
         "conditions":{
-            "player": {
-                "minecraft:team":"living"
-            }
+            
         },
         "trigger":"minecraft:tick"
     }

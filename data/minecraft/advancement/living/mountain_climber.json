@@ -6,7 +6,6 @@
         
         "player": 
           {
-            "minecraft:team":"living",
             "minecraft:location": {
               "position": {
                 "y": {

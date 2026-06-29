@@ -3,9 +3,6 @@
   "criteria": {
     "raw_cod": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
         "item": {
           "items": "minecraft:cod"
         }

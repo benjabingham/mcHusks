@@ -1,29 +1,29 @@
 {
-  "parent": "minecraft:husks/afterlife",
+  "parent": "minecraft:husks/root",   
   "criteria": {
-    "high_life": {
+    "live": {
+      
       "trigger": "minecraft:impossible"
     }
   },
   "display": {
     "description": {
-      "translate": "Reach a Life Score of 150"
+      "translate": "Reach a life score of 50 or higher as a Husk"
     },
     "icon": {
-      "id": "minecraft:sugar"
+      "id": "minecraft:poppy"
     },
     "title": {
-      "translate": "Hedonism"
+      "translate": "Afterlife"
     }
-    
   },
   "requirements": [
     [
-      "high_life"
+      "live"
     ]
-  ],
-  "rewards": {
+],
+"rewards": {
     "function": "husks:gainsoul"
-  },
+},
   "sends_telemetry_event": true
 }

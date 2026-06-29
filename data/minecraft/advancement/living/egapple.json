@@ -4,9 +4,6 @@
     "eat": {
         
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
         "item": {
           "items": "minecraft:enchanted_golden_apple"
         }

@@ -3,9 +3,6 @@
   "criteria": {
     "cookie": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
         "item": {
           "items": "minecraft:cookie"
         }

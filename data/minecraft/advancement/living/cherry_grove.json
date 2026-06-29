@@ -10,8 +10,7 @@
             "entity": "this",
             
             "predicate": {
-                "minecraft:team":"living",
-              "minecraft:location": {
+                "minecraft:location": {
                 "biomes": "minecraft:cherry_grove"
               }
             }

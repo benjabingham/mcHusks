@@ -4,10 +4,7 @@
     "blaze": {
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
-        "damage": {
+       "damage": {
           "source_entity": {
             "minecraft:entity_type": "minecraft:blaze"
           }

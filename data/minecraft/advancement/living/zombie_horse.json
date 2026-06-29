@@ -3,10 +3,7 @@
   "criteria": {
     "tame": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
-        "entity": [
+       "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",

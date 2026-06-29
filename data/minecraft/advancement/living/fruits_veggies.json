@@ -3,10 +3,7 @@
   "criteria": {
     "potato": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
-        "item": {
+       "item": {
           "items": "minecraft:baked_potato"
         }
       },

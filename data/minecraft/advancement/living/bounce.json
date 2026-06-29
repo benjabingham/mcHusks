@@ -3,9 +3,6 @@
   "criteria": {
     "listen": {
       "conditions": {
-        "player": {
-                "minecraft:team":"living"
-        },
         "location": [
           {
             "condition": "minecraft:location_check",

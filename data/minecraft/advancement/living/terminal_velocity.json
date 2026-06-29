@@ -9,7 +9,6 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:team":"living",
               "movement": {
                 "speed": {
                   "min": 70

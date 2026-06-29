@@ -3,9 +3,6 @@
   "criteria": {
     "blue": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
         "recipe_id": "firework_star",
         "ingredients":[{
           "items":[
@@ -17,10 +14,7 @@
     },
     "red": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
-        "recipe_id": "firework_star",
+       "recipe_id": "firework_star",
         "ingredients":[{
           "items":[
             "red_dye"
@@ -31,9 +25,6 @@
     },
     "orange": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
         "recipe_id": "firework_star",
         "ingredients":[{
           "items":[

@@ -4,9 +4,6 @@
     "polar": {
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
         "damage": {
           "source_entity": {
             "minecraft:entity_type": "minecraft:polar_bear"

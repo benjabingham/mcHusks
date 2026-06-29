@@ -4,7 +4,6 @@
     "grove": {
       "conditions": {
         "player": {
-            "minecraft:team":"living",
             "minecraft:location": {
               "biomes": "grove"
             }
@@ -24,7 +23,6 @@
     "taiga": {
       "conditions": {
         "player": {
-            "minecraft:team":"living",
             "minecraft:location": {
               "biomes": "snowy_taiga"
             }

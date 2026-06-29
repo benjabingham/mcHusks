@@ -8,8 +8,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-                "minecraft:team":"living",
-              "minecraft:location": {
+                "minecraft:location": {
                 "biomes": "minecraft:lush_caves"
               }
             }

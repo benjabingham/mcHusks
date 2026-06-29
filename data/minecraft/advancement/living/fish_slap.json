@@ -4,8 +4,7 @@
     "slap": {
       "conditions": {
         "player": {
-            "minecraft:team":"living",
-            "slots": {
+           "slots": {
             "weapon.mainhand": {
               "items": "minecraft:cod"
             }

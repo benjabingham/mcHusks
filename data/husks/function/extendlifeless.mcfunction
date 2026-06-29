@@ -5,4 +5,5 @@ execute as @s at @s run playsound entity.villager.celebrate
 
 execute as @s[tag=!husk] run say has extended their life a small amount!
 
-function husks:joy
+execute as @s[tag=!husk] run function husks:joyalive
+execute as @s[tag=husk] run function husks:joydead

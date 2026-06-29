@@ -9,7 +9,6 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:team":"living",
               "movement": {
                 "vertical_speed": {
                   "min": 20
@@ -32,9 +31,6 @@
     },
     "listen": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
         "location": [
           {
             "condition": "minecraft:location_check",
@@ -60,9 +56,6 @@
     },
     "flint": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
         "location": [
           {
             "condition": "minecraft:match_tool",
@@ -78,7 +71,6 @@
     }
   },
   "display": {
-    "frame":"challenge",
     "description": {
       "translate": "Cussion a deadly fall with a Water Bucket, use Flint and Steel, and listen to the Lava Chicken music Disc"
     },
@@ -101,7 +93,7 @@
     ]
   ],
   "rewards": {
-    "function": "husks:extendlifeextra"
+    "function": "husks:extendlife"
   },
   "sends_telemetry_event": true
 }

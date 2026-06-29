@@ -3,10 +3,7 @@
   "criteria": {
     "charge": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
-        "recipe_id": "firework_star",
+       "recipe_id": "firework_star",
         "ingredients":[{
           "items":[
             "fire_charge"
@@ -17,9 +14,6 @@
     },
     "gold": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
         "recipe_id": "firework_star",
         "ingredients":[{
           "items":[
@@ -31,9 +25,6 @@
     },
     "feather": {
       "conditions": {
-        "player": {
-            "minecraft:team":"living"
-        },
         "recipe_id": "firework_star",
         "ingredients":[{
           "items":[
