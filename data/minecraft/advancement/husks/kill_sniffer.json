@@ -1,0 +1,49 @@
+{
+  "parent": "minecraft:husks/extinction",
+  "criteria": {
+    "killed_creeper": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:sniffer"
+            }
+          }
+        ],
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+             "components": {
+                "minecraft:custom_name": "Extinction Event"
+              }
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Kill a Sniffer with an item named \"Extinction Event\""
+    },
+    "icon": {
+      "id": "minecraft:sniffer_egg"
+    },
+    "title": {
+      "translate": "Back To Antiquity"
+    }
+    
+  },
+  "requirements": [
+    [
+      "killed_creeper"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:gainsoul"
+  },
+  "sends_telemetry_event": true
+}

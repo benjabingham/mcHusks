@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:husks/kill_player",
+  "parent": "minecraft:husks/root",
   "criteria": {
     "arbalistic": {
       "conditions": {

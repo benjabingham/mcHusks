@@ -6,6 +6,8 @@ tag @a[tag=!husk] add living
 
 execute as @e[type=player] run scoreboard players add @s timeAliveTrue 1
 execute as @e[type=player] run function husks:fleeting
+#double countdown for living players past 5 hours
+#execute as @e[type=player,team=living] if score @s timeAliveTrue matches 360000.. run function husks:fleeting
 
 execute as @a if score @s currentHealth matches 1 run advancement grant @s only living/half_heart
 

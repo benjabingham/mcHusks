@@ -1,0 +1,154 @@
+{
+  "parent": "minecraft:husks/scapegoat",
+  "criteria": {
+    "axolotl": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:axolotl"
+            }
+          }
+        ],
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+             "components": {
+                "minecraft:custom_name": "Extinction Event"
+              }
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "tropical_fish": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:tropical_fish"
+            }
+          }
+        ],
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+             "components": {
+                "minecraft:custom_name": "Extinction Event"
+              }
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "turtle": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:turtle"
+            }
+          }
+        ],
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+             "components": {
+                "minecraft:custom_name": "Extinction Event"
+              }
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "polar_bear": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:polar_bear"
+            }
+          }
+        ],
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+             "components": {
+                "minecraft:custom_name": "Extinction Event"
+              }
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "panda": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:panda"
+            }
+          }
+        ],
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+             "components": {
+                "minecraft:custom_name": "Extinction Event"
+              }
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    } 
+  },
+  
+  "display": {
+    "description": {
+      "translate": "Use a weapon named \"Extinction Event\" to kill an Axolotl, a Tropical Fish, a Turtle, a Polar Bear, and a Panda"
+    },
+    "icon": {
+      "id": "minecraft:skull_pottery_sherd"
+    },
+    "title": {
+      "translate": "Extinction Event"
+    }
+    
+  },
+  "requirements": [
+    [
+      "turtle"
+    ],
+    [
+      "axolotl"
+    ],
+    [
+      "panda"
+    ],
+    [
+      "polar_bear"
+    ],
+    [
+      "tropical_fish"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:gainsoul"
+  },
+  "sends_telemetry_event": true
+}

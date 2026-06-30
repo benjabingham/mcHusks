@@ -7,7 +7,7 @@
   },
   "display": {
     "description": {
-      "translate": "Reach a Life Score of 150"
+      "translate": "Reach a Life Score of 150 or higher"
     },
     "icon": {
       "id": "minecraft:sugar"

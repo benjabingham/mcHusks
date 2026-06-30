@@ -1,15 +1,17 @@
 {
-  "parent": "minecraft:husks/root",
+  "parent": "minecraft:husks/infanticide",
   "criteria": {
-    "killed_player": {
+    "trader": {
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:entity_type": "minecraft:player",
-              "nbt": "{Tags:[\"living\"]}"
+              "minecraft:entity_type": "minecraft:wandering_trader",
+              "minecraft:location": {
+                "dimension": "the_end"
+              }
             }
           }
         ]
@@ -18,20 +20,19 @@
     }
   },
   "display": {
-    "hidden":true,
     "description": {
-      "translate": "Kill your fellow man"
+      "translate": "Bring a Wandering Trader to The End and kill it"
     },
     "icon": {
-      "id": "minecraft:player_head"
+      "id": "minecraft:end_stone"
     },
     "title": {
-      "translate": "Murder"
+      "translate": "Far From Home"
     }
   },
   "requirements": [
     [
-      "killed_player"
+      "trader"
     ]
   ],
   "rewards": {

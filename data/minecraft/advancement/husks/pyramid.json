@@ -1,15 +1,27 @@
 {
   "parent": "minecraft:husks/root",
   "criteria": {
-    "killed_player": {
+    "killed_baby": {
       "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:location": {
+                "structures": "desert_pyramid"
+              }
+            }
+          }
+        ],
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:entity_type": "minecraft:player",
-              "nbt": "{Tags:[\"living\"]}"
+              "flags": {
+                "is_baby": true
+              }
             }
           }
         ]
@@ -18,20 +30,19 @@
     }
   },
   "display": {
-    "hidden":true,
     "description": {
-      "translate": "Kill your fellow man"
+      "translate": "Sacrifice a Baby Mob in a Desert Pyramid"
     },
     "icon": {
-      "id": "minecraft:player_head"
+      "id": "minecraft:chiseled_sandstone"
     },
     "title": {
-      "translate": "Murder"
+      "translate": "Pharaoh's Gift"
     }
   },
   "requirements": [
     [
-      "killed_player"
+      "killed_baby"
     ]
   ],
   "rewards": {

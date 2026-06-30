@@ -1,37 +1,35 @@
 {
   "parent": "minecraft:husks/return_to_sender",
   "criteria": {
-    "place_dried_ghast_in_water": {
+    "killed_happy_ghast": {
       "conditions": {
-        "location": [
+        "entity": [
           {
-            "block": "minecraft:dried_ghast",
-            "condition": "minecraft:block_state_property",
-            "properties": {
-              "waterlogged": "true"
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:happy_ghast"
             }
           }
         ]
       },
-      "trigger": "minecraft:placed_block"
+      "trigger": "minecraft:player_killed_entity"
     }
   },
   "display": {
-    "announce_to_chat": false,
-    "show_toast":false,
     "description": {
-      "translate": "advancements.husbandry.place_dried_ghast_in_water.description"
+      "translate": "Kill a Happy Ghast"
     },
     "icon": {
       "id": "minecraft:dried_ghast"
     },
     "title": {
-      "translate": "advancements.husbandry.place_dried_ghast_in_water.title"
+      "translate": "Something To Smile About"
     }
   },
   "requirements": [
     [
-      "place_dried_ghast_in_water"
+      "killed_happy_ghast"
     ]
   ],
   "rewards": {

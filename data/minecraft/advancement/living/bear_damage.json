@@ -23,7 +23,6 @@
     }
   },
   "display": {
-    "frame":"challenge",
     "description": {
       "translate": "Receive damage from a Polar Bear and a Panda"
     },
@@ -43,7 +42,7 @@
     ]
   ],
   "rewards": {
-    "function": "husks:extendlifeextra"
+    "function": "husks:extendlife"
   },
   "sends_telemetry_event": true
 }

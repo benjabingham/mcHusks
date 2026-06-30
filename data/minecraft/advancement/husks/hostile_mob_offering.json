@@ -1,0 +1,123 @@
+{
+  "parent": "minecraft:husks/root",
+  "criteria": {
+    "creeper": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:creeper",
+              "nbt":"{CustomName:\"Offering\"}"
+            }
+          }
+        ],
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:golden_hoe"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "skeleton": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:skeleton",
+              "nbt":"{CustomName:\"Offering\"}"
+            }
+          }
+        ],
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:golden_hoe"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "zombie": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:zombie",
+              "nbt":"{CustomName:\"Offering\"}"
+            }
+          }
+        ],
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:golden_hoe"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "spider": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:spider",
+              "nbt":"{CustomName:\"Offering\"}"
+            }
+          }
+        ],
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:golden_hoe"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Use a golden hoe to kill a Creeper, a Skeleton, a Zombie, and a Skeleton, each named \"Offering\""
+    },
+    "icon": {
+      "id": "minecraft:golden_hoe"
+    },
+    "title": {
+      "translate": "Reaping Of Four"
+    }
+    
+  },
+  "requirements": [
+    [
+      "creeper"
+    ],
+    [
+      "skeleton"
+    ],
+    [
+      "spider"
+    ],
+    [
+      "zombie"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:gainsoul"
+  },
+  "sends_telemetry_event": true
+}

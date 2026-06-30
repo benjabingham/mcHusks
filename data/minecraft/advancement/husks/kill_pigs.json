@@ -1,0 +1,68 @@
+{
+  "parent": "minecraft:husks/kill_baby_piglin",
+  "criteria": {
+    "pig": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:pig",
+              "flags": {
+                "is_baby": true
+              },
+              "minecraft:location": {
+                "structures": "ruined_portal"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "hoglin": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:hoglin",
+              "flags": {
+                "is_baby": false
+              },
+              "minecraft:location": {
+                "structures": "ruined_portal"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Kill a Baby Pig and an Adult Hoglin at a Ruined Portal"
+    },
+    "icon": {
+      "id": "minecraft:crying_obsidian"
+    },
+    "title": {
+      "translate": "Weep Not For Swines"
+    }
+  },
+  "requirements": [
+    [
+      "pig"
+    ],
+    [
+      "hoglin"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:gainsoul"
+  },
+  "sends_telemetry_event": true
+}

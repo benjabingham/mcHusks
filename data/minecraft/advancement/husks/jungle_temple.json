@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:husks/pale_garden",
+  "parent": "minecraft:husks/pyramid",
   "criteria": {
     "killed_baby": {
       "conditions": {
@@ -9,7 +9,7 @@
             "entity": "this",
             "predicate": {
               "minecraft:location": {
-                "biomes": "minecraft:deep_dark"
+                "structures": "jungle_pyramid"
               }
             }
           }
@@ -19,7 +19,6 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:entity_type": "minecraft:villager",
               "flags": {
                 "is_baby": true
               }
@@ -32,13 +31,13 @@
   },
   "display": {
     "description": {
-      "translate": "Bring a Baby Villager to the Deep Dark and kill it"
+      "translate": "Sacrifice a Baby Mob in a Jungle Temple"
     },
     "icon": {
-      "id": "minecraft:sculk_catalyst"
+      "id": "minecraft:mossy_cobblestone"
     },
     "title": {
-      "translate": "No Coming Back"
+      "translate": "Temple Of Doom"
     }
   },
   "requirements": [

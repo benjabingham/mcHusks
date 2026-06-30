@@ -1,0 +1,153 @@
+{
+  "parent": "minecraft:husks/hostile_mob_offering",
+  "criteria": {
+    "strider": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:strider",
+              "nbt":"{CustomName:\"Offering\"}",
+              "flags": {
+                "is_baby": true
+              }
+            }
+          }
+        ],
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:diamond_hoe"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "bat": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:bat",
+              "nbt":"{CustomName:\"Offering\"}"
+            }
+          }
+        ],
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:diamond_hoe"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "villager": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:villager",
+              "nbt":"{CustomName:\"Offering\"}"
+            }
+          }
+        ],
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:diamond_hoe"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "golem": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:iron_golem",
+              "nbt":"{CustomName:\"Offering\"}"
+            }
+          }
+        ],
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:diamond_hoe"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "phantom": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:phantom",
+              "nbt":"{CustomName:\"Offering\"}"
+            }
+          }
+        ],
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:diamond_hoe"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Use a Diamond Hoe to kill a Baby Strider, a Bat, a Villager, an Iron Golem, and a Phantom, each named \"Offering\""
+    },
+    "icon": {
+      "id": "minecraft:diamond_hoe"
+    },
+    "title": {
+      "translate": "Reaping Of Five"
+    }
+    
+  },
+  "requirements": [
+    [
+      "strider"
+    ],
+    [
+      "bat"
+    ],
+    [
+      "villager"
+    ]
+    ,
+    [
+      "golem"
+    ]
+    ,
+    [
+      "phantom"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:gainsoul"
+  },
+  "sends_telemetry_event": true
+}

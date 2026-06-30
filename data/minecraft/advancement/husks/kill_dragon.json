@@ -1,8 +1,15 @@
 {
-  "parent": "minecraft:husks/kill_player",
+  "parent": "minecraft:husks/offering_5",
   "criteria": {
     "killed_dragon": {
       "conditions": {
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:netherite_hoe"
+            }
+          }
+        },
         "entity": [
           {
             "condition": "minecraft:entity_properties",
@@ -18,13 +25,13 @@
   },
   "display": {
     "description": {
-      "translate": "Kill the ender dragon"
+      "translate": "Kill the ender dragon with a Netherite Hoe"
     },
     "icon": {
-      "id": "minecraft:dragon_head"
+      "id": "minecraft:netherite_hoe"
     },
     "title": {
-      "translate": "Dracocide"
+      "translate": "Reaping Of One"
     }
   },
   "requirements": [

@@ -21,7 +21,6 @@
     }
   },
   "display": {
-    "frame": "challenge",
     "description": {
       "translate": "Achieve a velocity of 70 m/s"
     },
@@ -38,7 +37,7 @@
     ]
   ],
   "rewards": {
-    "function": "husks:extendlifeextra"
+    "function": "husks:extendlife"
   },
   "sends_telemetry_event": true
 }
