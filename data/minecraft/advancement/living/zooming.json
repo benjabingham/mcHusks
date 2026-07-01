@@ -21,9 +21,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Achieve a horizontal velocity of 30 m/s"
+      "translate": "Achieve a horizontal velocity of 30 m/s",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:blaze_powder"

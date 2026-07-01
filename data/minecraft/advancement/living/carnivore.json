@@ -44,9 +44,9 @@
   },
   
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Eat Cooked Porkchop, Steak, Cooked Mutton, Cooked Chicken, and Cooked Rabbit"
+      "translate": "Eat Cooked Porkchop, Steak, Cooked Mutton, Cooked Chicken, and Cooked Rabbit",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:cooked_beef"

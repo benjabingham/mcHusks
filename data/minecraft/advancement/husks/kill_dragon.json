@@ -25,7 +25,8 @@
   },
   "display": {
     "description": {
-      "translate": "Kill the ender dragon with a Netherite Hoe"
+      "translate": "Kill the ender dragon with a Netherite Hoe",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:netherite_hoe"

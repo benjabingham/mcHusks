@@ -9,9 +9,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Use a Bottle o' Enchanting"
+      "translate": "Use a Bottle o' Enchanting",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:experience_bottle"

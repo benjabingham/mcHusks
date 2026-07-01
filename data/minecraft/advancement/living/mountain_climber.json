@@ -20,9 +20,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Climb a very tall mountain"
+      "translate": "Climb a very tall mountain",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:snow_block"

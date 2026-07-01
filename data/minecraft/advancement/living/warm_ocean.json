@@ -19,9 +19,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Visit a Coral Reef"
+      "translate": "Visit a Coral Reef",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:fire_coral"

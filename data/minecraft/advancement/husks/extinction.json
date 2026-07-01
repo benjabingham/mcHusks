@@ -120,7 +120,8 @@
   
   "display": {
     "description": {
-      "translate": "Use a weapon named \"Extinction Event\" to kill an Axolotl, a Tropical Fish, a Turtle, a Polar Bear, and a Panda"
+      "translate": "Use a weapon named \"Extinction Event\" to kill an Axolotl, a Tropical Fish, a Turtle, a Polar Bear, and a Panda",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:skull_pottery_sherd"

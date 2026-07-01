@@ -21,7 +21,8 @@
   },
   "display": {
     "description": {
-      "translate": "Kill a defenseless Baby Goat"
+      "translate": "Kill a defenseless Baby Goat",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:goat_horn"

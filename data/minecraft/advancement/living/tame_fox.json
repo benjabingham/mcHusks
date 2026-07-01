@@ -41,9 +41,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Feed a Snow Fox in its natural habitat"
+      "translate": "Feed a Snow Fox in its natural habitat",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:sweet_berries"

@@ -67,9 +67,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Explore an Ocean Monument, a Shipwreck, and Ocean Ruins in warm and cold water"
+      "translate": "Explore an Ocean Monument, a Shipwreck, and Ocean Ruins in warm and cold water",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:sea_pickle"

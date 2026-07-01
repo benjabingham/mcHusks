@@ -31,7 +31,8 @@
     "announce_to_chat": false,
     "show_toast":false,
     "description": {
-      "translate": "advancements.nether.return_to_sender.description"
+      "translate": "advancements.nether.return_to_sender.description",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:fire_charge"

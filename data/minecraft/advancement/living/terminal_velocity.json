@@ -21,9 +21,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Achieve a velocity of 70 m/s"
+      "translate": "Achieve a velocity of 70 m/s",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:elytra"

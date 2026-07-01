@@ -19,9 +19,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Visit a Lush Cave"
+      "translate": "Visit a Lush Cave",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:glow_berries"

@@ -8,7 +8,8 @@
     "announce_to_chat": false,
     "background": "minecraft:block/basalt_side",
     "description": {
-      "translate": "Bring back the dead"
+      "translate": "Bring back the dead",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:zombie_head"

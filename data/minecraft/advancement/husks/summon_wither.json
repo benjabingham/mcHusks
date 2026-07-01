@@ -20,7 +20,8 @@
     "announce_to_chat": false,
     "show_toast":false,
     "description": {
-      "translate": "advancements.nether.summon_wither.description"
+      "translate": "advancements.nether.summon_wither.description",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:nether_star"

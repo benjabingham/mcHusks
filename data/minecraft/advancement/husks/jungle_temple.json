@@ -31,7 +31,8 @@
   },
   "display": {
     "description": {
-      "translate": "Sacrifice a Baby Mob in a Jungle Temple"
+      "translate": "Sacrifice a Baby Mob in a Jungle Temple",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:mossy_cobblestone"

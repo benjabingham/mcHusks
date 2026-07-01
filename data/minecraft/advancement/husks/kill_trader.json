@@ -21,7 +21,8 @@
   },
   "display": {
     "description": {
-      "translate": "Bring a Wandering Trader to The End and kill it"
+      "translate": "Bring a Wandering Trader to The End and kill it",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:end_stone"

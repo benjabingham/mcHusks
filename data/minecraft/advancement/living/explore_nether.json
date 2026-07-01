@@ -83,9 +83,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "advancements.nether.explore_nether.description"
+      "translate": "advancements.nether.explore_nether.description",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:netherite_boots"

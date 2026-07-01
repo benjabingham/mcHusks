@@ -44,7 +44,8 @@
   },
   "display": {
     "description": {
-      "translate": "Kill a Baby Pig and an Adult Hoglin at a Ruined Portal"
+      "translate": "Kill a Baby Pig and an Adult Hoglin at a Ruined Portal",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:crying_obsidian"

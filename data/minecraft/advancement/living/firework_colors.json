@@ -89,9 +89,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Craft Firework Stars with Red, Orange, Yellow, Green, Blue, Purple, and Pink dye"
+      "translate": "Craft Firework Stars with Red, Orange, Yellow, Green, Blue, Purple, and Pink dye",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:firework_star"

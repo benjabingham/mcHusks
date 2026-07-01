@@ -6,9 +6,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Half a heart is left but don't die"
+      "translate": "Half a heart is left but don't die",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:heart_pottery_sherd"

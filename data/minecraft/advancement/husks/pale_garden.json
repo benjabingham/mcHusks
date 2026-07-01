@@ -37,7 +37,8 @@
   },
   "display": {
     "description": {
-      "translate": "Sacrifice a Baby Mob at night in a Pale Garden with no light sources present"
+      "translate": "Sacrifice a Baby Mob at night in a Pale Garden with no light sources present",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:creaking_heart"

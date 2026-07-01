@@ -29,7 +29,8 @@
   },
   "display": {
     "description": {
-      "translate": "Light a Baby Piglin on fire, then kill it with a Golden Sword"
+      "translate": "Light a Baby Piglin on fire, then kill it with a Golden Sword",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:cooked_porkchop"

@@ -18,7 +18,8 @@
   },
   "display": {
     "description": {
-      "translate": "Kill a Happy Ghast"
+      "translate": "Kill a Happy Ghast",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:dried_ghast"

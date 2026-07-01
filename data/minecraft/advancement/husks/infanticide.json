@@ -32,7 +32,8 @@
   },
   "display": {
     "description": {
-      "translate": "Bring a Baby Villager to the Deep Dark and kill it"
+      "translate": "Bring a Baby Villager to the Deep Dark and kill it",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:sculk_catalyst"

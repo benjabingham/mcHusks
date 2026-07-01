@@ -43,9 +43,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Receive damage from a Blaze, a Ghast, a Piglin, and a Magma Cube"
+      "translate": "Receive damage from a Blaze, a Ghast, a Piglin, and a Magma Cube",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:piglin_head"

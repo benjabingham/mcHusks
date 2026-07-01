@@ -92,7 +92,8 @@
   },
   "display": {
     "description": {
-      "translate": "Use a golden hoe to kill a Creeper, a Skeleton, a Zombie, and a Skeleton, each named \"Offering\""
+      "translate": "Use a golden hoe to kill a Creeper, a Skeleton, a Zombie, and a Skeleton, each named \"Offering\"",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:golden_hoe"

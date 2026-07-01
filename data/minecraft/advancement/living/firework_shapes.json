@@ -62,9 +62,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Craft Firework Stars with a Fire Charge, a Gold Nugget, a Feather, Glowstone Dust, and a Diamond"
+      "translate": "Craft Firework Stars with a Fire Charge, a Gold Nugget, a Feather, Glowstone Dust, and a Diamond",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:fire_charge"

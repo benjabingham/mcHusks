@@ -117,7 +117,8 @@
   },
   "display": {
     "description": {
-      "translate": "Use a Diamond Hoe to kill a Baby Strider, a Bat, a Villager, an Iron Golem, and a Phantom, each named \"Offering\""
+      "translate": "Use a Diamond Hoe to kill a Baby Strider, a Bat, a Villager, an Iron Golem, and a Phantom, each named \"Offering\"",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:diamond_hoe"

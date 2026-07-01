@@ -44,9 +44,9 @@
   },
   
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Eat Raw Salmon, Cooked Salmon, Raw Cod, Cooked Cod, and Dried Kelp"
+      "translate": "Eat Raw Salmon, Cooked Salmon, Raw Cod, Cooked Cod, and Dried Kelp",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:salmon"

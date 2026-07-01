@@ -27,9 +27,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "advancements.adventure.play_jukebox_in_meadows.description"
+      "translate": "advancements.adventure.play_jukebox_in_meadows.description",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:jukebox"

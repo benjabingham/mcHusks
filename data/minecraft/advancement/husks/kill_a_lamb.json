@@ -21,7 +21,8 @@
   },
   "display": {
     "description": {
-      "translate": "Kill a defenseless Baby Sheep"
+      "translate": "Kill a defenseless Baby Sheep",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:red_wool"

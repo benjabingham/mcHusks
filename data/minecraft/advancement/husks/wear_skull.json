@@ -33,7 +33,8 @@
   },
   "display": {
     "description": {
-      "translate": "Kill a Wither Skeleton while wearing its brother's skull"
+      "translate": "Kill a Wither Skeleton while wearing its brother's skull",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:wither_skeleton_skull"

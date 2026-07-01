@@ -22,9 +22,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Feed an ocelot in a Jungle"
+      "translate": "Feed an ocelot in a Jungle",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:salmon"

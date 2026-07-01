@@ -18,7 +18,8 @@
   },
   "display": {
     "description": {
-      "translate": "Sacrifice yourself to a Bee"
+      "translate": "Sacrifice yourself to a Bee",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:bee_nest"

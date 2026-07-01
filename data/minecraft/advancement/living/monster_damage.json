@@ -43,9 +43,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Receive damage from a Skeleton, a Creeper, a Zombie, and a Spider"
+      "translate": "Receive damage from a Skeleton, a Creeper, a Zombie, and a Spider",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:skeleton_skull"

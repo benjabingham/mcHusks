@@ -18,7 +18,8 @@
   },
   "display": {
     "description": {
-      "translate": "Sacrifice yourself to the Ender Dragon"
+      "translate": "Sacrifice yourself to the Ender Dragon",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:dragon_breath"

@@ -19,9 +19,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Visit the Eroded Badlands"
+      "translate": "Visit the Eroded Badlands",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:orange_terracotta"

@@ -68,9 +68,9 @@
   },
   
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Eat Baked Potato, Carrot, Apple, Beetroot, Melon Slice, Sweet Berries, Dried Kelp, and Glow Berries"
+      "translate": "Eat Baked Potato, Carrot, Apple, Beetroot, Melon Slice, Sweet Berries, Dried Kelp, and Glow Berries",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:carrot"

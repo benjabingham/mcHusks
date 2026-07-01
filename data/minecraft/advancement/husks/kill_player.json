@@ -20,7 +20,8 @@
   "display": {
     "hidden":true,
     "description": {
-      "translate": "Kill your fellow man"
+      "translate": "Kill your fellow man",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:player_head"

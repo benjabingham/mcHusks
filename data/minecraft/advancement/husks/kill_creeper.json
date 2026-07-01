@@ -29,7 +29,8 @@
   },
   "display": {
     "description": {
-      "translate": "Kill a Creeper with TNT"
+      "translate": "Kill a Creeper with TNT",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:creeper_head"

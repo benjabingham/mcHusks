@@ -8,7 +8,8 @@
   },
   "display": {
     "description": {
-      "translate": "Reach a Life Score of 50 or higher as a Husk"
+      "translate": "Reach a Life Score of 50 or higher as a Husk",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:poppy"

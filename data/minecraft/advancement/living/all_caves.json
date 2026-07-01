@@ -51,9 +51,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Visit a Dripstone Cave, a Sulfer Cave, and the Deep Dark"
+      "translate": "Visit a Dripstone Cave, a Sulfer Cave, and the Deep Dark",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:pointed_dripstone"

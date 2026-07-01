@@ -23,7 +23,8 @@
     "announce_to_chat": false,
     "show_toast":false,
     "description": {
-      "translate": "advancements.nether.uneasy_alliance.description"
+      "translate": "advancements.nether.uneasy_alliance.description",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:ghast_tear"

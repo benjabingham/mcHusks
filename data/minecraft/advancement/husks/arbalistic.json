@@ -15,7 +15,8 @@
     "announce_to_chat": false,
     "show_toast":false,
     "description": {
-      "translate": "advancements.adventure.arbalistic.description"
+      "translate": "advancements.adventure.arbalistic.description",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:crossbow"

@@ -21,9 +21,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Visit a Cherry Grove"
+      "translate": "Visit a Cherry Grove",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:cherry_sapling"

@@ -16,9 +16,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Find buried treasure"
+      "translate": "Find buried treasure",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:chest"

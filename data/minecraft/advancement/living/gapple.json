@@ -11,9 +11,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Eat a Golden Apple"
+      "translate": "Eat a Golden Apple",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:golden_apple"

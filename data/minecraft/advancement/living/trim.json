@@ -111,9 +111,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "advancements.adventure.trim_with_any_armor_pattern.description"
+      "translate": "advancements.adventure.trim_with_any_armor_pattern.description",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:dune_armor_trim_smithing_template"

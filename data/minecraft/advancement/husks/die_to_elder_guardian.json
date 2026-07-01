@@ -18,7 +18,8 @@
   },
   "display": {
     "description": {
-      "translate": "Sacrifice yourself to the Elder Guardian"
+      "translate": "Sacrifice yourself to the Elder Guardian",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:sponge"

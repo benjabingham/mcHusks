@@ -17,9 +17,9 @@
     }
   },
   "display": {
-    "frame": "goal",
     "description": {
-      "translate": "Tame an animal"
+      "translate": "Tame an animal",
+      "color": "blue"
     },
     "icon": {
       "id": "minecraft:lead"

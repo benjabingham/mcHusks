@@ -18,7 +18,8 @@
   },
   "display": {
     "description": {
-      "translate": "Sacrifice yourself to the Warden"
+      "translate": "Sacrifice yourself to the Warden",
+      "color": "red"
     },
     "icon": {
       "id": "minecraft:sculk"
