@@ -1,0 +1,2 @@
+summon wither_skeleton ~ ~ ~ {PersistenceRequired:1b, Team:"husk",CustomNameVisible:1b,CustomName:"Lost Husk",attributes:[{id:"minecraft:scale",base:0.74},{id:"minecraft:name_tag_distance",base:100},{id:"max_health",base:10}]}
+execute as @s at @s run playsound entity.wither_skeleton.death player @a

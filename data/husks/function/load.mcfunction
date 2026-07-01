@@ -1,9 +1,13 @@
 scoreboard objectives add huskDeaths deathCount
 
+#deaths is used for husk detection, and is reset on RESPAWN
 scoreboard objectives add deaths deathCount
 scoreboard objectives add trueDeaths deathCount trueDeaths
+scoreboard objectives add ondeath deathCount
 
 scoreboard objectives add souls dummy
+scoreboard objectives add totalSouls dummy
+scoreboard objectives add soulsUsed dummy
 scoreboard players add ☻ souls 0
 scoreboard objectives setdisplay sidebar souls
 

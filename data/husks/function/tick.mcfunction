@@ -1,4 +1,5 @@
 execute as @a if score @s deaths matches 1 run attribute @s minecraft:max_health base set 20
+execute as @a if score @s ondeath matches 1.. run function husks:ondeath
 
 execute as @e[type=player] if score @s deaths matches 1 run function husks:playerdeath
 execute as @e[type=player,team=!husk] run team join living

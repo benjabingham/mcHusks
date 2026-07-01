@@ -1,0 +1,51 @@
+{
+  "parent": "minecraft:living/root",
+  "criteria": {
+    "pot_crafted_using_only_sherds": {
+      "conditions": {
+        "ingredients": [
+          {
+            "items": "#minecraft:decorated_pot_sherds"
+          },
+          {
+            "items": "#minecraft:decorated_pot_sherds"
+          },
+          {
+            "items": "#minecraft:decorated_pot_sherds"
+          },
+          {
+            "items": "#minecraft:decorated_pot_sherds"
+          }
+        ],
+        "recipe_id": "minecraft:decorated_pot"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "show_toast": false,
+    "description": {
+      "translate": "advancements.adventure.craft_decorated_pot_using_only_sherds.description",
+      "color": "blue"
+    },
+    "icon": {
+      "components": {
+          
+      },
+      "id": "minecraft:decorated_pot"
+    },
+    "title": {
+      "translate": "advancements.adventure.craft_decorated_pot_using_only_sherds.title"
+    }
+  },
+  "requirements": [
+    [
+      "pot_crafted_using_only_sherds"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

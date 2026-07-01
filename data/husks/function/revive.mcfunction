@@ -1,4 +1,5 @@
 scoreboard players remove ☻ souls 1
+scoreboard players add @s soulsUsed 1
 scoreboard players set @s huskDeaths 0
 spreadplayers 0 0 20 20 false @s[tag=husk]
 tag @s remove husk

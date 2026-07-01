@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:living/root",
+  "parent": "minecraft:living/pottery",
   "criteria": {
     "armor_trimmed_minecraft:bolt_armor_trim_smithing_template_smithing_trim": {
       "conditions": {

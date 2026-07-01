@@ -14,4 +14,8 @@ execute at @p[tag=husk] as @e[tag=aggressible,tag=!tamed] run attribute @s knock
 execute at @p[tag=husk] as @e[tag=aggressible,tag=!tamed] run damage @s 0 player_attack by @p
 execute at @p[tag=husk] as @e[tag=aggressible,tag=!tamed] run attribute @s knockback_resistance modifier remove kbr
 
+execute as @e[tag=aggressible,tag=!tamed] at @p[tag=husk] run playsound entity.sniffer.scenting player @a
+
+tag @e[tag=aggressible] remove aggressible
+
 scoreboard players set wolfattacktimer vars 0
