@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:living/harming_potion",   
+  "criteria": {
+    "use": {
+      "conditions": {
+       
+      },
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "frame": "goal",
+    "description": {
+      "translate": "Use a Bottle o' Enchanting"
+    },
+    "icon": {
+      "id": "minecraft:experience_bottle"
+    },
+    "title": {
+      "translate": "Liquid Memories"
+    }
+  },
+  "requirements": [
+    [
+      "use"
+    ]
+],
+"rewards": {
+    "function": "husks:extendlife"
+},
+  "sends_telemetry_event": true
+}

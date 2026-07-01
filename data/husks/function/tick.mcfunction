@@ -31,3 +31,7 @@ execute if predicate {condition: "weather_check", "thundering":true} run execute
 
 scoreboard players add wolfattacktimer vars 1
 execute if score wolfattacktimer vars matches 600.. run function husks:wolfattack
+
+execute as @a if score @s threw_xp_bottle matches 1.. run advancement grant @s only living/exp_bottle
+execute as @a if score @s threw_xp_bottle matches 1.. run scoreboard players set @s threw_xp_bottle 0
+

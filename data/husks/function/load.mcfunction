@@ -25,3 +25,4 @@ team add husk
 team add living
 team modify husk color dark_purple
 
+scoreboard objectives add threw_xp_bottle minecraft.used:minecraft.experience_bottle

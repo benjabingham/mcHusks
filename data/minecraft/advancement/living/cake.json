@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:living/cookie",
+  "parent": "minecraft:living/pie",
   "criteria": {
     "cake": {
       "conditions": {
