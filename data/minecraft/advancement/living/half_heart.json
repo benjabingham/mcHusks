@@ -6,6 +6,7 @@
     }
   },
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Half a heart is left but don't die"
     },

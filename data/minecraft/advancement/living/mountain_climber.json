@@ -20,6 +20,7 @@
     }
   },
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Climb a very tall mountain"
     },

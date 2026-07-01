@@ -43,6 +43,7 @@
     }
   },
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Receive damage from a Blaze, a Ghast, a Piglin, and a Magma Cube"
     },

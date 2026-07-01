@@ -60,6 +60,7 @@
   },
   
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Eat Raw Porkchop, Raw Beef, Raw Mutton, Raw Chicken Raw Rabbit, Spider Eye, and Rotten Flesh"
     },

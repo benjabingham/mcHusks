@@ -22,6 +22,7 @@
     }
   },
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "advancements.adventure.who_needs_rockets.description"
     },

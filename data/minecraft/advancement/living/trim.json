@@ -111,6 +111,7 @@
     }
   },
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "advancements.adventure.trim_with_any_armor_pattern.description"
     },

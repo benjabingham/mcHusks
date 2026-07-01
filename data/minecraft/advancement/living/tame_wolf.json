@@ -17,6 +17,7 @@
     }
   },
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Tame an animal"
     },

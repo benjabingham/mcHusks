@@ -22,6 +22,7 @@
     }
   },
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Feed an ocelot in a Jungle"
     },

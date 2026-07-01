@@ -68,6 +68,7 @@
   },
   
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Eat Baked Potato, Carrot, Apple, Beetroot, Melon Slice, Sweet Berries, Dried Kelp, and Glow Berries"
     },

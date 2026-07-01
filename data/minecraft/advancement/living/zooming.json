@@ -21,6 +21,7 @@
     }
   },
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Achieve a horizontal velocity of 30 m/s"
     },

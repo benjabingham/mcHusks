@@ -44,6 +44,7 @@
   },
   
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Eat Raw Salmon, Cooked Salmon, Raw Cod, Cooked Cod, and Dried Kelp"
     },

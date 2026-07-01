@@ -19,6 +19,7 @@
     }
   },
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Visit the Eroded Badlands"
     },

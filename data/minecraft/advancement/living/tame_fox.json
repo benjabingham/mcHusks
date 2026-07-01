@@ -41,6 +41,7 @@
     }
   },
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Feed a Snow Fox in its natural habitat"
     },

@@ -62,6 +62,7 @@
     }
   },
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Craft Firework Stars with a Fire Charge, a Gold Nugget, a Feather, Glowstone Dust, and a Diamond"
     },

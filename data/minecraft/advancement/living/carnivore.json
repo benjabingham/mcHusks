@@ -44,6 +44,7 @@
   },
   
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Eat Cooked Porkchop, Steak, Cooked Mutton, Cooked Chicken, and Cooked Rabbit"
     },

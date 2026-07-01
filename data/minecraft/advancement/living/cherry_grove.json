@@ -21,6 +21,7 @@
     }
   },
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Visit a Cherry Grove"
     },

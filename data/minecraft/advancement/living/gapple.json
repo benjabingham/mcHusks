@@ -11,6 +11,7 @@
     }
   },
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Eat a Golden Apple"
     },

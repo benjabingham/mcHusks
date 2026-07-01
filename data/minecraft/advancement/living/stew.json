@@ -36,6 +36,7 @@
   },
   
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Eat Suspicious Stew, Rabbit Stew, Mushroom Stew, and Beetroot Soup"
     },

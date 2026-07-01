@@ -83,8 +83,7 @@
     }
   },
   "display": {
-    "announce_to_chat": false,
-    "show_toast":false,
+    "frame": "goal",
     "description": {
       "translate": "advancements.nether.explore_nether.description"
     },

@@ -16,6 +16,7 @@
     }
   },
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Find buried treasure"
     },

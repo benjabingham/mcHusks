@@ -19,6 +19,7 @@
     }
   },
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Visit a Coral Reef"
     },

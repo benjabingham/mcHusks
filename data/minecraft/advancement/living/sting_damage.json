@@ -33,6 +33,7 @@
     }
   },
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "Receive damage from a Bee, a Pufferfish, and a Cave Spider"
     },
