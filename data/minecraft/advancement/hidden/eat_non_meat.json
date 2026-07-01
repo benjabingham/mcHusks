@@ -1,0 +1,180 @@
+{
+  "criteria": {
+    "cookie": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:cookie"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "pumpkin": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:pumpkin_pie"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "beetroot_soup": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:beetroot_soup"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "gold_carrot": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:golden_carrot"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "honey": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:honey_bottle"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "suspicious_stew": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:suspicious_stew"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "baked_potato": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:baked_potato"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "bread": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:bread"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "apple": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:apple"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "egapple": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:enchanted_golden_apple"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "gapple": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:golden_apple"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "carrot": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:carrot"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "glow_berries": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:glow_berries"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "melon_slice": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:melon_slice"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "poison_potato": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:poisonous_potato"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "sweet_berries": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:sweet_berries"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "beetroot": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:beetroot"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "kelp": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:dried_kelp"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "potato": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:potato"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "hidden": true,
+    "show_toast": false,
+    "description": {
+      "translate": ""
+    },
+    "icon": {
+      "id": "minecraft:cookie"
+    },
+    "title": {
+      "translate": ""
+    }
+  },
+  "requirements": [
+    [
+      "cookie","pumpkin","beetroot_soup","gold_carrot","suspicious_stew","baked_potato",
+      "bread","apple","carrot","glow_berries","melon_slice","poison_potato","sweet_berries","beetroot","kelp","potato","honey","egapple","gapple"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:eatnonmeat"
+  },
+  "sends_telemetry_event": true
+}

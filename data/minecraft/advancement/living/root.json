@@ -8,6 +8,7 @@
     }
   },
   "display": {
+    
     "announce_to_chat": false,
     "background": "minecraft:block/stripped_cherry_log",
     "description": {
