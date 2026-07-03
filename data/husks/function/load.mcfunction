@@ -1,3 +1,6 @@
+gamerule send_command_feedback true
+
+
 scoreboard objectives add huskDeaths deathCount
 
 #deaths is used for husk detection, and is reset on RESPAWN

@@ -36,3 +36,4 @@ execute if score wolfattacktimer vars matches 600.. run function husks:wolfattac
 execute as @a if score @s threw_xp_bottle matches 1.. run advancement grant @s only living/exp_bottle
 execute as @a if score @s threw_xp_bottle matches 1.. run scoreboard players set @s threw_xp_bottle 0
 
+function husks:summons/boss/bossbehaviors
