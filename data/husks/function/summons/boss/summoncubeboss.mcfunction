@@ -1,4 +1,4 @@
-summon magma_cube ~ -100 ~ {Size:8, DeathLootTable:"husks:boss/cubeboss",PersistenceRequired:1b,Tags:["cubes-to-teleport","cube-boss","summoned"],CustomNameVisible:0b,CustomName:"Corrupting Cube",attributes:[{id:"max_health",base:60}]}
+summon magma_cube ~ -100 ~ {Size:8, DeathLootTable:"husks:boss/cubeboss",PersistenceRequired:1b,Tags:["cubes-to-teleport","cube-boss","summoned"],CustomNameVisible:0b,CustomName:"Corrupting Cube",attributes:[{id:"max_health",base:60}],Team:HideNames}
 execute as @a at @s run playsound ambient.basalt_deltas.mood player @a
 
 execute as @e[tag=cubes-to-teleport] run spreadplayers ~ ~ 0 75 true @s

@@ -1,15 +1,21 @@
 {
-  "parent": "minecraft:husks/kill_husk",
+  "parent": "minecraft:husks/root",
   "criteria": {
-    "killed_player": {
+    "killed": {
       "conditions": {
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:golden_sword"
+            }
+          }
+        },
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:entity_type": "minecraft:player",
-              "nbt": "{Tags:[\"living\"]}"
+              "nbt": "{Tags:[\"summoned\"]}"
             }
           }
         ]
@@ -18,25 +24,24 @@
     }
   },
   "display": {
-    "hidden":true,
     "description": {
-      "translate": "Kill your fellow man",
+      "translate": "Use a Golden Sword to kill a creature summoned by a Soul Ritual",
       "color": "red"
     },
     "icon": {
-      "id": "minecraft:player_head"
+      "id": "minecraft:golden_sword"
     },
     "title": {
-      "translate": "Murder"
+      "translate": "Banishment"
     }
   },
   "requirements": [
     [
-      "killed_player"
+      "killed"
     ]
   ],
   "rewards": {
-    "function": "husks:gainsoul"
+    "function": "husks:gainsoulfree"
   },
   "sends_telemetry_event": true
 }

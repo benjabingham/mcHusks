@@ -1,15 +1,26 @@
 {
-  "parent": "minecraft:husks/kill_husk",
+  "parent": "minecraft:husks/root",
   "criteria": {
     "killed_player": {
       "conditions": {
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+              "components": {
+                "minecraft:enchantments": {
+                  "minecraft:smite": 5
+                }
+              }
+            }
+          }
+        },
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:player",
-              "nbt": "{Tags:[\"living\"]}"
+              "nbt": "{Tags:[\"husk\"]}"
             }
           }
         ]
@@ -18,16 +29,15 @@
     }
   },
   "display": {
-    "hidden":true,
     "description": {
-      "translate": "Kill your fellow man",
+      "translate": "Use a weapon with Smite V to kill a Husk",
       "color": "red"
     },
     "icon": {
-      "id": "minecraft:player_head"
+      "id": "minecraft:zombie_head"
     },
     "title": {
-      "translate": "Murder"
+      "translate": "Redemption"
     }
   },
   "requirements": [

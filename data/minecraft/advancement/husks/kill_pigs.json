@@ -40,6 +40,26 @@
         ]
       },
       "trigger": "minecraft:player_killed_entity"
+    },
+    "zoglin": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:zoglin",
+              "flags": {
+                "is_baby": false
+              },
+              "minecraft:location": {
+                "structures": "ruined_portal"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
     }
   },
   "display": {
@@ -59,7 +79,7 @@
       "pig"
     ],
     [
-      "hoglin"
+      "hoglin","zoglin"
     ]
   ],
   "rewards": {

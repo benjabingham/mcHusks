@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:husks/kill_creeper",
+  "parent": "minecraft:husks/wear_skull",
   "criteria": {
     "killed_enderman": {
       "conditions": {

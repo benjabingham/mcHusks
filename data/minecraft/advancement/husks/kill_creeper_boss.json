@@ -1,15 +1,14 @@
 {
-  "parent": "minecraft:husks/kill_husk",
+  "parent": "minecraft:husks/kill_summoned",
   "criteria": {
-    "killed_player": {
+    "killed": {
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:entity_type": "minecraft:player",
-              "nbt": "{Tags:[\"living\"]}"
+              "nbt": "{Tags:[\"creeper-boss\"]}"
             }
           }
         ]
@@ -18,25 +17,24 @@
     }
   },
   "display": {
-    "hidden":true,
     "description": {
-      "translate": "Kill your fellow man",
+      "translate": "Kill The Propagator",
       "color": "red"
     },
     "icon": {
-      "id": "minecraft:player_head"
+      "id": "minecraft:creeper_head"
     },
     "title": {
-      "translate": "Murder"
+      "translate": "Fungicide"
     }
   },
   "requirements": [
     [
-      "killed_player"
+      "killed"
     ]
   ],
   "rewards": {
-    "function": "husks:gainsoul"
+    "function": "husks:gainsoulfree"
   },
   "sends_telemetry_event": true
 }

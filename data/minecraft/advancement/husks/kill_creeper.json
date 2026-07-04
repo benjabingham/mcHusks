@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:husks/wear_skull",
+  "parent": "minecraft:husks/return_to_sender",
   "criteria": {
     "killed_creeper": {
       "conditions": {

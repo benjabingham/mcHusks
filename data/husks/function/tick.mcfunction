@@ -1,6 +1,11 @@
 execute as @a if score @s deaths matches 1 run attribute @s minecraft:max_health base set 20
 execute as @a if score @s ondeath matches 1.. run function husks:ondeath
 
+scoreboard players add @a firstload 0
+execute as @a if score @s firstload matches 0 run function husks:help/welcome
+execute as @a if score @s firstload matches 0 run scoreboard players set @s firstload 1
+
+
 execute as @e[type=player] if score @s deaths matches 1 run function husks:playerdeath
 execute as @e[type=player,team=!husk] run team join living
 tag @a[tag=!husk] add living
@@ -16,6 +21,12 @@ execute in overworld as @a[distance=0..,team=husk] if score @s lifePercent match
 execute in the_nether as @a[distance=0..,team=husk] run gamemode survival @s
 
 execute as @a if score @s printscore matches 1.. run function husks:printscore
+execute as @a if score @s help matches 1.. run function husks:help/help
+execute as @a if score @s help-souls matches 1.. run function husks:help/help-souls
+execute as @a if score @s help-life matches 1.. run function husks:help/help-life
+execute as @a if score @s help-husks matches 1.. run function husks:help/help-husks
+
+
 execute as @a[tag=living] run function husks:updatelongestlife
 
 scoreboard players add scoreboardtimer vars 1

@@ -1,29 +1,26 @@
 {
-    "parent": "husks/kill_creeper",
+  "parent": "minecraft:husks/kill_villager_types",
   "criteria": {
-    "wear_skull": {
+    "killed_cleric": {
       "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:location": {
+                "structures": "nether_fossil"
+              }
+            }
+          }
+        ],
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:entity_type": "minecraft:wither_skeleton"
-            }
-          }
-        ],
-         "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "slots": {
-                "armor.head": {
-                  "items": [
-                    "minecraft:wither_skeleton_skull"
-                  ]
-                }
-              }
+              "minecraft:entity_type": "minecraft:villager",
+              "nbt": "{VillagerData:{profession:\"minecraft:cleric\"}}"
             }
           }
         ]
@@ -33,19 +30,19 @@
   },
   "display": {
     "description": {
-      "translate": "Kill a Wither Skeleton while wearing its brother's skull",
+      "translate": "Trap a Cleric within a Nether Fossil and kill it",
       "color": "red"
     },
     "icon": {
-      "id": "minecraft:wither_skeleton_skull"
+      "id": "minecraft:bone_block"
     },
     "title": {
-      "translate": "Fratricide"
+      "translate": "No Gods Here"
     }
   },
   "requirements": [
     [
-      "wear_skull"
+      "killed_cleric"
     ]
   ],
   "rewards": {

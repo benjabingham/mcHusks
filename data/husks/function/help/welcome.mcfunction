@@ -1,0 +1,1 @@
+tellraw @s [{"text":"Welcome to HUSKS\n\nFor help, open your chat and type /trigger help","color":"light_purple" }]

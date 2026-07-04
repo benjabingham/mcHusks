@@ -1,0 +1,113 @@
+{
+  "parent": "minecraft:husks/kill_lvl5",   
+  "criteria": {
+    "desert": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:villager",
+              "nbt": "{VillagerData:{type:\"minecraft:desert\"}}"
+            }
+          }
+        ]
+      }
+    },
+    "plains": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:villager",
+              "nbt": "{VillagerData:{type:\"minecraft:plains\"}}"
+            }
+          }
+        ]
+      }
+    },
+    "savanna": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:villager",
+              "nbt": "{VillagerData:{type:\"minecraft:savanna\"}}"
+            }
+          }
+        ]
+      }
+    },
+    "snow": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:villager",
+              "nbt": "{VillagerData:{type:\"minecraft:snow\"}}"
+            }
+          }
+        ]
+      }
+    },
+    "taiga": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:villager",
+              "nbt": "{VillagerData:{type:\"minecraft:taiga\"}}"
+            }
+          }
+        ]
+      }
+    }
+},
+  "display": {
+    "description": {
+      "translate": "Kill a Desert Villager, a Plains Villager, a Savanna Villager, a Snow Villager, and a Taiga Villager",
+      "color": "red"
+    },
+    "icon": {
+      "id": "minecraft:wheat"
+    },
+    "title": {
+      "translate": "Thinning The Herd"
+    }
+  },
+  "requirements": [
+    [
+      "desert"
+    ],
+    [
+      "plains"
+    ],
+    [
+      "savanna"
+    ],
+    [
+      "snow"
+    ],
+    [
+      "taiga"
+    ]
+],
+"rewards": {
+    "function": "husks:gainsoul"
+},
+  "sends_telemetry_event": true
+}

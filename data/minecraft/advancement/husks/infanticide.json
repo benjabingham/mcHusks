@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:husks/pale_garden",
+  "parent": "minecraft:husks/kill_priest",
   "criteria": {
     "killed_baby": {
       "conditions": {

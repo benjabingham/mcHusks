@@ -1,15 +1,15 @@
 {
-  "parent": "minecraft:husks/kill_husk",
+  "parent": "minecraft:husks/root",
   "criteria": {
-    "killed_player": {
+    "killed": {
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:entity_type": "minecraft:player",
-              "nbt": "{Tags:[\"living\"]}"
+              "minecraft:entity_type": "minecraft:villager",
+              "nbt": "{VillagerData:{level:5}}"
             }
           }
         ]
@@ -18,21 +18,20 @@
     }
   },
   "display": {
-    "hidden":true,
     "description": {
-      "translate": "Kill your fellow man",
+      "translate": "Kill a level 5 Villager",
       "color": "red"
     },
     "icon": {
-      "id": "minecraft:player_head"
+      "id": "minecraft:smithing_table"
     },
     "title": {
-      "translate": "Murder"
+      "translate": "Skilled Blood"
     }
   },
   "requirements": [
     [
-      "killed_player"
+      "killed"
     ]
   ],
   "rewards": {

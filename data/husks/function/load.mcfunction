@@ -25,8 +25,23 @@ scoreboard objectives modify longestLife displayname "Longest Lives"
 scoreboard objectives add temp dummy temp
 scoreboard objectives add vars dummy vars
 scoreboard players set ticksperminute vars 1200
+scoreboard players set maxTimeAlive vars 8400000
+
+team add HideNames
+team modify HideNames nametagVisibility never
+
+scoreboard objectives add firstload dummy
+
 scoreboard objectives add printscore trigger printscore 
 scoreboard players enable @a printscore
+scoreboard objectives add help trigger help 
+scoreboard players enable @a help
+scoreboard objectives add help-souls trigger help-souls 
+scoreboard players enable @a help-souls
+scoreboard objectives add help-life trigger help-life
+scoreboard players enable @a help-life
+scoreboard objectives add help-husks trigger help-husks
+scoreboard players enable @a help-husks
 
 team add husk
 team add living
