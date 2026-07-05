@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:living/cherry_grove",
+  "parent": "minecraft:living/root",
   "criteria": {
     "visit": {
       "conditions": {

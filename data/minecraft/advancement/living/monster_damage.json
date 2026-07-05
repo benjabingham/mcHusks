@@ -44,9 +44,7 @@
   },
   "display": {
     "description": {
-      "translate": "Receive damage from a Skeleton, a Creeper, a Zombie, and a Spider",
-      "color": "blue"
-    },
+      "translate": "Receive damage from a Skeleton, a Creeper, a Zombie, and a Spider"    },
     "icon": {
       "id": "minecraft:skeleton_skull"
     },
@@ -69,7 +67,7 @@
     ]
   ],
   "rewards": {
-    "function": "husks:extendlife"
+    "function": "husks:extendlifeless"
   },
   "sends_telemetry_event": true
 }

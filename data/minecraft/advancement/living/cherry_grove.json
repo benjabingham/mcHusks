@@ -17,19 +17,19 @@
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "minecraft:slept_in_bed"
     }
   },
   "display": {
     "description": {
-      "translate": "Visit a Cherry Grove",
+      "translate": "Sleep in a bed in a Cherry Grove",
       "color": "blue"
     },
     "icon": {
       "id": "minecraft:cherry_sapling"
     },
     "title": {
-      "translate": "Pretty And Pink"
+      "translate": "Ryokan"
     }
   },
   "requirements": [
