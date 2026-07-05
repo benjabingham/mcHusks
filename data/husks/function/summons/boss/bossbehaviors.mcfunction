@@ -7,7 +7,7 @@ execute as @e[tag=phantom-boss] at @s run fill ~-10 ~-10 ~-10 ~10 ~10 ~10 air re
 execute store result score abilityTick vars run random value 1..3
 scoreboard players operation bossabilities vars += abilityTick vars
 execute as @e[tag=phantom-boss] at @s run execute if score bossabilities vars matches 3597.. run summon phantom
-execute at @p[distance=100..] as @e[tag=phantom-boss] run execute if score bossabilities vars matches 1..3 run tag @e[tag=phantom-boss] add phantoms-to-teleport
+execute as @e[tag=phantom-boss] at @s at @p[distance=100..] run execute if score bossabilities vars matches 1..3 run tag @e[tag=phantom-boss] add phantoms-to-teleport
 execute as @e[tag=phantom-boss] at @s run execute if score bossabilities vars matches 1..3 run execute as @p[distance=100..] at @s run function husks:summons/teleport/teleportphantoms
 
 execute as @e[tag=creeper-boss] at @s run execute if score bossabilities vars matches 3595.. run summon creeper ~ ~ ~ {ExplosionRadius:2b,attributes:[{id:"minecraft:scale",base:0.5},{id:"max_health",base:7},{id:"movement_speed",base:0.4}]}
@@ -18,28 +18,22 @@ execute as @e[tag=creeper-boss] at @s run execute if score bossabilities vars ma
 execute as @e[tag=ghast-boss] at @s run execute if score bossabilities vars matches 3580.. run summon ghast ~ ~ ~ {attributes:[{id:"minecraft:scale",base:0.5},{id:"max_health",base:3}]}
 execute as @e[tag=ghast-boss] at @s run execute if score bossabilities vars matches 3580.. run playsound entity.ghast.hurt hostile @a ~ ~ ~ 10
 
-execute as @e[tag=cube-boss,limit=1] at @s run execute if score bossabilities vars matches 400 run function husks:summons/netherize
-execute as @e[tag=cube-boss,limit=1] at @s run execute if score bossabilities vars matches 800 run function husks:summons/netherize
-execute as @e[tag=cube-boss,limit=1] at @s run execute if score bossabilities vars matches 1200 run function husks:summons/netherize
-execute as @e[tag=cube-boss,limit=1] at @s run execute if score bossabilities vars matches 1600 run function husks:summons/netherize
-execute as @e[tag=cube-boss,limit=1] at @s run execute if score bossabilities vars matches 2000 run function husks:summons/netherize
-execute as @e[tag=cube-boss,limit=1] at @s run execute if score bossabilities vars matches 3600.. run function husks:summons/netherize
+#cube
+
+
+#this causes slight lag spikes. Cube could call a more shallow version to greatly save on computation
+execute as @e[tag=cube-boss,limit=1] at @s run execute if score bossabilities vars matches 400 run function husks:summons/boss/netherizesmall
+execute as @e[tag=cube-boss,limit=1] at @s run execute if score bossabilities vars matches 800 run function husks:summons/boss/netherizesmall
+execute as @e[tag=cube-boss,limit=1] at @s run execute if score bossabilities vars matches 1200 run function husks:summons/boss/netherizesmall
+execute as @e[tag=cube-boss,limit=1] at @s run execute if score bossabilities vars matches 1600 run function husks:summons/boss/netherizesmall
+execute as @e[tag=cube-boss,limit=1] at @s run execute if score bossabilities vars matches 2000 run function husks:summons/boss/netherizesmall
+execute as @e[tag=cube-boss,limit=1] at @s run execute if score bossabilities vars matches 3600.. run function husks:summons/boss/netherizesmall
 
 execute as @e[tag=cube-boss] at @s run execute if score bossabilities vars matches 1..5 run place feature delta
 execute as @e[tag=cube-boss] at @s run execute if score bossabilities vars matches 3000..3005 run place feature delta
-execute as @e[tag=cube-boss] at @s run execute as @e[type=pig,distance=..8] at @s run summon zombified_piglin
-execute as @e[tag=cube-boss] at @s run execute as @e[type=pig,distance=..8] at @s run tp ~ -100 ~
-execute as @e[tag=cube-boss] at @s run execute as @e[type=zombie,distance=..8] at @s run summon zombified_piglin
-execute as @e[tag=cube-boss] at @s run execute as @e[type=zombie,distance=..8] at @s run tp ~ -100 ~
-execute as @e[tag=cube-boss] at @s run execute as @e[type=skeleton,distance=..8] at @s run summon wither_skeleton
-execute as @e[tag=cube-boss] at @s run execute as @e[type=skeleton,distance=..8] at @s run tp ~ -100 ~
-execute as @e[tag=cube-boss] at @s run execute as @e[type=villager,distance=..8] at @s run summon piglin
-execute as @e[tag=cube-boss] at @s run execute as @e[type=villager,distance=..8] at @s run tp ~ -100 ~
-execute as @e[tag=cube-boss] at @s run execute as @e[type=slime,distance=..8] at @s run summon magma_cube
-execute as @e[tag=cube-boss] at @s run execute as @e[type=slime,distance=..8] at @s run tp ~ -100 ~
-execute as @e[tag=cube-boss] at @s run execute as @e[type=sulfur_cube,distance=..8] at @s run summon magma_cube
-execute as @e[tag=cube-boss] at @s run execute as @e[type=sulfur_cube,distance=..8] at @s run tp ~ -100 ~
-execute as @a at @s run execute if score bossabilities vars matches 2400..2403 run execute as @e[tag=cube-boss,distance=6..50,limit=1] at @s run function husks:summons/summonspark
+
+
+#wolf
 
 execute if score bossabilities vars matches 3400..3402 run execute as @e[tag=kerberos,tag=!tamed] at @s run playsound entity.wolf.growl ambient @a ~ ~ ~ 2
 execute if score bossabilities vars matches 3400..3402 run execute as @e[tag=kerberos,tag=!tamed] at @s run playsound item.firecharge.use ambient @a ~ ~ ~ 2

@@ -27,7 +27,7 @@
   },
   "display": {
     "description": {
-      "translate": "Kill a Sniffer with an item named \"Extinction Event\"",
+      "translate": "Use a weapon named \"Extinction Event\" to kill a Sniffer",
       "color": "red"
     },
     "icon": {

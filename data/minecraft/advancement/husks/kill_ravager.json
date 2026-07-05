@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:husks/scapegoat",
+  "parent": "minecraft:husks/fitting_end",
   "criteria": {
     "killed_baby_piglin": {
       "conditions": {
         "player": {
           "minecraft:slots": {
             "weapon.mainhand": {
-              "items": "minecraft:golden_sword"
+              "items": "minecraft:crossbow"
             }
           }
         },
@@ -15,11 +15,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:entity_type": "minecraft:piglin",
-              "flags": {
-                "is_baby": true,
-                "is_on_fire": true
-              }
+              "minecraft:entity_type": "minecraft:ravager"
             }
           }
         ]
@@ -29,14 +25,14 @@
   },
   "display": {
     "description": {
-      "translate": "Light a Baby Piglin on fire, then kill it with a Golden Sword",
+      "translate": "Kill a Ravager with a Crossbow",
       "color": "red"
     },
     "icon": {
-      "id": "minecraft:cooked_porkchop"
+      "id": "minecraft:arrow"
     },
     "title": {
-      "translate": "Piglet Roast"
+      "translate": "Pierce The Beast"
     }
   },
   "requirements": [

@@ -8,17 +8,16 @@ execute as @a if score @s firstload matches 0 run scoreboard players set @s firs
 
 execute as @e[type=player] if score @s deaths matches 1 run function husks:playerdeath
 execute as @e[type=player,team=!husk] run team join living
-tag @a[tag=!husk] add living
+tag @a[tag=!husk,tag=!living] add living
 
 execute as @e[type=player] run scoreboard players add @s timeAliveTrue 1
 execute as @e[type=player] run function husks:fleeting
 #double countdown for living players past 5 hours
 #execute as @e[type=player,team=living] if score @s timeAliveTrue matches 360000.. run function husks:fleeting
 
-execute as @a if score @s currentHealth matches 1 run advancement grant @s only living/half_heart
 
-execute in overworld as @a[distance=0..,team=husk] if score @s lifePercent matches ..49 run gamemode adventure @s
-execute in the_nether as @a[distance=0..,team=husk] run gamemode survival @s
+execute in overworld as @a[distance=0..,team=husk,gamemode=survival] if score @s lifePercent matches ..49 run gamemode adventure @s
+execute in the_nether as @a[distance=0..,team=husk,gamemode=adventure] run gamemode survival @s
 
 execute as @a if score @s printscore matches 1.. run function husks:printscore
 execute as @a if score @s help matches 1.. run function husks:help/help
@@ -44,7 +43,6 @@ execute if predicate {condition: "weather_check", "thundering":true} run execute
 scoreboard players add wolfattacktimer vars 1
 execute if score wolfattacktimer vars matches 600.. run function husks:wolfattack
 
-execute as @a if score @s threw_xp_bottle matches 1.. run advancement grant @s only living/exp_bottle
-execute as @a if score @s threw_xp_bottle matches 1.. run scoreboard players set @s threw_xp_bottle 0
+function husks:advancement/advancementtick
 
 function husks:summons/boss/bossbehaviors

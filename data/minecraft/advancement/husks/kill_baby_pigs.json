@@ -1,19 +1,35 @@
 {
-  "parent": "minecraft:husks/kill_baby_pigs",
+  "parent": "minecraft:husks/scapegoat",
   "criteria": {
-    "pig": {
+    "piglin": {
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:entity_type": "minecraft:pig",
+              "minecraft:entity_type": "minecraft:piglin",
               "flags": {
-                "is_baby": true
-              },
-              "minecraft:location": {
-                "structures": "ruined_portal"
+                "is_baby": true,
+                "is_on_fire": true
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "ziglin": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "zombified_piglin",
+              "flags": {
+                "is_baby": true,
+                "is_on_fire": true
               }
             }
           }
@@ -30,30 +46,8 @@
             "predicate": {
               "minecraft:entity_type": "minecraft:hoglin",
               "flags": {
-                "is_baby": false
-              },
-              "minecraft:location": {
-                "structures": "ruined_portal"
-              }
-            }
-          }
-        ]
-      },
-      "trigger": "minecraft:player_killed_entity"
-    },
-    "zoglin": {
-      "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "minecraft:entity_type": "minecraft:zoglin",
-              "flags": {
-                "is_baby": false
-              },
-              "minecraft:location": {
-                "structures": "ruined_portal"
+                "is_baby": true,
+                "is_on_fire": true
               }
             }
           }
@@ -64,22 +58,25 @@
   },
   "display": {
     "description": {
-      "translate": "Kill a Baby Pig and an Adult Hoglin at a Ruined Portal",
+      "translate": "Ignite then kill a Baby Piglin, a Baby Zombified Piglin, and a Baby Hoglin",
       "color": "red"
     },
     "icon": {
-      "id": "minecraft:crying_obsidian"
+      "id": "minecraft:cooked_porkchop"
     },
     "title": {
-      "translate": "Weep Not For Swines"
+      "translate": "Piglet Roast"
     }
   },
   "requirements": [
     [
-      "pig"
+      "piglin"
     ],
     [
-      "hoglin","zoglin"
+      "ziglin"
+    ],
+    [
+      "hoglin"
     ]
   ],
   "rewards": {

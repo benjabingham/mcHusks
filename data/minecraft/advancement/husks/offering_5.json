@@ -1,39 +1,14 @@
 {
   "parent": "minecraft:husks/hostile_mob_offering",
   "criteria": {
-    "strider": {
+    "enderman": {
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:entity_type": "minecraft:strider",
-              "nbt":"{CustomName:\"Offering\"}",
-              "flags": {
-                "is_baby": true
-              }
-            }
-          }
-        ],
-        "player": {
-          "minecraft:slots": {
-            "weapon.mainhand": {
-              "items": "minecraft:diamond_hoe"
-            }
-          }
-        }
-      },
-      "trigger": "minecraft:player_killed_entity"
-    },
-    "bat": {
-      "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "minecraft:entity_type": "minecraft:bat",
+              "minecraft:entity_type": "minecraft:enderman",
               "nbt":"{CustomName:\"Offering\"}"
             }
           }
@@ -48,14 +23,14 @@
       },
       "trigger": "minecraft:player_killed_entity"
     },
-    "villager": {
+    "blaze": {
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:entity_type": "minecraft:villager",
+              "minecraft:entity_type": "minecraft:blaze",
               "nbt":"{CustomName:\"Offering\"}"
             }
           }
@@ -70,14 +45,36 @@
       },
       "trigger": "minecraft:player_killed_entity"
     },
-    "golem": {
+    "pillager": {
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:entity_type": "minecraft:iron_golem",
+              "minecraft:entity_type": "minecraft:pillager",
+              "nbt":"{CustomName:\"Offering\"}"
+            }
+          }
+        ],
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:diamond_hoe"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "witch": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:witch",
               "nbt":"{CustomName:\"Offering\"}"
             }
           }
@@ -117,7 +114,7 @@
   },
   "display": {
     "description": {
-      "translate": "Use a Diamond Hoe to kill a Baby Strider, a Bat, a Villager, an Iron Golem, and a Phantom, each named \"Offering\"",
+      "translate": "Use a Diamond Hoe to kill an Enderman, a Blaze, a Pillager, a Witch, and a Phantom, each named \"Offering\"",
       "color": "red"
     },
     "icon": {
@@ -130,17 +127,17 @@
   },
   "requirements": [
     [
-      "strider"
+      "enderman"
     ],
     [
-      "bat"
+      "blaze"
     ],
     [
-      "villager"
+      "pillager"
     ]
     ,
     [
-      "golem"
+      "witch"
     ]
     ,
     [

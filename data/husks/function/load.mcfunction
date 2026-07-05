@@ -26,6 +26,10 @@ scoreboard objectives add temp dummy temp
 scoreboard objectives add vars dummy vars
 scoreboard players set ticksperminute vars 1200
 scoreboard players set maxTimeAlive vars 8400000
+scoreboard players set timeMultiplier vars -84000
+scoreboard players set 100 vars 100
+scoreboard players set two vars 2
+
 
 team add HideNames
 team modify HideNames nametagVisibility never
@@ -47,4 +51,4 @@ team add husk
 team add living
 team modify husk color dark_purple
 
-scoreboard objectives add threw_xp_bottle minecraft.used:minecraft.experience_bottle
+function husks:advancement/advancementload

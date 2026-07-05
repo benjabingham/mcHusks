@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:husks/kill_husk",
+  "parent": "minecraft:husks/root",
   "criteria": {
     "killed_player": {
       "conditions": {

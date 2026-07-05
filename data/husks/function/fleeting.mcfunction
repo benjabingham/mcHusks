@@ -7,16 +7,16 @@ execute if score @s lifePercent matches 140.. run scoreboard players add @s time
 execute if score @s lifePercent matches 120.. run scoreboard players add @s timeAlive 60
 execute if score @s lifePercent matches 100.. run scoreboard players add @s timeAlive 40
 
-execute if score @s lifePercent matches 90..99 run scoreboard players add @s timeAlive 17
+execute if score @s lifePercent matches 90.. run scoreboard players add @s timeAlive 17
 execute if score @s lifePercent matches 80..89 run scoreboard players add @s timeAlive 16
 execute if score @s lifePercent matches 70..79 run scoreboard players add @s timeAlive 15
-execute if score @s lifePercent matches 60..69 run scoreboard players add @s timeAlive 10
-execute if score @s lifePercent matches 50..59 run scoreboard players add @s timeAlive 9
-execute if score @s lifePercent matches 40..49 run scoreboard players add @s timeAlive 8
-execute if score @s lifePercent matches 30..39 run scoreboard players add @s timeAlive 8
-execute if score @s lifePercent matches 20..29 run scoreboard players add @s timeAlive 7
+execute if score @s lifePercent matches 60..69 run scoreboard players add @s timeAlive 13
+execute if score @s lifePercent matches 50..59 run scoreboard players add @s timeAlive 11
+execute if score @s lifePercent matches 40..49 run scoreboard players add @s timeAlive 10
+execute if score @s lifePercent matches 30..39 run scoreboard players add @s timeAlive 9
+execute if score @s lifePercent matches 20..29 run scoreboard players add @s timeAlive 8
 execute if score @s lifePercent matches 10..19 run scoreboard players add @s timeAlive 7
-execute if score @s lifePercent matches ..9 run scoreboard players add @s timeAlive 5
+execute if score @s lifePercent matches ..9 run scoreboard players add @s timeAlive 6
 
 execute as @s[tag=husk] if score @s lifePercent matches 25.. run scoreboard players add @s timeAlive 10
 execute as @s[tag=husk] if score @s lifePercent matches 50.. run scoreboard players add @s timeAlive 150

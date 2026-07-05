@@ -1,15 +1,24 @@
 {
-  "parent": "minecraft:husks/kill_phantom_boss",
   "criteria": {
     "killed": {
       "conditions": {
-       
-        
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"cube-boss\"]}"
+            }
+          }
+        ]
       },
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:player_killed_entity"
     }
   },
   "display": {
+    "announce_to_chat": false,
+    "hidden": true,
+    "show_toast": false,
     "description": {
       "translate": "Kill The Corrupting Cube",
       "color": "red"
@@ -27,7 +36,7 @@
     ]
   ],
   "rewards": {
-    "function": "husks:gainsoulfree"
+    "function": "husks:advancement/killcube"
   },
   "sends_telemetry_event": true
 }

@@ -1,0 +1,3 @@
+scoreboard objectives add threw_xp_bottle minecraft.used:minecraft.experience_bottle
+
+scoreboard objectives add diamond_blocks_sacrificed dummy

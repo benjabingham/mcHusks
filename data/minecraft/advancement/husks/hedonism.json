@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:husks/afterlife",
+  "parent": "minecraft:husks/root",
   "criteria": {
     "high_life": {
       "trigger": "minecraft:impossible"

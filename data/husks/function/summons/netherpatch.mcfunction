@@ -1,4 +1,5 @@
-
+execute as @s at @s run fill ~-3 ~-100 ~-3 ~3 ~33 ~3 lava replace dead_brain_coral_block strict
+execute as @s at @s run fill ~-3 ~-100 ~-3 ~3 ~33 ~3 lava replace water strict
 
 execute as @s at @s run fill ~-3 ~-100 ~-3 ~3 ~33 ~3 fire replace #inside_step_sound_blocks
 execute as @s at @s run fill ~-3 ~-100 ~-3 ~3 ~33 ~3 fire replace #replaceable_by_trees
@@ -45,8 +46,6 @@ execute as @s at @s run fill ~-3 ~-100 ~-3 ~3 ~3 ~3 ancient_debris replace #diam
 
 
 
-
-execute as @s at @s run fill ~-3 ~-100 ~-3 ~3 ~33 ~3 lava replace dead_brain_coral_block strict
-execute as @s at @s run fill ~-3 ~-100 ~-3 ~3 ~33 ~3 lava replace water strict
+execute as @s at @s run execute as @e[distance=..3,type=!magma_cube] run function husks:summons/netherizemob
 
 

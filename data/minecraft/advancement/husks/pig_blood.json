@@ -1,0 +1,227 @@
+{
+  "parent": "minecraft:husks/kill_brute",
+  "criteria": {
+    "piglin": {
+      "conditions": {
+        "player": {
+          "minecraft:slots": {
+            "armor.head": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            },
+            "armor.chest": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            },
+            "armor.legs": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            },
+            "armor.feet": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            }
+          }
+        },
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:piglin"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },"brute": {
+      "conditions": {
+        "player": {
+          "minecraft:slots": {
+            "armor.head": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            },
+            "armor.chest": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            },
+            "armor.legs": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            },
+            "armor.feet": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            }
+          }
+        },
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:piglin_brute"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },"hoglin": {
+      "conditions": {
+        "player": {
+          "minecraft:slots": {
+            "armor.head": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            },
+            "armor.chest": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            },
+            "armor.legs": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            },
+            "armor.feet": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            }
+          }
+        },
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:hoglin"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },"zombie": {
+      "conditions": {
+        "player": {
+          "minecraft:slots": {
+            "armor.head": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            },
+            "armor.chest": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            },
+            "armor.legs": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            },
+            "armor.feet": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            }
+          }
+        },
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:zombified_piglin"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },"zoglin": {
+      "conditions": {
+        "player": {
+          "minecraft:slots": {
+            "armor.head": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            },
+            "armor.chest": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            },
+            "armor.legs": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            },
+            "armor.feet": {
+              "components": {
+                "minecraft:dyed_color": 11546150
+              }
+            }
+          }
+        },
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:zoglin"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Kill a Piglin, a Piglin Brute, a Zombified Piglin, a Hoglin, and a Zoglin while wearing full Leather Armor dyed red",
+      "color": "red"
+    },
+    "icon": {
+      "id": "minecraft:leather_helmet",
+      "components": {
+        "minecraft:dyed_color": 11546150
+      }
+    },
+    "title": {
+      "translate": "Drenched In Pig-Blood"
+    }
+  },
+  "requirements": [
+    [
+      "piglin"
+    ],
+    [
+      "brute"
+    ],
+    [
+      "zombie"
+    ],
+    [
+      "hoglin"
+    ],
+    [
+      "zoglin"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:gainsoul"
+  },
+  "sends_telemetry_event": true
+}

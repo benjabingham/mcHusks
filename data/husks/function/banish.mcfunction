@@ -13,7 +13,7 @@ effect give @s night_vision infinite 0 true
 effect give @s water_breathing infinite 0 false
 
 execute if score @s huskDeaths matches ..1 run attribute @s minecraft:max_health base set 26
-execute if score @s huskDeaths matches ..2 run effect give @s trial_omen infinite 0 true
+execute if score @s huskDeaths matches ..2 run effect give @s trial_omen 3600 0 true
 
 
 execute if score @s huskDeaths matches 3 run attribute @s minecraft:max_health base set 16

@@ -1,21 +1,19 @@
 {
-  "parent": "minecraft:husks/kill_a_lamb",
+  "parent": "minecraft:husks/kill_pigs",
   "criteria": {
-    "killed": {
+    "brute": {
       "conditions": {
-        "player": {
-          "minecraft:slots": {
-            "weapon.mainhand": {
-              "items": "minecraft:golden_sword"
-            }
-          }
-        },
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "nbt": "{Tags:[\"summoned\"]}"
+              "minecraft:entity_type": "minecraft:piglin_brute",
+              "minecraft:stepping_on": {
+                "block":{
+                  "blocks": "minecraft:gold_block"
+                }
+              }
             }
           }
         ]
@@ -25,23 +23,23 @@
   },
   "display": {
     "description": {
-      "translate": "Use a Golden Sword to kill a creature summoned by a Soul Ritual",
+      "translate": "Kill a Piglin Brute that is standing on a Gold Block",
       "color": "red"
     },
     "icon": {
-      "id": "minecraft:golden_sword"
+      "id": "minecraft:golden_axe"
     },
     "title": {
-      "translate": "Banishment"
+      "translate": "Axe And You Shall Receive"
     }
   },
   "requirements": [
     [
-      "killed"
+      "brute"
     ]
   ],
   "rewards": {
-    "function": "husks:gainsoulfree"
+    "function": "husks:gainsoul"
   },
   "sends_telemetry_event": true
 }
