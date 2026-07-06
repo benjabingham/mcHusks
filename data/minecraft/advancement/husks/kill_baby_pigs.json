@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "piglin": {
+      "conditions": {
+      
+      },
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "hidden":true,
+    "description": {
+      "translate": "Ignite a BabyasdasdasdasdPiglin, then kill it with a Gold Sword",
+      "color": "red"
+    },
+    "icon": {
+      "id": "minecraft:cooked_porkchop"
+    },
+    "title": {
+      "translate": "Piglet Roast"
+    }
+  },
+  "requirements": [
+    [
+      "piglin"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:gainsoul"
+  },
+  "sends_telemetry_event": true
+}
