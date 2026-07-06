@@ -3,12 +3,12 @@
   "criteria": {
     "tame": {
       "conditions": {
-        "entity": [
+       "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              
+              "minecraft:entity_type": "minecraft:zombie_horse"
             }
           }
         ]
@@ -17,15 +17,15 @@
     }
   },
   "display": {
+    "frame": "challenge",
     "description": {
-      "translate": "Tame an animal",
-      "color": "blue"
+      "translate": "Tame a Zombie Horse"
     },
     "icon": {
-      "id": "minecraft:lead"
+      "id": "minecraft:rotten_flesh"
     },
     "title": {
-      "translate": "Best Friends Forever"
+      "translate": "Bad Horse"
     }
   },
   "requirements": [
@@ -34,7 +34,7 @@
     ]
 ],
 "rewards": {
-    "function": "husks:extendlife"
+    "function": "husks:extendlifeextra"
 },
   "sends_telemetry_event": true
 }

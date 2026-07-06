@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "consumed_item": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "block/melon_side",
+    "description": {
+      "translate": "Eat it all"
+    },
+    "icon": {
+      "id": "minecraft:apple"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "Tastes"
+    }
+  },
+  "requirements": [
+    [
+      "consumed_item"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

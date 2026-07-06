@@ -1,0 +1,33 @@
+{
+  "parent": "tastes/tropical",
+  "criteria": {
+    "eat": {
+      "conditions": {
+       "item": {
+          "items": "minecraft:pufferfish"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Eat a Pufferfish"
+    },
+    "icon": {
+      "id": "minecraft:pufferfish"
+    },
+    "title": {
+      "translate": "Did I Prepare This Right?"
+    }
+  },
+  "requirements": [
+    [
+      "eat"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlifeless"
+  },
+  "sends_telemetry_event": true
+}

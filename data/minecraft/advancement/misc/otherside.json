@@ -1,0 +1,45 @@
+{
+  "parent": "misc/cat",
+  "criteria": {
+    "listen": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "jukebox"
+                ]
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:music_disc_otherside"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Listen to the Otherside music disc"
+    },
+    "icon": {
+      "id": "minecraft:music_disc_otherside"
+    },
+    "title": {
+      "translate": "Take A Walk On The Other Side"
+    }
+  },
+  "rewards": {
+    "function": "husks:extendlifeless"
+  },
+  "sends_telemetry_event": true
+}

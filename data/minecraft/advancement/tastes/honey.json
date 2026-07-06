@@ -1,0 +1,33 @@
+{
+  "parent": "tastes/1_root",
+  "criteria": {
+    "eat": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:honey_bottle"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Eat some Honey"
+    },
+    "icon": {
+      "id": "minecraft:honey_bottle"
+    },
+    "title": {
+      "translate": "Oh, Bother"
+    }
+  },
+  "requirements": [
+    [
+      "eat"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlifeless"
+  },
+  "sends_telemetry_event": true
+}

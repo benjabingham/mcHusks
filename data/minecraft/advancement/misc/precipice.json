@@ -1,0 +1,45 @@
+{
+  "parent": "misc/bounce",
+  "criteria": {
+    "listen": {
+      "conditions": {
+       "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "jukebox"
+                ]
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:music_disc_precipice"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Listen to the Precipice music disc"
+    },
+    "icon": {
+      "id": "minecraft:music_disc_precipice"
+    },
+    "title": {
+      "translate": "On The Precipice"
+    }
+  },
+  "rewards": {
+    "function": "husks:extendlifeless"
+  },
+  "sends_telemetry_event": true
+}

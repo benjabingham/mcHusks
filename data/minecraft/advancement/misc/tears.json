@@ -1,0 +1,45 @@
+{
+  "parent": "misc/play_jukebox_in_meadow",
+  "criteria": {
+    "listen": {
+      "conditions": {
+       "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "jukebox"
+                ]
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:music_disc_tears"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Listen to the Tears music disc"
+    },
+    "icon": {
+      "id": "minecraft:music_disc_tears"
+    },
+    "title": {
+      "translate": "Feel something"
+    }
+  },
+  "rewards": {
+    "function": "husks:extendlifeless"
+  },
+  "sends_telemetry_event": true
+}

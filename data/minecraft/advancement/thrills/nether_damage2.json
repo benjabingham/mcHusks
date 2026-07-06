@@ -1,0 +1,75 @@
+{
+  "parent": "thrills/nether_damage",
+  "criteria": {
+    "enderman": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "minecraft:entity_type": "minecraft:enderman"
+          }
+        }
+      }
+    },
+    "hoglin": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "minecraft:entity_type": "minecraft:hoglin"
+          }
+        }
+      }
+    },
+    "brute": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "minecraft:entity_type": "minecraft:piglin_brute"
+          }
+        }
+      }
+    },
+    "wither": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "minecraft:entity_type": "minecraft:wither_skeleton"
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "frame": "challenge",
+    "description": {
+      "translate": "Receive damage from a Wither Skeleton, an Enderman, a Piglin Brute, and a Hoglin"
+    },
+    "icon": {
+      "id": "minecraft:wither_skeleton_skull"
+    },
+    "title": {
+      "translate": "Nether Tussler II"
+    }
+  },
+  "requirements": [
+    [
+      "hoglin"
+    ],
+    [
+      "brute"
+    ],
+    [
+      "enderman"
+    ],
+    [
+      "wither"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlifeextra"
+  },
+  "sends_telemetry_event": true
+}

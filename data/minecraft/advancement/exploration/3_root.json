@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "consumed_item": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "block/stripped_bamboo_block",
+    "description": {
+      "translate": "Travel far and wide"
+    },
+    "icon": {
+      "id": "minecraft:leather_boots"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "Exploration"
+    }
+  },
+  "requirements": [
+    [
+      "consumed_item"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

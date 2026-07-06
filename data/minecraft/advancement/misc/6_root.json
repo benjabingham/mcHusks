@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "consumed_item": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "block/stone",
+    "description": {
+      "translate": "Other stuff"
+    },
+    "icon": {
+      "id": "minecraft:diamond"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "Misc"
+    }
+  },
+  "requirements": [
+    [
+      "consumed_item"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

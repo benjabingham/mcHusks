@@ -1,0 +1,33 @@
+{
+  "parent": "tastes/1_root",
+  "criteria": {
+    "eat": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:cookie"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Eat a Cookie"
+    },
+    "icon": {
+      "id": "minecraft:cookie"
+    },
+    "title": {
+      "translate": "Yummy Treat"
+    }
+  },
+  "requirements": [
+    [
+      "eat"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlifeless"
+  },
+  "sends_telemetry_event": true
+}

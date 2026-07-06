@@ -1,40 +1,44 @@
 {
-  "parent": "minecraft:husbandry/2_root",   
+  "parent": "minecraft:exploration/3_root",
   "criteria": {
-    "tame": {
+    "visit": {
       "conditions": {
-        "entity": [
+        
+        "player": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
+            
             "predicate": {
-              
+                "minecraft:location": {
+                "biomes": "minecraft:cherry_grove"
+              }
             }
           }
         ]
       },
-      "trigger": "minecraft:tame_animal"
+      "trigger": "minecraft:slept_in_bed"
     }
   },
   "display": {
     "description": {
-      "translate": "Tame an animal",
+      "translate": "Sleep in a bed in a Cherry Grove",
       "color": "blue"
     },
     "icon": {
-      "id": "minecraft:lead"
+      "id": "minecraft:cherry_sapling"
     },
     "title": {
-      "translate": "Best Friends Forever"
+      "translate": "Ryokan"
     }
   },
   "requirements": [
     [
-      "tame"
+      "visit"
     ]
-],
-"rewards": {
+  ],
+  "rewards": {
     "function": "husks:extendlife"
-},
+  },
   "sends_telemetry_event": true
 }

@@ -1,0 +1,68 @@
+{
+  "parent": "tastes/fruits_veggies",
+  "criteria": {
+    "sus": {
+      "conditions": {
+       "item": {
+          "items": "minecraft:suspicious_stew"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "rabbit": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:rabbit_stew"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "beetroot": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:beetroot_soup"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "mushroom": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:mushroom_stew"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  
+  "display": {
+    "description": {
+      "translate": "Eat Suspicious Stew, Rabbit Stew, Mushroom Stew, and Beetroot Soup",
+      "color": "blue"
+    },
+    "icon": {
+      "id": "minecraft:suspicious_stew"
+    },
+    "title": {
+      "translate": "Stewie Griffin"
+    }
+  },
+  "requirements": [
+    [
+      "sus"
+    ],
+    [
+      "rabbit"
+    ],
+    [
+      "beetroot"
+    ],
+    [
+      "mushroom"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

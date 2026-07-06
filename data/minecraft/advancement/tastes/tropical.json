@@ -1,0 +1,33 @@
+{
+  "parent": "tastes/seafood",
+  "criteria": {
+    "eat": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:tropical_fish"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Eat a Tropical Fish"
+    },
+    "icon": {
+      "id": "minecraft:tropical_fish"
+    },
+    "title": {
+      "translate": "Finding Nemo"
+    }
+  },
+  "requirements": [
+    [
+      "eat"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlifeless"
+  },
+  "sends_telemetry_event": true
+}

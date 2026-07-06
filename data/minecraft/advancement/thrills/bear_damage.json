@@ -1,0 +1,49 @@
+{
+  "parent": "thrills/sting_damage",
+  "criteria": {
+    "polar": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "minecraft:entity_type": "minecraft:polar_bear"
+          }
+        }
+      }
+    },
+    "panda": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "minecraft:entity_type": "minecraft:panda"
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Receive damage from a Polar Bear and a Panda",
+      "color": "blue"
+    },
+    "icon": {
+      "id": "minecraft:bamboo_block"
+    },
+    "title": {
+      "translate": "Bear Wrestler"
+    }
+  },
+  "requirements": [
+    [
+      "polar"
+    ],
+    [
+      "panda"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "tastes/gcarrot",
+  "criteria": {
+    "eat": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:golden_apple"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Eat a Golden Apple",
+      "color": "blue"
+    },
+    "icon": {
+      "id": "minecraft:golden_apple"
+    },
+    "title": {
+      "translate": "Crassus In Eden"
+    }
+  },
+  "requirements": [
+    [
+      "eat"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

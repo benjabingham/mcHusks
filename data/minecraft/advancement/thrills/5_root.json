@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "consumed_item": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "block/mossy_stone_bricks",
+    "description": {
+      "translate": "Risk your life"
+    },
+    "icon": {
+      "id": "minecraft:iron_sword"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "Thrills"
+    }
+  },
+  "requirements": [
+    [
+      "consumed_item"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

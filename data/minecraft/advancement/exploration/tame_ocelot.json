@@ -1,31 +1,36 @@
 {
-  "parent": "minecraft:husbandry/2_root",   
+  "parent": "exploration/3_root",
   "criteria": {
     "tame": {
       "conditions": {
+        "player": {
+            "minecraft:location": {
+              "biomes": "jungle"
+            }
+        },
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              
+              "minecraft:entity_type": "minecraft:ocelot"
             }
           }
         ]
       },
-      "trigger": "minecraft:tame_animal"
+      "trigger": "minecraft:player_interacted_with_entity"
     }
   },
   "display": {
     "description": {
-      "translate": "Tame an animal",
+      "translate": "Feed an ocelot in a Jungle",
       "color": "blue"
     },
     "icon": {
-      "id": "minecraft:lead"
+      "id": "minecraft:salmon"
     },
     "title": {
-      "translate": "Best Friends Forever"
+      "translate": "Acquaintances"
     }
   },
   "requirements": [

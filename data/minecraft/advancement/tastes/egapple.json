@@ -1,0 +1,35 @@
+{
+  "parent": "tastes/gapple",
+  "criteria": {
+    "eat": {
+        
+      "conditions": {
+        "item": {
+          "items": "minecraft:enchanted_golden_apple"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "frame": "challenge",
+    "description": {
+      "translate": "Eat an Enchanted Golden Apple"
+    },
+    "icon": {
+      "id": "minecraft:enchanted_golden_apple"
+    },
+    "title": {
+      "translate": "Ambrosia"
+    }
+  },
+  "requirements": [
+    [
+      "eat"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlifeextra"
+  },
+  "sends_telemetry_event": true
+}

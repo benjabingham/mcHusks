@@ -1,0 +1,101 @@
+{
+  "parent": "tastes/carnivore",
+  "criteria": {
+    "chop": {
+      "conditions": {
+       "item": {
+          "items": "minecraft:porkchop"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "rabbit": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:rabbit"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "steak": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:beef"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "mutton": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:mutton"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "chicken": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:chicken"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "flesh": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:rotten_flesh"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "spider": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:spider_eye"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  
+  "display": {
+    "description": {
+      "translate": "Eat Raw Porkchop, Raw Beef, Raw Mutton, Raw Chicken Raw Rabbit, Spider Eye, and Rotten Flesh",
+      "color": "blue"
+    },
+    "icon": {
+      "id": "minecraft:chicken"
+    },
+    "title": {
+      "translate": "Raw Diet"
+    }
+  },
+  "requirements": [
+    [
+      "steak"
+    ],
+    [
+      "rabbit"
+    ],
+    [
+      "chicken"
+    ],
+    [
+      "mutton"
+    ],
+    [
+      "chop"
+    ],
+    [
+      "flesh"
+    ],
+    [
+      "spider"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

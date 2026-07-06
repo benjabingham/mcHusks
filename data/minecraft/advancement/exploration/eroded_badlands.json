@@ -1,40 +1,42 @@
 {
-  "parent": "minecraft:husbandry/2_root",   
+  "parent": "3_exploration/mountain_climber",
   "criteria": {
-    "tame": {
+    "visit": {
       "conditions": {
-        "entity": [
+        "player": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              
+                "minecraft:location": {
+                "biomes": "minecraft:eroded_badlands"
+              }
             }
           }
         ]
       },
-      "trigger": "minecraft:tame_animal"
+      "trigger": "minecraft:location"
     }
   },
   "display": {
     "description": {
-      "translate": "Tame an animal",
+      "translate": "Visit the Eroded Badlands",
       "color": "blue"
     },
     "icon": {
-      "id": "minecraft:lead"
+      "id": "minecraft:orange_terracotta"
     },
     "title": {
-      "translate": "Best Friends Forever"
+      "translate": "Grand Canyon"
     }
   },
   "requirements": [
     [
-      "tame"
+      "visit"
     ]
-],
-"rewards": {
+  ],
+  "rewards": {
     "function": "husks:extendlife"
-},
+  },
   "sends_telemetry_event": true
 }

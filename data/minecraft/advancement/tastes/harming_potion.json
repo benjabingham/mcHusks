@@ -1,0 +1,37 @@
+{
+  "parent": "tastes/health_potion",
+  "criteria": {
+    "eat": {
+      "conditions": {
+       "item": {
+          "items": "minecraft:potion",
+          "components": {
+            "minecraft:potion_contents": "minecraft:strong_harming"
+          }
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Drink a Potion of Strong Harming"
+    },
+    "icon": {
+      "id": "minecraft:potion",
+      "components": {"minecraft:potion_contents": "minecraft:harming"}
+    },
+    "title": {
+      "translate": "Bone Hurting Juice"
+    }
+  },
+  "requirements": [
+    [
+      "eat"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlifeless"
+  },
+  "sends_telemetry_event": true
+}

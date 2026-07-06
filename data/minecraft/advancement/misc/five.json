@@ -1,0 +1,45 @@
+{
+  "parent": "misc/pigstep",
+  "criteria": {
+    "listen": {
+      "conditions": {
+       "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "jukebox"
+                ]
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:music_disc_5"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Listen to the 5 music disc"
+    },
+    "icon": {
+      "id": "minecraft:music_disc_5"
+    },
+    "title": {
+      "translate": "Found Footage"
+    }
+  },
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

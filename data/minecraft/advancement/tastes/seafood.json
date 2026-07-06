@@ -1,0 +1,79 @@
+{
+  "parent": "tastes/1_root",
+  "criteria": {
+    "raw_cod": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:cod"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "cod": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:cooked_cod"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "raw_salmon": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:salmon"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "salmon": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:cooked_salmon"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "kelp": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:kelp"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  
+  "display": {
+    "description": {
+      "translate": "Eat Raw Salmon, Cooked Salmon, Raw Cod, Cooked Cod, and Dried Kelp",
+      "color": "blue"
+    },
+    "icon": {
+      "id": "minecraft:salmon"
+    },
+    "title": {
+      "translate": "See Food Diet"
+    }
+  },
+  "requirements": [
+    [
+      "salmon"
+    ],
+    [
+      "raw_salmon"
+    ],
+    [
+      "cod"
+    ],
+    [
+      "raw_cod"
+    ],
+    [
+      "kelp"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

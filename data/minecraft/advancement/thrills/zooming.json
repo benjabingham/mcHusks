@@ -1,40 +1,44 @@
 {
-  "parent": "minecraft:husbandry/2_root",   
+  "parent": "thrills/freefall",
   "criteria": {
-    "tame": {
+    "terminal": {
+      "trigger": "minecraft:tick",
       "conditions": {
-        "entity": [
+        "player": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              
+              "movement": {
+                "horizontal_speed": {
+                  "min": 30
+                }
+              }
             }
           }
         ]
-      },
-      "trigger": "minecraft:tame_animal"
+      }
     }
   },
   "display": {
     "description": {
-      "translate": "Tame an animal",
+      "translate": "Achieve a horizontal velocity of 30 m/s",
       "color": "blue"
     },
     "icon": {
-      "id": "minecraft:lead"
+      "id": "minecraft:blaze_powder"
     },
     "title": {
-      "translate": "Best Friends Forever"
+      "translate": "Need For Speed"
     }
   },
   "requirements": [
     [
-      "tame"
+      "terminal"
     ]
-],
-"rewards": {
+  ],
+  "rewards": {
     "function": "husks:extendlife"
-},
+  },
   "sends_telemetry_event": true
 }

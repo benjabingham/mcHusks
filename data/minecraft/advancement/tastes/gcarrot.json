@@ -1,0 +1,33 @@
+{
+  "parent": "tastes/1_root",
+  "criteria": {
+    "eat": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:golden_carrot"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Eat a Golden Carrot"
+    },
+    "icon": {
+      "id": "minecraft:golden_carrot"
+    },
+    "title": {
+      "translate": "24 Karat"
+    }
+  },
+  "requirements": [
+    [
+      "eat"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlifeless"
+  },
+  "sends_telemetry_event": true
+}
