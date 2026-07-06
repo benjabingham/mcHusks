@@ -31,12 +31,7 @@
     },
     "icon": {
       "components": {
-        "minecraft:pot_decorations": [
-          "minecraft:brick",
-          "minecraft:heart_pottery_sherd",
-          "minecraft:brick",
-          "minecraft:explorer_pottery_sherd"
-        ]
+       
       },
       "id": "minecraft:decorated_pot"
     },

@@ -1,6 +1,6 @@
 execute as @a if score @s currentHealth matches 1 run advancement grant @s only living/half_heart
 
-execute as @a if score @s threw_xp_bottle matches 1.. run advancement grant @s only living/exp_bottle
+execute as @a if score @s threw_xp_bottle matches 1.. run advancement grant @s only misc/exp_bottle
 execute as @a if score @s threw_xp_bottle matches 1.. run scoreboard players set @s threw_xp_bottle 0
 
 #this can be optimized by only looking for diamonds within a block of the player, and adding a "thrown-diamonds" tag
