@@ -1,0 +1,33 @@
+{
+
+  "criteria": {
+    "breed": {
+      
+      "trigger": "bred_animals"
+    }
+  },
+  "requirements": [
+    [
+      "breed"
+    ]
+  ],
+  "display": {
+    "announce_to_chat": false,
+    "hidden": true,
+    "show_toast": false,
+    "description": {
+      "translate": "null",
+      "color": "red"
+    },
+    "icon": {
+      "id": "minecraft:magma_cream"
+    },
+    "title": {
+      "translate": "null"
+    }
+  },
+  "rewards": {
+    "function": "husks:advancement/breedanimal"
+  },
+  "sends_telemetry_event": true
+}

@@ -2,17 +2,10 @@
   "parent": "exploration/warm_ocean",
   "criteria": {
     "buried_treasure": {
+      "trigger": "minecraft:player_generates_container_loot",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "structures": "minecraft:buried_treasure"
-            }
-          }
-        ]
-      },
-      "trigger": "minecraft:any_block_use"
+        "loot_table": "minecraft:chests/buried_treasure"
+      }
     }
   },
   "display": {

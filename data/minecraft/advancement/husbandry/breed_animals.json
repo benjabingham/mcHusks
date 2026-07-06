@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:husbandry/make_purple",
+  "criteria": {
+    "breed": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Breed 50 animals"
+    },
+    "icon": {
+      "id": "minecraft:wheat"
+    },
+    "title": {
+      "translate": "Breeder"
+    }
+  },
+  "requirements": [
+    [
+      "breed"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlifeless"
+  },
+  "sends_telemetry_event": true
+}

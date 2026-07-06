@@ -1,0 +1,71 @@
+{
+  "parent": "thrills/5_root",
+  "criteria": {
+    "blaze": {
+     "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "minecraft:entity_type": "minecraft:blaze"
+
+        }
+      }
+    },
+    "magma": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "minecraft:entity_type": "minecraft:magma_cube"
+
+        }
+      }
+    },
+    "ghast": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "minecraft:entity_type": "minecraft:ghast"
+
+        }
+      }
+    },
+    "ziglin": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "minecraft:entity_type": "minecraft:zombified_piglin"
+
+        }
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Kill a Blaze, a Ghast, a Zombified Piglin, and a Magma Cube",
+      "color": "blue"
+    },
+    "icon": {
+      "id": "minecraft:blaze_rod"
+    },
+    "title": {
+      "translate": "Nether Hunter"
+    }
+  },
+  "requirements": [
+    [
+      "ziglin"
+    ],
+    [
+      "ghast"
+    ],
+    [
+      "magma"
+    ],
+    [
+      "blaze"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

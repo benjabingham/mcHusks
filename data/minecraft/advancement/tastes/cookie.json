@@ -4,7 +4,7 @@
     "eat": {
       "conditions": {
         "item": {
-          "items": "minecraft:cookie"
+          "items": "#husks:sweets"
         }
       },
       "trigger": "minecraft:consume_item"

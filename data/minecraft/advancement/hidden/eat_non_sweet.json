@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "eat": {
+      "conditions": {
+        "item": {
+          "items": "#husks:non_sweets"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "requirements": [
+    [
+      "eat"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:advancement/eatnonsweet"
+  },
+  "sends_telemetry_event": true
+}

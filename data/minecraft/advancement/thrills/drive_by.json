@@ -1,0 +1,48 @@
+{
+  "parent": "thrills/overkill",
+  "criteria": {
+    "terminal": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "minecraft:entity_type": "#skeletons"
+
+        },
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "movement": {
+                "speed": {
+                  "min": 50
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "frame":"challenge",
+    "description": {
+      "translate": "Kill a Skeleton while traveling at 50 m/s or faster"
+    },
+    "icon": {
+      "id": "minecraft:iron_spear"
+    },
+    "title": {
+      "translate": "Drive-by"
+    }
+  },
+  "requirements": [
+    [
+      "terminal"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlifeextra"
+  },
+  "sends_telemetry_event": true
+}

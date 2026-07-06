@@ -8,7 +8,7 @@
     "announce_to_chat": false,
     "background": "minecraft:gui/advancements/backgrounds/husbandry",
     "description": {
-      "translate": "advancements.husbandry.root.description"
+      "translate": "Cultivate life"
     },
     "icon": {
       "id": "minecraft:hay_block"

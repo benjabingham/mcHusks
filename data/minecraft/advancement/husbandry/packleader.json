@@ -1,0 +1,74 @@
+{
+  "parent": "minecraft:husbandry/tame_animal",   
+  "criteria": {
+    "cat": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "entity_type": "cat"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tame_animal"
+    },
+    "dog": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "entity_type": "wolf"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tame_animal"
+    },
+    "horse": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "entity_type": "horse"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tame_animal"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Tame a Cat, a Wolf, and a Horse",
+      "color": "blue"
+    },
+    "icon": {
+      "id": "minecraft:bone"
+    },
+    "title": {
+      "translate": "Packleader"
+    }
+  },
+  "requirements": [
+    [
+      "cat"
+    ],
+    [
+      "dog"
+    ],
+    [
+      "horse"
+    ]
+],
+"rewards": {
+    "function": "husks:extendlife"
+},
+  "sends_telemetry_event": true
+}

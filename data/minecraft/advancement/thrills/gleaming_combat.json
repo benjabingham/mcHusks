@@ -1,0 +1,63 @@
+{
+  "parent": "thrills/kill_golden",
+  "criteria": {
+    "golden": {
+     "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "minecraft:slots": {
+            "armor.head": {
+              "items": "minecraft:golden_helmet"
+            },
+            "armor.chest": {
+              "items": "minecraft:golden_chestplate"
+            },
+            "armor.legs": {
+              "items": "minecraft:golden_leggings"
+            },
+            "armor.feet": {
+              "items": "minecraft:golden_boots"
+            }
+          }
+        },
+        "player": {
+          "minecraft:slots": {
+            "armor.head": {
+              "items": "minecraft:golden_helmet"
+            },
+            "armor.chest": {
+              "items": "minecraft:golden_chestplate"
+            },
+            "armor.legs": {
+              "items": "minecraft:golden_leggings"
+            },
+            "armor.feet": {
+              "items": "minecraft:golden_boots"
+            }
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "frame":"challenge",
+    "description": {
+      "translate": "Kill a monster while both you and the monster are wearing full Golden Armor"
+    },
+    "icon": {
+      "id": "golden_chestplate"
+    },
+    "title": {
+      "translate": "Gleaming Combat"
+    }
+  },
+  "requirements": [
+    [
+      "golden"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlifeextra"
+  },
+  "sends_telemetry_event": true
+}

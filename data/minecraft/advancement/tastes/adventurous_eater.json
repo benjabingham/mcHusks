@@ -1,24 +1,25 @@
 {
-  "parent": "tastes/tropical",
+  "parent": "tastes/stew",
   "criteria": {
     "eat": {
       "conditions": {
-       "item": {
-          "items": "minecraft:pufferfish"
+        "item": {
+          "items": "minecraft:tropical_fish"
         }
       },
       "trigger": "minecraft:consume_item"
     }
   },
   "display": {
+    "frame":"challenge",
     "description": {
-      "translate": "Eat a Pufferfish"
+      "translate": "Eat a Tropical Fish, a Pufferfish, a Spider Eye, a Poisonous Potato, Rotten Flesh, and Suspicious Stew"
     },
     "icon": {
       "id": "minecraft:pufferfish"
     },
     "title": {
-      "translate": "Did I Prepare This Right?"
+      "translate": "Adventurous Eater"
     }
   },
   "requirements": [
@@ -27,7 +28,7 @@
     ]
   ],
   "rewards": {
-    "function": "husks:extendlifeless"
+    "function": "husks:extendlifeextra"
   },
   "sends_telemetry_event": true
 }

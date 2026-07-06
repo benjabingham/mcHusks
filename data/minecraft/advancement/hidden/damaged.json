@@ -1,0 +1,37 @@
+{
+  "parent": "thrills/5_root",
+  "criteria": {
+    "damaged": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+       "damage": {
+          "dealt": {
+            "min": 4
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "show_toast":false,
+    "hidden":true,
+    "announce_to_chat":false,
+    "description": {
+      "translate": "null"    },
+    "icon": {
+      "id": "minecraft:skeleton_skull"
+    },
+    "title": {
+      "translate": "took damage"
+    }
+  },
+  "requirements": [
+    [
+      "damaged"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:advancement/takedamage"
+  },
+  "sends_telemetry_event": true
+}

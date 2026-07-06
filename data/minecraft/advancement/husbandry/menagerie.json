@@ -1,0 +1,74 @@
+{
+  "parent": "minecraft:husbandry/packleader",   
+  "criteria": {
+    "parrot": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "entity_type": "parrot"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tame_animal"
+    },
+    "trader": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "entity_type": "trader_llama"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tame_animal"
+    },
+    "skorse": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "entity_type": "skeleton_horse"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tame_animal"
+    }
+  },
+  "display": {
+    "frame":"challenge",
+    "description": {
+      "translate": "Tame a Parrot, a Trader Llama, and a Skeleton Horse"
+    },
+    "icon": {
+      "id": "minecraft:parrot_spawn_egg"
+    },
+    "title": {
+      "translate": "Packleader"
+    }
+  },
+  "requirements": [
+    [
+      "parrot"
+    ],
+    [
+      "trader"
+    ],
+    [
+      "skorse"
+    ]
+],
+"rewards": {
+    "function": "husks:extendlifeextra"
+},
+  "sends_telemetry_event": true
+}

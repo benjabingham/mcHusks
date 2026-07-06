@@ -1,20 +1,20 @@
 {
-  "parent": "thrills/monster_damage",
+  "parent": "thrills/half_heart",
   "criteria": {
     "damage": {
       "trigger": "minecraft:impossible"
     }
   },
   "display": {
+    "frame":"challenge",
     "description": {
-      "translate": "Half a heart is left but don't die die die, die die die die",
-      "color": "blue"
+      "translate": "Be dangerously close to death 20 times"
     },
     "icon": {
-      "id": "minecraft:heart_pottery_sherd"
+      "id": "minecraft:skull_pottery_sherd"
     },
     "title": {
-      "translate": "Near Death Experience"
+      "translate": "Dance With Death"
     }
   },
   "requirements": [
@@ -23,7 +23,7 @@
     ]
   ],
   "rewards": {
-    "function": "husks:extendlife"
+    "function": "husks:extendlifeextra"
   },
   "sends_telemetry_event": true
 }

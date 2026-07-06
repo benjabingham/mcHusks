@@ -1,6 +1,13 @@
 {
-  "parent": "tastes/cookie",
   "criteria": {
+    "eat": {
+      "conditions": {
+        "item": {
+          "items": "#husks:animal_products"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
     "cake": {
       "conditions": {
          "location": [
@@ -8,13 +15,7 @@
             "condition": "minecraft:location_check",
             "predicate": {
               "block": {
-                "blocks": "minecraft:cake",
-                "state": {
-                  "bites": {
-                    "min": "6",
-                    "max": "6"
-                  }
-                }
+                "blocks": "minecraft:cake"
               }
             }
           }
@@ -24,24 +25,27 @@
     }
   },
   "display": {
+    "announce_to_chat": false,
+    "hidden": true,
+    "show_toast": false,
     "description": {
-      "translate": "Eat the second to last slice of a Cake",
-      "color":"blue"
+      "translate": "null",
+      "color": "red"
     },
     "icon": {
-      "id": "minecraft:cake"
+      "id": "minecraft:magma_cream"
     },
     "title": {
-      "translate": "I couldn't possibly have any more..."
+      "translate": "null"
     }
   },
   "requirements": [
     [
-      "cake"
+      "eat","cake"
     ]
   ],
   "rewards": {
-    "function": "husks:extendlife"
+    "function": "husks:advancement/eatanimalproduct"
   },
   "sends_telemetry_event": true
 }

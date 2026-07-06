@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:husbandry/2_root",   
+  "parent": "minecraft:husbandry/packleader",   
   "criteria": {
     "tame": {
       "conditions": {

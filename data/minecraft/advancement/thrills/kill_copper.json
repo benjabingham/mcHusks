@@ -1,0 +1,46 @@
+{
+  "parent": "thrills/5_root",
+  "criteria": {
+    "copper": {
+     "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "minecraft:slots": {
+            "armor.head": {
+              "items": "minecraft:copper_helmet"
+            },
+            "armor.chest": {
+              "items": "minecraft:copper_chestplate"
+            },
+            "armor.legs": {
+              "items": "minecraft:copper_leggings"
+            },
+            "armor.feet": {
+              "items": "minecraft:copper_boots"
+            }
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Kill a monster that is wearing full Copper Armor"
+    },
+    "icon": {
+      "id": "copper_helmet"
+    },
+    "title": {
+      "translate": "Knightslayer"
+    }
+  },
+  "requirements": [
+    [
+      "copper"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlifeless"
+  },
+  "sends_telemetry_event": true
+}

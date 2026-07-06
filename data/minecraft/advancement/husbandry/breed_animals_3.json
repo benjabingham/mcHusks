@@ -1,29 +1,25 @@
 {
-  "parent": "tastes/carnivore",
+  "parent": "minecraft:husbandry/breed_animals_2",
   "criteria": {
-    "time": {
-      "conditions": {
-        
-      },
+    "breed": {
       "trigger": "minecraft:impossible"
     }
   },
-  
   "display": {
-    "frame": "challenge",
+    "frame":"challenge",
     "description": {
-      "translate": "Eat only raw meat and raw fish for 5 days"
+      "translate": "Breed 250 animals"
     },
     "icon": {
-      "id": "minecraft:chicken"
+      "id": "minecraft:golden_carrot"
     },
     "title": {
-      "translate": "Raw Diet"
+      "translate": "Master Breeder"
     }
   },
   "requirements": [
     [
-      "time"
+      "breed"
     ]
   ],
   "rewards": {

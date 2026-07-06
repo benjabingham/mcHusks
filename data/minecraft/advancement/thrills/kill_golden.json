@@ -1,0 +1,47 @@
+{
+  "parent": "thrills/kill_copper",
+  "criteria": {
+    "golden": {
+     "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "minecraft:slots": {
+            "armor.head": {
+              "items": "minecraft:golden_helmet"
+            },
+            "armor.chest": {
+              "items": "minecraft:golden_chestplate"
+            },
+            "armor.legs": {
+              "items": "minecraft:golden_leggings"
+            },
+            "armor.feet": {
+              "items": "minecraft:golden_boots"
+            }
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Kill a monster that is wearing full Golden Armor",
+      "color": "blue"
+    },
+    "icon": {
+      "id": "golden_helmet"
+    },
+    "title": {
+      "translate": "King No More"
+    }
+  },
+  "requirements": [
+    [
+      "golden"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

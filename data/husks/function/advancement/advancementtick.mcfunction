@@ -1,4 +1,9 @@
-execute as @a if score @s currentHealth matches 1 run advancement grant @s only living/half_heart
+execute as @a if score @s currentHealth matches 1 run advancement grant @s only thrills/half_heart
+
+execute as @a if score @s damaged matches 1 run execute as @s if score @s currentHealth matches ..6 run scoreboard players add @s times_damaged_low 1
+
+execute as @a if score @s times_damaged_low matches 20.. run advancement grant @s only thrills/low_health_often
+execute as @a if score @s damaged matches 1.. run scoreboard players set @s damaged 0
 
 execute as @a if score @s threw_xp_bottle matches 1.. run advancement grant @s only misc/exp_bottle
 execute as @a if score @s threw_xp_bottle matches 1.. run scoreboard players set @s threw_xp_bottle 0
@@ -20,5 +25,12 @@ execute as @a if score @s diamond_blocks_sacrificed matches 9 run advancement gr
 execute as @a if score @s diamond_blocks_sacrificed matches 10.. run advancement grant @s only husks/sacrifice_diamonds
 execute as @a if score @s diamond_blocks_sacrificed matches 10.. run scoreboard players set @s diamond_blocks_sacrificed 0
 
+scoreboard players add @a time_since_animal_product 1
+scoreboard players add @a time_since_non_raw 1
+scoreboard players add @a time_since_non_sweet 1
 
+execute as @a if score @s time_since_animal_product matches 120000 run advancement grant @s only tastes/vegan
+execute as @a if score @s time_since_non_raw matches 120000 run advancement grant @s only tastes/raw_diet
+execute as @a if score @s time_since_non_sweet matches 120000 run advancement grant @s only tastes/sweets_only
 
+execute as @a if score @s creepers_killed matches 20.. run advancement grant @s only thrills/creeper_hunter

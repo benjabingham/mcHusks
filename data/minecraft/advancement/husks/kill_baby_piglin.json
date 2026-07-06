@@ -15,7 +15,14 @@
               }
             }
           }
-        ]
+        ],
+        "player": {
+          "minecraft:slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:golden_sword"
+            }
+          }
+        }
       },
       "trigger": "minecraft:player_killed_entity"
     }

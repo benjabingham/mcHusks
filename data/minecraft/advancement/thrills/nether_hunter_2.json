@@ -1,0 +1,71 @@
+{
+  "parent": "thrills/nether_hunter",
+  "criteria": {
+    "enderman": {
+     "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "minecraft:entity_type": "minecraft:enderman"
+
+        }
+      }
+    },
+    "hoglin": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "minecraft:entity_type": "minecraft:hoglin"
+
+        }
+      }
+    },
+    "brute": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "minecraft:entity_type": "minecraft:piglin_brute"
+
+        }
+      }
+    },
+    "wither": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "minecraft:entity_type": "minecraft:wither_skeleton"
+
+        }
+      }
+    }
+  },
+  "display": {
+    "frame": "challenge",
+    "description": {
+      "translate": "Kill a Wither Skeleton, an Enderman, a Piglin Brute, and a Hoglin"
+    },
+    "icon": {
+      "id": "minecraft:wither_skeleton_skull"
+    },
+    "title": {
+      "translate": "Nether Hunter II"
+    }
+  },
+  "requirements": [
+    [
+      "hoglin"
+    ],
+    [
+      "brute"
+    ],
+    [
+      "enderman"
+    ],
+    [
+      "wither"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlifeextra"
+  },
+  "sends_telemetry_event": true
+}

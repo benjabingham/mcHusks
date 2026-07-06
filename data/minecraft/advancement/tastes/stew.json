@@ -1,5 +1,5 @@
 {
-  "parent": "tastes/fruits_veggies",
+  "parent": "tastes/1_root",
   "criteria": {
     "sus": {
       "conditions": {

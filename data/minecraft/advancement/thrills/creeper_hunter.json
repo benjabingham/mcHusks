@@ -1,5 +1,5 @@
 {
-  "parent": "thrills/monster_damage",
+  "parent": "thrills/5_root",
   "criteria": {
     "damage": {
       "trigger": "minecraft:impossible"
@@ -7,14 +7,14 @@
   },
   "display": {
     "description": {
-      "translate": "Half a heart is left but don't die die die, die die die die",
+      "translate": "Kill 20 Creepers",
       "color": "blue"
     },
     "icon": {
-      "id": "minecraft:heart_pottery_sherd"
+      "id": "minecraft:creeper_head"
     },
     "title": {
-      "translate": "Near Death Experience"
+      "translate": "Creeper Hunter"
     }
   },
   "requirements": [

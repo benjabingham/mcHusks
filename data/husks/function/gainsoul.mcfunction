@@ -4,6 +4,7 @@ scoreboard players add @s totalSouls 1
 
 execute as @a at @s run playsound block.bell.resonate
 
+execute as @s[gamemode=creative] run return fail
 execute if dimension minecraft:overworld as @s[distance=0..] if score @s totalSouls matches 2.. run function husks:summons/disturb
 
 execute if dimension minecraft:the_nether as @s[distance=0..] if score @s totalSouls matches 2.. run execute if score ☻ souls matches 2.. run function husks:summons/netherdisturb
