@@ -4,7 +4,10 @@ team leave @s
 team join husk @s
 scoreboard players set @s timeAlive 8400000
 
-execute in minecraft:the_nether run spreadplayers 0 0 2000 2000 false @s
+execute if score @s huskDeaths matches ..2 run execute in minecraft:the_nether run spreadplayers 0 0 0 2000 false @s
+execute if score @s huskDeaths matches 3..5 run execute in minecraft:the_nether run spreadplayers 0 0 0 1500 false @s
+execute if score @s huskDeaths matches 6.. run execute in minecraft:the_nether run spreadplayers 0 0 0 1000 false @s
+
 function cavespread:spread
 execute as @s at @s run playsound block.portal.trigger
 execute as @a at @s run playsound block.trial_spawner.ambient_ominous

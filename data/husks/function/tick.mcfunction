@@ -3,6 +3,7 @@ execute as @a if score @s ondeath matches 1.. run function husks:ondeath
 
 scoreboard players add @a firstload 0
 execute as @a if score @s firstload matches 0 run function husks:help/welcome
+execute as @a if score @s firstload matches 0 run gamemode survival
 execute as @a if score @s firstload matches 0 run scoreboard players set @s firstload 1
 
 

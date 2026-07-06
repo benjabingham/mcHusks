@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:husks/scapegoat",
+  "criteria": {
+    "piglin": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:piglin",
+              "flags": {
+                "is_baby": true,
+                "is_on_fire": true
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Ignite a Baby Piglin, then kill it with a Gold Sword",
+      "color": "red"
+    },
+    "icon": {
+      "id": "minecraft:cooked_porkchop"
+    },
+    "title": {
+      "translate": "Piglet Roast"
+    }
+  },
+  "requirements": [
+    [
+      "piglin"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:gainsoul"
+  },
+  "sends_telemetry_event": true
+}
