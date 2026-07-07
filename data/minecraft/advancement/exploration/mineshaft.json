@@ -1,0 +1,31 @@
+{
+  "parent": "exploration/3_root",
+  "criteria": {
+    "buried_treasure": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/abandoned_mineshaft"
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Be the first to loot an abandonned mineshaft"
+    },
+    "icon": {
+      "id": "minecraft:chest_minecart"
+    },
+    "title": {
+      "translate": "Get Shafted"
+    }
+  },
+  "requirements": [
+    [
+      "buried_treasure"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlifeless"
+  },
+  "sends_telemetry_event": true
+}

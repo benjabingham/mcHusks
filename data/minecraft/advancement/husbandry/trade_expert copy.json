@@ -1,43 +1,40 @@
 {
-  "parent": "minecraft:exploration/3_root",
+  "parent": "husbandry/2_root",
   "criteria": {
-    "visit": {
+    "trade": {
       "conditions": {
         
-        "player": [
+        "villager": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
-            
             "predicate": {
-                "minecraft:location": {
-                "biomes": "minecraft:cherry_grove"
-              }
+              "nbt": "{VillagerData:{level:5}}"
             }
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "minecraft:villager_trade"
     }
   },
   "display": {
     "description": {
-      "translate": "Visit a Cherry Grove"
+      "translate": "Trade with a level 5 Villager"
     },
     "icon": {
-      "id": "minecraft:cherry_sapling"
+      "id": "minecraft:emerald"
     },
     "title": {
-      "translate": "Pretty And Pink"
+      "translate": "In Good Hands"
     }
   },
   "requirements": [
     [
-      "visit"
+      "trade"
     ]
-  ],
-  "rewards": {
+],
+"rewards": {
     "function": "husks:extendlifeless"
-  },
+},
   "sends_telemetry_event": true
 }

@@ -43,6 +43,9 @@
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "frame": "challenge",
     "description": {
       "translate": "Receive damage from a Wither Skeleton, an Enderman, a Piglin Brute, and a Hoglin"

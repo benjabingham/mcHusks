@@ -15,7 +15,7 @@
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "impossible"
     },
     "in_temple": {
       "conditions": {
@@ -31,7 +31,7 @@
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "impossible"
     },
     "in_igloo": {
       "conditions": {
@@ -47,10 +47,13 @@
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "frame": "challenge",
     "description": {
       "translate": "Explore a Desert Pyramid, a Jungle Temple, and an Igloo"

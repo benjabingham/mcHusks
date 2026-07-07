@@ -33,6 +33,9 @@
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Receive damage from a Bee, a Pufferfish, and a Cave Spider",
       "color": "blue"

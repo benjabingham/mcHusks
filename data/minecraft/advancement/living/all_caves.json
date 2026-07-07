@@ -15,7 +15,7 @@
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "impossible"
     },
      "deep": {
       "conditions": {
@@ -31,7 +31,7 @@
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "impossible"
     },
      "sulfur": {
       "conditions": {
@@ -47,10 +47,14 @@
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "impossible"
     }
   },
   "display": {
+    
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Visit a Dripstone Cave, a Sulfer Cave, and the Deep Dark",
       "color": "blue"
@@ -74,7 +78,6 @@
     ]
   ],
   "rewards": {
-    "function": "husks:extendlife"
   },
   "sends_telemetry_event": true
 }

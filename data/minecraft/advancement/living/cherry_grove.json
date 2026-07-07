@@ -17,10 +17,13 @@
           }
         ]
       },
-      "trigger": "minecraft:slept_in_bed"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Sleep in a bed in a Cherry Grove",
       "color": "blue"
@@ -38,7 +41,6 @@
     ]
   ],
   "rewards": {
-    "function": "husks:extendlife"
   },
   "sends_telemetry_event": true
 }

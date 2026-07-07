@@ -1,28 +1,29 @@
 {
-  "parent": "minecraft:husbandry/make_purple",
+  "parent": "thrills/nether_hunter_2",
   "criteria": {
-    "breed": {
+    "impossible": {
       "trigger": "minecraft:impossible"
     }
   },
   "display": {
+    "frame":"challenge",
     "description": {
-      "translate": "Breed 25 animals"
+      "translate": "Kill 20 Hoglins"
     },
     "icon": {
-      "id": "minecraft:wheat"
+      "id": "minecraft:porkchop"
     },
     "title": {
-      "translate": "Breeder"
+      "translate": "Hogsbane"
     }
   },
   "requirements": [
     [
-      "breed"
+      "impossible"
     ]
   ],
   "rewards": {
-    "function": "husks:extendlifeless"
+    "function": "husks:extendlifeextra"
   },
   "sends_telemetry_event": true
 }

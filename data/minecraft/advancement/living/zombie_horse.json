@@ -3,20 +3,15 @@
   "criteria": {
     "tame": {
       "conditions": {
-       "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "minecraft:entity_type": "minecraft:zombie_horse"
-            }
-          }
-        ]
+       
       },
-      "trigger": "minecraft:tame_animal"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "frame": "challenge",
     "description": {
       "translate": "Tame a Zombie Horse"

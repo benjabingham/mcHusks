@@ -2,10 +2,13 @@
   "parent": "minecraft:living/monster_damage",
   "criteria": {
     "damage": {
-      "trigger": "minecraft:impossible"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Half a heart is left but don't die",
       "color": "blue"

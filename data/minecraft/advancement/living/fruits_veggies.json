@@ -1,73 +1,15 @@
 {
   "parent": "minecraft:living/cookie",
   "criteria": {
-    "potato": {
-      "conditions": {
-       "item": {
-          "items": "minecraft:baked_potato"
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
-    "carrot": {
-      "conditions": {
-        "item": {
-          "items": "minecraft:carrot"
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
-    "apple": {
-      "conditions": {
-        "item": {
-          "items": "minecraft:apple"
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
-    "beetroot": {
-      "conditions": {
-        "item": {
-          "items": "minecraft:beetroot"
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
-    "melon": {
-      "conditions": {
-        "item": {
-          "items": "minecraft:melon_slice"
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
-    "berries": {
-      "conditions": {
-        "item": {
-          "items": "minecraft:sweet_berries"
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
-    "glow": {
-      "conditions": {
-        "item": {
-          "items": "minecraft:glow_berries"
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
-    "kelp": {
-      "conditions": {
-        "item": {
-          "items": "minecraft:kelp"
-        }
-      },
-      "trigger": "minecraft:consume_item"
+     "test":{
+      "trigger": "impossible"
     }
   },
   
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Eat Baked Potato, Carrot, Apple, Beetroot, Melon Slice, Sweet Berries, Dried Kelp, and Glow Berries",
       "color": "blue"
@@ -81,28 +23,7 @@
   },
   "requirements": [
     [
-      "kelp"
-    ],
-    [
-      "beetroot"
-    ],
-    [
-      "berries"
-    ],
-    [
-      "glow"
-    ],
-    [
-      "melon"
-    ],
-    [
-      "apple"
-    ],
-    [
-      "potato"
-    ],
-    [
-      "carrot"
+      "test"
     ]
   ],
   "rewards": {

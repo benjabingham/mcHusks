@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:husbandry/2_root",
+  "criteria": {
+    "iron": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": {
+          "minecraft:entity_type": "minecraft:iron_golem"
+        }
+      }
+    },
+    "copper": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": {
+          "minecraft:entity_type": "minecraft:copper_golem"
+        }
+      }
+    },
+    "snow": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": {
+          "minecraft:entity_type": "minecraft:snow_golem"
+        }
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Create a Copper Golem, an Iron Golem, and a Snow Golem",
+      "color": "blue"
+    },
+    "icon": {
+      "id": "minecraft:jack_o_lantern"
+    },
+    "title": {
+      "translate": "Hired Help"
+    }
+  },
+  "rewards":{
+    "function": "husks:extendlife"
+    },
+  "sends_telemetry_event": true
+}

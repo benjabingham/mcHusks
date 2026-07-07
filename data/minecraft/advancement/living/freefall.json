@@ -2,7 +2,7 @@
   "parent": "minecraft:living/root",
   "criteria": {
     "terminal": {
-      "trigger": "minecraft:tick",
+      "trigger": "minecraft:impossible",
       "conditions": {
         "player": [
           {
@@ -21,6 +21,9 @@
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Achieve a vertical velocity of 30 m/s"
     },

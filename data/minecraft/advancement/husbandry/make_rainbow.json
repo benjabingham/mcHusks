@@ -1,0 +1,199 @@
+{
+  "parent": "minecraft:husbandry/make_purple",
+  "criteria": {
+    "white": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child":{
+          "nbt": "{Color:0b}"
+        } 
+      }
+    },
+    "orange": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child":{
+          "nbt": "{Color:1b}"
+        } 
+      }
+    },
+    "magenta": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child":{
+          "nbt": "{Color:2b}"
+        } 
+      }
+    },
+    "lightblue": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child":{
+          "nbt": "{Color:3b}"
+        } 
+      }
+    },
+    "yellow": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child":{
+          "nbt": "{Color:4b}"
+        } 
+      }
+    },
+    "lime": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child":{
+          "nbt": "{Color:5b}"
+        } 
+      }
+    },
+    "pink": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child":{
+          "nbt": "{Color:6b}"
+        } 
+      }
+    },
+    "gray": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child":{
+          "nbt": "{Color:7b}"
+        } 
+      }
+    },"lightgray": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child":{
+          "nbt": "{Color:8b}"
+        } 
+      }
+    },
+    "cyan": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child":{
+          "nbt": "{Color:9b}"
+        } 
+      }
+    },
+    "purple": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child":{
+          "nbt": "{Color:10b}"
+        } 
+      }
+    },
+    "blue": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child":{
+          "nbt": "{Color:11b}"
+        } 
+      }
+    },
+    "brown": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child":{
+          "nbt": "{Color:12b}"
+        } 
+      }
+    },
+    "green": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child":{
+          "nbt": "{Color:13b}"
+        } 
+      }
+    },
+    "red": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child":{
+          "nbt": "{Color:14b}"
+        } 
+      }
+    },
+    "black": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child":{
+          "nbt": "{Color:15b}"
+        } 
+      }
+    }
+
+  },
+  "display": {
+    "description": {
+      "translate": "Breed a sheep of every color",
+      "color": "blue"
+    },
+    "icon": {
+      "id": "minecraft:orange_wool"
+    },
+    "title": {
+      "translate": "Make The Rainbow"
+    }
+  },
+  "requirements": [
+    [
+      "white"
+    ],
+    [
+      "orange"
+    ],
+    [
+      "magenta"
+    ],
+    [
+      "lightblue"
+    ],
+    [
+      "yellow"
+    ],
+    [
+      "lime"
+    ],
+    [
+      "pink"
+    ],
+    [
+      "gray"
+    ],
+    [
+      "lightgray"
+    ],
+    [
+      "cyan"
+    ],
+    [
+      "purple"
+    ],
+    [
+      "blue"
+    ],
+    [
+      "brown"
+    ],
+    [
+      "green"
+    ],
+    [
+      "red"
+    ],
+    [
+      "black"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlife"
+  },
+  "sends_telemetry_event": true
+}

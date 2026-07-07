@@ -1,5 +1,5 @@
 {
-  "parent": "exploration/3_root",
+  "parent": "exploration/mineshaft",
   "criteria": {
     "visit": {
       "conditions": {

@@ -4,17 +4,15 @@
     
     "listen": {
       "conditions": {
-        "item": 
-          {
-              "items": [
-                "minecraft:name_tag"
-              ]
-          }
+        
       },
-      "trigger": "minecraft:player_interacted_with_entity"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Bestow a mob with a name"
     },

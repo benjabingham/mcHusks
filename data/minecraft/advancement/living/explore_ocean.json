@@ -15,7 +15,7 @@
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "impossible"
     },
     "in_ocean_ruin_cold": {
       "conditions": {
@@ -31,7 +31,7 @@
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "impossible"
     },
     "in_shipwreck": {
       "conditions": {
@@ -47,7 +47,7 @@
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "impossible"
     },
     "in_monument": {
       "conditions": {
@@ -63,10 +63,13 @@
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Explore an Ocean Monument, a Shipwreck, and Ocean Ruins in warm and cold water",
       "color": "blue"

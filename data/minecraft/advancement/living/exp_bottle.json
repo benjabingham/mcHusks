@@ -5,10 +5,13 @@
       "conditions": {
        
       },
-      "trigger": "minecraft:impossible"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Use a Bottle o' Enchanting",
       "color": "blue"

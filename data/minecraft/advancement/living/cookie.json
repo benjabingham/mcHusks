@@ -3,14 +3,15 @@
   "criteria": {
     "eat": {
       "conditions": {
-        "item": {
-          "items": "minecraft:cookie"
-        }
+       
       },
-      "trigger": "minecraft:consume_item"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Eat a Cookie"
     },
@@ -27,7 +28,6 @@
     ]
   ],
   "rewards": {
-    "function": "husks:extendlifeless"
   },
   "sends_telemetry_event": true
 }

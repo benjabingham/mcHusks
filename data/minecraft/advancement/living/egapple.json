@@ -4,14 +4,15 @@
     "eat": {
         
       "conditions": {
-        "item": {
-          "items": "minecraft:enchanted_golden_apple"
-        }
+        
       },
-      "trigger": "minecraft:consume_item"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "frame": "challenge",
     "description": {
       "translate": "Eat an Enchanted Golden Apple"
@@ -29,7 +30,6 @@
     ]
   ],
   "rewards": {
-    "function": "husks:extendlifeextra"
   },
   "sends_telemetry_event": true
 }

@@ -31,46 +31,21 @@
     },
     "listen": {
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": [
-                  "jukebox"
-                ]
-              }
-            }
-          },
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": [
-                "minecraft:music_disc_lava_chicken"
-              ]
-            }
-          }
-        ]
+        
       },
-      "trigger": "minecraft:item_used_on_block"
+      "trigger": "impossible"
     },
     "flint": {
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": [
-                "flint_and_steel"
-              ]
-            }
-          }
-        ]
+       
       },
-      "trigger": "minecraft:item_used_on_block"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
      "description": {
       "translate": "Cussion a deadly fall with a Water Bucket, use Flint and Steel, and listen to the Lava Chicken music Disc",
       "color": "blue"

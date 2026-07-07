@@ -3,17 +3,15 @@
   "criteria": {
     "eat": {
       "conditions": {
-       "item": {
-          "items": "minecraft:potion",
-          "components": {
-            "minecraft:potion_contents": "minecraft:strong_harming"
-          }
-        }
+       
       },
-      "trigger": "minecraft:consume_item"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Drink a Potion of Strong Harming"
     },

@@ -3,31 +3,15 @@
   "criteria": {
     "listen": {
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": [
-                  "jukebox"
-                ]
-              }
-            }
-          },
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": [
-                "minecraft:music_disc_bounce"
-              ]
-            }
-          }
-        ]
+        
       },
-      "trigger": "minecraft:item_used_on_block"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Listen to the Bounce music disc"
     },
@@ -39,7 +23,6 @@
     }
   },
   "rewards": {
-    "function": "husks:extendlifeless"
   },
   "sends_telemetry_event": true
 }

@@ -43,6 +43,9 @@
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Receive damage from a Skeleton, a Creeper, a Zombie, and a Spider"    },
     "icon": {

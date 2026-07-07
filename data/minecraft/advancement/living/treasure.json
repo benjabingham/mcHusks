@@ -3,19 +3,15 @@
   "criteria": {
     "buried_treasure": {
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "structures": "minecraft:buried_treasure"
-            }
-          }
-        ]
+        
       },
-      "trigger": "minecraft:any_block_use"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Find buried treasure",
       "color": "blue"

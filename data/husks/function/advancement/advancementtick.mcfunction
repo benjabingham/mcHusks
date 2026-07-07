@@ -1,6 +1,6 @@
 execute as @a if score @s currentHealth matches 1 run advancement grant @s only thrills/half_heart
 
-execute as @a if score @s damaged matches 1 run execute as @s if score @s currentHealth matches ..6 run scoreboard players add @s times_damaged_low 1
+execute as @a if score @s damaged matches 1 run execute as @s if score @s currentHealth matches 1..6 run scoreboard players add @s times_damaged_low 1
 
 execute as @a if score @s times_damaged_low matches 20.. run advancement grant @s only thrills/low_health_often
 execute as @a if score @s damaged matches 1.. run scoreboard players set @s damaged 0
@@ -34,3 +34,6 @@ execute as @a if score @s time_since_non_raw matches 120000 run advancement gran
 execute as @a if score @s time_since_non_sweet matches 120000 run advancement grant @s only tastes/sweets_only
 
 execute as @a if score @s creepers_killed matches 20.. run advancement grant @s only thrills/creeper_hunter
+execute as @a if score @s hoglins_killed matches 20.. run advancement grant @s only thrills/hoglin_hunter
+
+execute as @a if score @s deaths matches 0 run execute if score @s level matches 99.. run advancement grant @s only misc/level_99

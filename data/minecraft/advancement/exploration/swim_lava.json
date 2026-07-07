@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:exploration/3_root",
+  "parent": "minecraft:exploration/explore_nether",
   "criteria": {
     "visit": {
       "conditions": {
@@ -10,8 +10,13 @@
             "entity": "this",
             
             "predicate": {
-                "minecraft:location": {
-                "biomes": "minecraft:cherry_grove"
+              "minecraft:location": {
+                "block": {
+                  "blocks": "minecraft:lava"
+                }
+              },
+              "effects": {
+                "fire_resistance": {}
               }
             }
           }
@@ -22,13 +27,14 @@
   },
   "display": {
     "description": {
-      "translate": "Visit a Cherry Grove"
+      "translate": "Take a harmless dip in some Lava",
+      "color": "blue"
     },
     "icon": {
-      "id": "minecraft:cherry_sapling"
+      "id": "minecraft:lava_bucket"
     },
     "title": {
-      "translate": "Pretty And Pink"
+      "translate": "This Feels Nice!"
     }
   },
   "requirements": [
@@ -37,7 +43,7 @@
     ]
   ],
   "rewards": {
-    "function": "husks:extendlifeless"
+    "function": "husks:extendlife"
   },
   "sends_telemetry_event": true
 }

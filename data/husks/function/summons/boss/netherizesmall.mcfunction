@@ -1,6 +1,8 @@
 #THIS VERSION IS ONLY USED BY THE CUBE BOSS, AND ALSO SUMMONS A SPARK if nearest player is between 4 and 50 blocks away
 
 execute at @s as @p[distance=4..50] run function husks:summons/summonspark
+execute at @s as @p[distance=6..40] run function husks:summons/summonspark
+
 
 execute as @s at @a run playsound ambient.basalt_deltas.mood weather @a ~ ~ ~ 100
 execute as @s at @s run playsound item.firecharge.use weather @a ~ ~ ~ 5

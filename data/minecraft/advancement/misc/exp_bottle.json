@@ -1,5 +1,5 @@
 {
-  "parent": "misc/6_root",
+  "parent": "misc/enchant_item",
   "criteria": {
     "use": {
       "conditions": {

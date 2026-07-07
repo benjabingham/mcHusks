@@ -1,5 +1,5 @@
 {
-  "parent": "husbandry/2_root",
+  "parent": "husbandry/trade_expert",
   "criteria": {
     "cured_zombie": {
       "trigger": "minecraft:cured_zombie_villager"

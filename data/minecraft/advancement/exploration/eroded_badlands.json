@@ -1,5 +1,5 @@
 {
-  "parent": "3_exploration/mountain_climber",
+  "parent": "exploration/mountain_climber",
   "criteria": {
     "visit": {
       "conditions": {

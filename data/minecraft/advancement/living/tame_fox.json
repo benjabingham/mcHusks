@@ -7,18 +7,10 @@
             "minecraft:location": {
               "biomes": "grove"
             }
-        },
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "minecraft:entity_type": "minecraft:fox"
-            }
-          }
-        ]
+        }
+        
       },
-      "trigger": "minecraft:player_interacted_with_entity"
+      "trigger": "impossible"
     },
     "taiga": {
       "conditions": {
@@ -37,10 +29,13 @@
           }
         ]
       },
-      "trigger": "minecraft:player_interacted_with_entity"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Feed a Snow Fox in its natural habitat",
       "color": "blue"

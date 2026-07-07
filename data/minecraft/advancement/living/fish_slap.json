@@ -9,21 +9,16 @@
               "items": "minecraft:cod"
             }
           }
-        },
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "minecraft:entity_type": "minecraft:player"
-            }
-          }
-        ]
+        }
+        
       },
-      "trigger": "minecraft:player_hurt_entity"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Slap a Player with raw Cod"
     },

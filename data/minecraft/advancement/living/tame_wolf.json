@@ -3,20 +3,15 @@
   "criteria": {
     "tame": {
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              
-            }
-          }
-        ]
+        
       },
-      "trigger": "minecraft:tame_animal"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Tame an animal",
       "color": "blue"

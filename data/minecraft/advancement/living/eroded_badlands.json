@@ -15,10 +15,13 @@
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Visit the Eroded Badlands",
       "color": "blue"

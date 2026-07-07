@@ -15,7 +15,7 @@
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "impossible"
     },
     "minecraft:crimson_forest": {
       "conditions": {
@@ -31,7 +31,7 @@
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "impossible"
     },
     "minecraft:nether_wastes": {
       "conditions": {
@@ -47,7 +47,7 @@
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "impossible"
     },
     "minecraft:soul_sand_valley": {
       "conditions": {
@@ -63,7 +63,7 @@
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "impossible"
     },
     "minecraft:warped_forest": {
       "conditions": {
@@ -79,10 +79,13 @@
           }
         ]
       },
-      "trigger": "minecraft:location"
+      "trigger": "impossible"
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "advancements.nether.explore_nether.description",
       "color": "blue"

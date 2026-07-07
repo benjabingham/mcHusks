@@ -23,6 +23,9 @@
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Receive damage from a Polar Bear and a Panda",
       "color": "blue"
@@ -43,7 +46,6 @@
     ]
   ],
   "rewards": {
-    "function": "husks:extendlife"
   },
   "sends_telemetry_event": true
 }

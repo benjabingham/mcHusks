@@ -21,6 +21,9 @@
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Achieve a horizontal velocity of 30 m/s",
       "color": "blue"

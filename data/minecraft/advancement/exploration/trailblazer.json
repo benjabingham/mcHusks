@@ -1,0 +1,38 @@
+{
+  "parent": "exploration/mineshaft",
+  "criteria": {
+    "pyramid": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/desert_pyramid"
+      }
+    },
+    "temple": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/jungle_temple"
+      }
+    }
+  },
+  "display": {
+    "frame": "challenge",
+    "description": {
+      "translate": "Be the first to loot a Jungle Temple or Desert Pyramid"
+    },
+    "icon": {
+      "id": "minecraft:compass"
+    },
+    "title": {
+      "translate": "Trailblazer"
+    }
+  },
+  "requirements": [
+    [
+      "pyramid","temple"
+    ]
+  ],
+  "rewards": {
+    "function": "husks:extendlifeextra"
+  },
+  "sends_telemetry_event": true
+}

@@ -1,28 +1,29 @@
 {
-  "parent": "minecraft:husbandry/make_purple",
+  "parent": "misc/6_root",
   "criteria": {
-    "breed": {
+    "impossible": {
       "trigger": "minecraft:impossible"
     }
   },
   "display": {
     "description": {
-      "translate": "Breed 25 animals"
+      "translate": "Lose a living friend",
+      "color":"blue"
     },
     "icon": {
-      "id": "minecraft:wheat"
+      "id": "minecraft:zombie_head"
     },
     "title": {
-      "translate": "Breeder"
+      "translate": "A Moment of Silence"
     }
   },
   "requirements": [
     [
-      "breed"
+      "impossible"
     ]
   ],
   "rewards": {
-    "function": "husks:extendlifeless"
+    "function": "husks:extendlife"
   },
   "sends_telemetry_event": true
 }

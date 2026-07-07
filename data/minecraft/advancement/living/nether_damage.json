@@ -43,6 +43,9 @@
     }
   },
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Receive damage from a Blaze, a Ghast, a Piglin, and a Magma Cube",
       "color": "blue"

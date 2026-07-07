@@ -1,0 +1,28 @@
+{
+  "parent": "misc/6_root",
+  "criteria": {
+    "enchanted_item": {
+      "trigger": "minecraft:enchanted_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Enchant an item"
+    },
+    "icon": {
+      "id": "minecraft:book"
+    },
+    "title": {
+      "translate": "Enchanter"
+    }
+  },
+  "requirements": [
+    [
+      "enchanted_item"
+    ]
+],
+"rewards": {
+    "function": "husks:extendlifeless"
+},
+  "sends_telemetry_event": true
+}

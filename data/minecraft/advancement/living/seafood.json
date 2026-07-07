@@ -1,49 +1,15 @@
 {
   "parent": "minecraft:living/carnivore",
   "criteria": {
-    "raw_cod": {
-      "conditions": {
-        "item": {
-          "items": "minecraft:cod"
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
-    "cod": {
-      "conditions": {
-        "item": {
-          "items": "minecraft:cooked_cod"
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
-    "raw_salmon": {
-      "conditions": {
-        "item": {
-          "items": "minecraft:salmon"
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
-    "salmon": {
-      "conditions": {
-        "item": {
-          "items": "minecraft:cooked_salmon"
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
-    "kelp": {
-      "conditions": {
-        "item": {
-          "items": "minecraft:kelp"
-        }
-      },
-      "trigger": "minecraft:consume_item"
+     "test":{
+      "trigger": "impossible"
     }
   },
   
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Eat Raw Salmon, Cooked Salmon, Raw Cod, Cooked Cod, and Dried Kelp",
       "color": "blue"
@@ -57,19 +23,7 @@
   },
   "requirements": [
     [
-      "salmon"
-    ],
-    [
-      "raw_salmon"
-    ],
-    [
-      "cod"
-    ],
-    [
-      "raw_cod"
-    ],
-    [
-      "kelp"
+      "test"
     ]
   ],
   "rewards": {

@@ -1,49 +1,15 @@
 {
   "parent": "minecraft:living/cookie",
   "criteria": {
-    "chop": {
-      "conditions": {
-        "item": {
-          "items": "minecraft:cooked_porkchop"
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
-    "rabbit": {
-      "conditions": {
-        "item": {
-          "items": "minecraft:cooked_rabbit"
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
-    "steak": {
-      "conditions": {
-        "item": {
-          "items": "minecraft:cooked_beef"
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
-    "mutton": {
-      "conditions": {
-        "item": {
-          "items": "minecraft:cooked_mutton"
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
-    "chicken": {
-      "conditions": {
-        "item": {
-          "items": "minecraft:cooked_chicken"
-        }
-      },
-      "trigger": "minecraft:consume_item"
+    "test":{
+      "trigger": "impossible"
     }
   },
   
   "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
     "description": {
       "translate": "Eat Cooked Porkchop, Steak, Cooked Mutton, Cooked Chicken, and Cooked Rabbit",
       "color": "blue"
@@ -56,24 +22,10 @@
     }
   },
   "requirements": [
-    [
-      "steak"
-    ],
-    [
-      "rabbit"
-    ],
-    [
-      "chicken"
-    ],
-    [
-      "mutton"
-    ],
-    [
-      "chop"
-    ]
+    ["test"]
+
   ],
   "rewards": {
-    "function": "husks:extendlife"
   },
   "sends_telemetry_event": true
 }
