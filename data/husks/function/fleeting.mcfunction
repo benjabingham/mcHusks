@@ -8,7 +8,7 @@ execute if score @s lifePercent matches 120.. run scoreboard players add @s time
 execute if score @s lifePercent matches 100.. run scoreboard players add @s timeAlive 40
 
 execute if score @s lifePercent matches 90.. run scoreboard players add @s timeAlive 17
-execute if score @s lifePercent matches 80..89 run scoreboard players add @s timeAlive 15
+execute if score @s lifePercent matches 80..89 run scoreboard players add @s timeAlive 16
 execute if score @s lifePercent matches 70..79 run scoreboard players add @s timeAlive 14
 execute if score @s lifePercent matches 60..69 run scoreboard players add @s timeAlive 12
 execute if score @s lifePercent matches 50..59 run scoreboard players add @s timeAlive 10
