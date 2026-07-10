@@ -9,9 +9,6 @@
             "entity": "this",
             "predicate": {
               "minecraft:entity_type": "minecraft:pig",
-              "flags": {
-                "is_baby": true
-              },
               "minecraft:location": {
                 "structures": "ruined_portal"
               }
@@ -21,17 +18,14 @@
       },
       "trigger": "minecraft:player_killed_entity"
     },
-    "hoglin": {
+    "piglin": {
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:entity_type": "minecraft:hoglin",
-              "flags": {
-                "is_baby": false
-              },
+              "minecraft:entity_type": "minecraft:piglin",
               "minecraft:location": {
                 "structures": "ruined_portal"
               }
@@ -41,17 +35,14 @@
       },
       "trigger": "minecraft:player_killed_entity"
     },
-    "zoglin": {
+    "ziglin": {
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "minecraft:entity_type": "minecraft:zoglin",
-              "flags": {
-                "is_baby": false
-              },
+              "minecraft:entity_type": "minecraft:zombified_piglin",
               "minecraft:location": {
                 "structures": "ruined_portal"
               }
@@ -64,7 +55,7 @@
   },
   "display": {
     "description": {
-      "translate": "Kill a Baby Pig and an Adult Hoglin at a Ruined Portal",
+      "translate": "Kill a Pig, a Piglin, and a Zombified Piglin at a Ruined Portal",
       "color": "red"
     },
     "icon": {
@@ -79,7 +70,10 @@
       "pig"
     ],
     [
-      "hoglin","zoglin"
+      "piglin"
+    ],
+    [
+      "ziglin"
     ]
   ],
   "rewards": {

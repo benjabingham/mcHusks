@@ -13,15 +13,12 @@ execute if score randomsummon vars matches 0..10 run execute if score dangerleve
 execute if score randomsummon vars matches 5..20 run execute if score dangerlevel vars matches 3.. run effect give @s bad_omen 1200
 execute if score randomsummon vars matches 21..25 run execute if score dangerlevel vars matches 3.. run summon vex ~ ~ ~ {Tags:["summoned"]}
 execute if score randomsummon vars matches 26..30 run execute if score dangerlevel vars matches 4.. run function husks:summons/summonwinddemon
-execute if score randomsummon vars matches 31..40 run execute if score dangerlevel vars matches 4.. run function husks:summons/summonhellhound
+execute if score randomsummon vars matches 31..45 run execute if score dangerlevel vars matches 4.. run function husks:summons/summonhellhound
 
-#gnomes??? (little pillagers)
 
-execute if score randomsummon vars matches 41..50 run execute if score dangerlevel vars matches 6.. run execute if score ☻ souls matches 3.. run function husks:summons/boss/summonghastmother
-execute if score randomsummon vars matches 51..60 run execute if score dangerlevel vars matches 8.. run execute if score ☻ souls matches 4.. run summon warden ~ ~ ~ {Tags:["summoned"]}
+execute if score randomsummon vars matches 46..60 run execute if score dangerlevel vars matches 8.. run execute if score ☻ souls matches 4.. run summon warden ~ ~ ~ {Tags:["summoned"]}
 execute if score randomsummon vars matches 61..70 run execute if score dangerlevel vars matches 10.. run execute if score ☻ souls matches 5.. run summon wither ~ ~ ~ {Invul:1000,Tags:["summoned"]}
 
 execute if score randomsummon vars matches 71..73 run execute if score dangerlevel vars matches 5.. run execute if score ☻ souls matches 2.. run function husks:summons/enderize
 
-#hellhound?
 

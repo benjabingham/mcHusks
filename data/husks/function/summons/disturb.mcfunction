@@ -30,7 +30,7 @@ execute if score randomsummon vars matches 56..61 run execute if score dangerlev
 
 #gnomes??? (little pillagers)
 
-execute if score randomsummon vars matches 62..70 run execute if score dangerlevel vars matches 5.. run execute if score ☻ souls matches 3.. run function husks:summons/boss/summonmegacreeper
+execute if score randomsummon vars matches 62..70 run execute as @s[advancements={thrills/creeper_hunter=true}] run function husks:summons/boss/summonmegacreeper
 execute if score randomsummon vars matches 70..78 run execute if score dangerlevel vars matches 6.. run execute if score ☻ souls matches 3.. run function husks:summons/boss/summonghastmother
 execute if score randomsummon vars matches 79..87 run execute if score dangerlevel vars matches 7.. run execute if score ☻ souls matches 3.. run function husks:summons/boss/summonphantomboss
 execute if score randomsummon vars matches 89..100 run execute if score dangerlevel vars matches 8.. run execute if score ☻ souls matches 3.. run function husks:summons/boss/summoncubeboss
