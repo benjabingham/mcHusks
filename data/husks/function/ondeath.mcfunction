@@ -1,7 +1,5 @@
 execute at @s[team=husk] run function husks:summons/summonlost
-say death
-execute as @s[team=living] run execute as @a run execute if score @s ondeath matches 0 run advancement grant @s only thrills/player_dies
-execute as @s[team=living] run execute as @a run execute if score @s ondeath matches 0 run say im alive
+execute as @s[team=living] run execute as @a run execute if score @s ondeath matches 0 run advancement grant @s only misc/player_dies
 xp set @s 0 levels
 scoreboard players set @s ondeath 0
 
@@ -18,6 +16,8 @@ advancement revoke @s from husbandry/2_root
 advancement revoke @s from exploration/3_root
 advancement revoke @s from thrills/5_root
 advancement revoke @s from misc/6_root
+#this can be removed once all root advancements are purged
+advancement revoke @a from living/root
 
 
 

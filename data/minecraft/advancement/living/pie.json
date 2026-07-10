@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "alive":{
+        "conditions":{
+        },
+        "trigger": "impossible"
+    }
+  },
+  "display": {
+    "hidden":true,
+    "announce_to_chat": false,
+    "show_toast": false,
+    
+    "background": "minecraft:block/stripped_cherry_log",
+    "description": {
+      "translate": "Extend your life by living it"
+    },
+    "icon": {
+      "id": "minecraft:player_head"
+    },
+    "title": {
+      "translate": "Living Life"
+    }
+  },
+  "requirements": [
+    [
+      "alive"
+    ]
+],
+  "sends_telemetry_event": true
+}
