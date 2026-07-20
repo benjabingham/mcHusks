@@ -8,4 +8,6 @@ execute if score @s lifePercent matches 30..39 run attribute @s minecraft:max_he
 execute if score @s lifePercent matches 20..29 run attribute @s minecraft:max_health base set 6
 execute if score @s lifePercent matches 10..19 run attribute @s minecraft:max_health base set 4
 execute if score @s lifePercent matches ..9 run attribute @s minecraft:max_health base set 2
-execute if score @s lifePercent matches ..0 run effect give @s wither 60
+#execute if score @s lifePercent matches ..0 run effect give @s wither 60
+
+execute as @s[tag=living] run attribute @s minecraft:max_health base set 20

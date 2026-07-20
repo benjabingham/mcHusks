@@ -1,3 +1,4 @@
+
 function husks:updatelifepercent
 
 execute if score @s lifePercent matches 101.. run say is overflowing with life!
