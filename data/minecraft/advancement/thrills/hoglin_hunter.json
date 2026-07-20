@@ -8,7 +8,7 @@
   "display": {
     "frame":"challenge",
     "description": {
-      "translate": "Kill 20 Hoglins"
+      "translate": "Kill 15 Hoglins"
     },
     "icon": {
       "id": "minecraft:porkchop"

@@ -1,5 +1,5 @@
 {
-  "parent": "thrills/5_root",
+  "parent": "thrills/blaze",
   "criteria": {
     "blaze": {
      "trigger": "minecraft:player_killed_entity",
@@ -44,7 +44,7 @@
       "color": "blue"
     },
     "icon": {
-      "id": "minecraft:blaze_rod"
+      "id": "minecraft:magma_cream"
     },
     "title": {
       "translate": "Nether Hunter"

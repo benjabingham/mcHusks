@@ -4,9 +4,11 @@ team leave @s
 team join husk @s
 scoreboard players set @s timeAlive 8400000
 
-execute if score @s huskDeaths matches ..2 run execute in minecraft:the_nether run spreadplayers 0 0 0 2000 false @s
-execute if score @s huskDeaths matches 3..5 run execute in minecraft:the_nether run spreadplayers 0 0 0 1500 false @s
-execute if score @s huskDeaths matches 6.. run execute in minecraft:the_nether run spreadplayers 0 0 0 1000 false @s
+execute if score @s huskDeaths matches ..2 run execute in minecraft:the_nether run spreadplayers 0 0 0 1500 false @s
+execute if score @s huskDeaths matches 3 run execute in minecraft:the_nether run spreadplayers 0 0 0 1200 false @s
+execute if score @s huskDeaths matches 4 run execute in minecraft:the_nether run spreadplayers 0 0 0 1000 false @s
+execute if score @s huskDeaths matches 5 run execute in minecraft:the_nether run spreadplayers 0 0 0 800 false @s
+execute if score @s huskDeaths matches 6.. run execute in minecraft:the_nether run spreadplayers 0 0 0 600 false @s
 
 function cavespread:spread
 execute as @s at @s run playsound block.portal.trigger
@@ -18,7 +20,7 @@ effect give @s water_breathing infinite 0 false
 execute if score @s huskDeaths matches ..1 run attribute @s minecraft:max_health base set 26
 execute if score @s huskDeaths matches ..2 run effect give @s trial_omen 3600 0 true
 
-
+execute if score @s huskDeaths matches ..3 run give @s golden_pickaxe
 execute if score @s huskDeaths matches 3 run attribute @s minecraft:max_health base set 16
 execute if score @s huskDeaths matches 4 run attribute @s minecraft:max_health base set 14
 execute if score @s huskDeaths matches 5.. run attribute @s minecraft:max_health base set 12

@@ -33,7 +33,7 @@ execute as @a if score @s time_since_animal_product matches 120000 run advanceme
 execute as @a if score @s time_since_non_raw matches 120000 run advancement grant @s only tastes/raw_diet
 execute as @a if score @s time_since_non_sweet matches 120000 run advancement grant @s only tastes/sweets_only
 
-execute as @a if score @s creepers_killed matches 20.. run advancement grant @s only thrills/creeper_hunter
-execute as @a if score @s hoglins_killed matches 20.. run advancement grant @s only thrills/hoglin_hunter
+execute as @a if score @s creepers_killed matches 15.. run advancement grant @s only thrills/creeper_hunter
+execute as @a if score @s hoglins_killed matches 15.. run advancement grant @s only thrills/hoglin_hunter
 
 execute as @a if score @s deaths matches 0 run execute if score @s level matches 99.. run advancement grant @s only misc/level_99

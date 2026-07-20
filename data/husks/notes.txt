@@ -1,0 +1,1 @@
+double check all advancement displays and triggers - some weird stuff (yummy treat triggering off of honey, pottery not showing in chat)
